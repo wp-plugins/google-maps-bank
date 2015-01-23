@@ -1,9 +1,9 @@
 === Google Maps Bank - Advanced Google Maps ===
 Contributors: Gallery-Bank,contact-banker
-Tags:  admin, plugin, comments, google maps, maps, map, map markers, google, google map, wp maps, wp google maps, wp google map, easy map, store locator, map plugin, directions, map directions, google map plugin, routes, polygons, polylines, streetview, location, marker, latitude, longitude, map widget
+Tags: admin, plugin, comments, google maps, maps, map, map markers, google, google map, wp maps, wp google maps, wp google map, easy map, store locator, map plugin, directions, map directions, google map plugin, routes, polygons, polylines, streetview, location, marker, latitude, longitude, map widget
 Requires at least: 3.3
 Tested up to: 4.1
-Stable tag: 1.0.0
+Stable tag: 1.0
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -97,6 +97,6 @@ If any problem occurs, please contact us at [support@tech-banker.com](mailto:sup
 
 == Changelog ==
 
-= 1.0.1 =
+= 1.0 =
 
 * Initial Version Release

@@ -4,7 +4,7 @@ Plugin Name: Google Maps Bank Lite Edition
 Plugin URI: http://tech-banker.com
 Description: Google Maps Bank is the simplest plugin on WordPress! Create a Custom Google Map in easy quick steps!
 Author: Tech Banker
-Version: 1.0.0
+Version: 1.0
 */
 /////////////////////////////////////  Define  Google Maps Bank  Constants  ////////////////////////////////////////
 
