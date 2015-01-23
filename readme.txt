@@ -1,5 +1,5 @@
 === Google Maps Bank - Advanced Google Maps ===
-Contributors: Gallery-Bank,contact-banker
+Contributors: contact-banker,Gallery-Bank
 Tags: admin, plugin, comments, google maps, maps, map, map markers, google, google map, wp maps, wp google maps, wp google map, easy map, store locator, map plugin, directions, map directions, google map plugin, routes, polygons, polylines, streetview, location, marker, latitude, longitude, map widget
 Requires at least: 3.3
 Tested up to: 4.1
