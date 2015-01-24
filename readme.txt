@@ -19,21 +19,25 @@ While the lite version of Google Maps Bank allows you to create a Google map wit
 
 **[Google Maps Bank](http://tech-banker.com/products/wp-google-maps-bank/)**
 
-= Lite Version (Free) =
+= Key Features in Google Maps Bank Lite Edition: =
 
 * Super easy to use, no coding required!
-* Create as many map markers as you need by simply typing in the address
-* Edit your map markers with the click of a button
-* Drag map markers to an exact location
+* Multi-Lingual. Available now in 36 Languages.
+* Shortcode Wizard in your Page/Post.
+* Automatic Plugin update Notification with New Features , Bugs Fixing and much more
+* With Free Lite Edition, you can create upto 2 Google Maps
+* Create upto 5 Google Map markers as you need by simply typing in the address.
+* Add Location on Google Map with auto genrated logitute and latitude on base of location
+* Add upto 1 Colorful Polygon to your Google Map to highlight or show a specific area on the Google Map
+* Add upto 1 Colorful Polyline to your Google Map to highlight or show a specific path on the Google Map
+* Edit your Google Map markers with the click of a button
+*
 * UTF-8 character support
-* Map can be included as a widget
 * Support for localization
 * Choose from four Google maps types: roadmap, terrain, satellite and hybrid
+* Delete Google Map with the click of a button
 * Define your own width, height and zoom level for your Google Map
-* Add animations to your map markers!
 * Store locator functionality
-* Add Polygons to your Map
-* Add Polylines / Routes to your map
 * Create a map in less than a 30 seconds!
 
 = Professional Edition =
