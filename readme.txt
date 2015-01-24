@@ -142,8 +142,6 @@ If any problem occurs, please contact us at [support@tech-banker.com](mailto:sup
 13. Manage Maps - Manage Polylines
 14. Manage Maps - Manage Layers
 
-== Frequently Asked Questions ==
-
 == Changelog ==
 
 = 1.0.1 =
