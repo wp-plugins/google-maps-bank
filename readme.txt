@@ -11,27 +11,33 @@ Google Maps Bank is the simplest plugin on WordPress! Create a Custom Google Map
 
 == Description ==
 
-WP Google Maps Bank is the simplest yet powerful plugin ever created for WordPrss!
+**WP Google Maps Bank** is the simplest yet powerful plugin ever created for WordPrss!
 
 Add a customized Google map to your WordPress posts and/or pages quickly and easily with the supplied shortcode.
 
 While the lite version of Google Maps Bank allows you to create a Google map with markers, polylines and polygons, the Pro version allows you to do so much more! 
 
 **[Google Maps Bank](http://tech-banker.com/products/wp-google-maps-bank/)**
+**[Support Desk - Feel Free to ask your Queries](http://tech-banker.com/forums/forum/google-maps-bank-support/)**
 
-= Key Features in Google Maps Bank Lite Edition: =
+
+= Key Features in Google Maps Bank Lite Edition : =
 
 * Super easy to use, no coding required!
 * Multi-Lingual. Available now in 36 Languages.
 * Shortcode Wizard in your Page/Post.
 * Automatic Plugin update Notification with New Features , Bugs Fixing and much more
 * With Free Lite Edition, you can create upto 2 Google Maps
-* Create upto 5 Google Map markers as you need by simply typing in the address.
+* Create 5 Google Map markers as you need by simply typing in the address
+* Drag Google map markers to an exact location
 * Add Location on Google Map with auto genrated logitute and latitude on base of location
 * Add upto 1 Colorful Polygon to your Google Map to highlight or show a specific area on the Google Map
 * Add upto 1 Colorful Polyline to your Google Map to highlight or show a specific path on the Google Map
 * Edit your Google Map markers with the click of a button
-*
+* Edit your Google Map location with the click of a button 
+* Edit your Google Map ploygon with click of a button
+* Edit your Google Map ployline with click of a button
+* Set Different Google Map control like Pan Control,Over View Map,Draggable etc
 * UTF-8 character support
 * Support for localization
 * Choose from four Google maps types: roadmap, terrain, satellite and hybrid
@@ -40,20 +46,37 @@ While the lite version of Google Maps Bank allows you to create a Google map wit
 * Store locator functionality
 * Create a map in less than a 30 seconds!
 
-= Professional Edition =
+= Key Features in Google Maps Bank Premium Editions : =
 
-* Create multiple Google maps!
+* Create Unlimited Google maps! 
+* 113 Different Google map Themes to beautify your Google map
+* Create Unlimited map markers as you need by simply typing in the address
+* Create Unlimited Polygons!
+* Create Unlimited Polylines!
 * Add descriptions, links and images to your map markers.
 * Add categories to your map markers
+* Add animations to your map markers!
 * Filter markers by category
 * Mashup multiple Google maps
 * Add different marker icons, or your own icons to make your map really stand out!
 * List your Google Map markers in the three ways; Basic listing, Carousel, Advanced Table
 * Allow your visitors to get directions to your markers.
-* Export/Import your markers to a CSV file for quick editing.
-* Link Fusion tables to your Google Maps
+* Google Map Weather Layer
+* Google Map Cloud Layer
+* Google Map Traffic Layer
+* Google Map Transit Layer
+* Google Map Bicycling Layer
+* Google Map Panorama Layer
+* Google Map Map Engine Layer
+* Google Map Streetview supported
+* Marker Cluster settings for Google Map
+* Link Fusion tables to your Google Map
 * Show your visitor's location on the Map
-* Import KML/KMZ files to your Google Map
+* Circle Overlay 
+* Widgets
+* Bulk Deletion of Google Maps
+* Responsive Google Map
+* Roles & Capabilities
 * More advanced options for the Store Locator
 * WordPress Network friendly
 * Get the [WP Google Maps Bank Premium Editions](http://tech-banker.com/products/wp-google-maps-bank/)
