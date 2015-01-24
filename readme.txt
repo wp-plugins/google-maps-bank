@@ -125,6 +125,23 @@ After downloading the ZIP file,
 
 If any problem occurs, please contact us at [support@tech-banker.com](mailto:support@tech-banker.com).
 
+== Screenshots ==
+
+1. Dashboard - Google Maps Bank
+2. Create Google Maps - Step 1
+3. Create Google Maps - Step 2
+4. Create Google Maps - Step 3
+5. Create Google Maps - Step 3
+6. Create Google Maps - Step 4
+7. Create Google Maps - Step 5
+8. Create Google Maps - Step 6
+9. Create Google Maps - Step 7
+10. Manage Maps - Manage Locations
+11. Manage Maps - Manage Markers
+12. Manage Maps - Manage Polygons
+13. Manage Maps - Manage Polylines
+14. Manage Maps - Manage Layers
+
 == Frequently Asked Questions ==
 
 == Changelog ==
