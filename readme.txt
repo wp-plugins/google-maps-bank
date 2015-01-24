@@ -18,6 +18,7 @@ Add a customized Google map to your WordPress posts and/or pages quickly and eas
 While the lite version of Google Maps Bank allows you to create a Google map with markers, polylines and polygons, the Pro version allows you to do so much more! 
 
 **[Google Maps Bank](http://tech-banker.com/products/wp-google-maps-bank/)**
+
 **[Support Desk - Feel Free to ask your Queries](http://tech-banker.com/forums/forum/google-maps-bank-support/)**
 
 
@@ -75,7 +76,7 @@ While the lite version of Google Maps Bank allows you to create a Google map wit
 * Show your visitor's location on the Map
 * Circle Overlay advance settings
 * Edit Google Map with click of a button
-* Set Google Map Border Settings for
+* Set Google Map Border Settings for customizing as per your website's look & feel
 * Widgets
 * Bulk Deletion of Google Maps
 * Responsive Google Map
@@ -108,6 +109,7 @@ After downloading the ZIP file,
 3. Click "Choose file" ("Browse") and select the downloaded zip file.  
 
 **For Mac Users**  
+
 > * Go to your Downloads folder and locate the folder with the plugin. 
 > * Right-click on the folder and select Compress. 
 > * Now you have a newly created .zip file which can be installed as described here.*  
