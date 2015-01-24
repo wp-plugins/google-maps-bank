@@ -1,4 +1,4 @@
-=== Google Maps Bank - Advanced Google Maps ===
+=== WP Google Maps Bank - Advanced Google Maps ===
 Contributors: contact-banker, Gallery-Bank
 Tags: admin, plugin, comments, google maps, maps, map, map markers, google, google map, wp maps, wp google maps, wp google map, easy map, store locator, map plugin, directions, map directions, google map plugin, routes, polygons, polylines, streetview, location, marker, latitude, longitude, map widget
 Requires at least: 3.3
@@ -7,8 +7,7 @@ Stable tag: 1.0.1
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
-Google Maps Bank is the simplest plugin on WordPress! Create a Custom Google Map in easy quick steps!
-
+Google Maps Bank comes handy with  Markers, Polylines, Polygons, Layers, Directions, Advanced Settings! What else needed!
 == Description ==
 
 **WP Google Maps Bank** is the simplest yet powerful plugin ever created for WordPrss!
@@ -26,6 +25,7 @@ While the lite version of Google Maps Bank allows you to create a Google map wit
 * Super easy to use, no coding required!
 * Multi-Lingual. Available now in 36 Languages.
 * Shortcode Wizard in your Page/Post.
+* 800+ Marker Images on Google Map
 * Automatic Plugin update Notification with New Features , Bugs Fixing and much more
 * With Free Lite Edition, you can create upto 2 Google Maps
 * Create 5 Google Map markers as you need by simply typing in the address
