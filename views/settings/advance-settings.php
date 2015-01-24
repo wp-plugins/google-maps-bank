@@ -155,7 +155,7 @@ else
 									<div class="widget-layout">
 										<div class="widget-layout-title">
 											<h4>
-												<?php _e("Street View Settings", map_bank); ?><i class="widget_premium_feature"><?php _e(" (Available in Premium Edition)", map_bank); ?></i>
+												<?php _e("Street View Settings", map_bank); ?><i class="widget_premium_feature"><?php _e(" (Available in Premium Editions)", map_bank); ?></i>
 											</h4>
 										</div>
 										<div class="widget-layout-body">
@@ -194,7 +194,7 @@ else
 									<div class="widget-layout">
 										<div class="widget-layout-title">
 											<h4>
-												<?php _e("Circle Overlay Settings", map_bank); ?><i class="widget_premium_feature"><?php _e(" (Available in Premium Edition)", map_bank); ?></i>
+												<?php _e("Circle Overlay Settings", map_bank); ?><i class="widget_premium_feature"><?php _e(" (Available in Premium Editions)", map_bank); ?></i>
 											</h4>
 										</div>
 										<div class="widget-layout-body">
@@ -278,7 +278,7 @@ else
 									<div class="widget-layout">
 										<div class="widget-layout-title">
 											<h4>
-												<?php _e("Marker Cluster Settings", map_bank); ?><i class="widget_premium_feature"><?php _e(" (Available in Premium Edition)", map_bank); ?></i>
+												<?php _e("Marker Cluster Settings", map_bank); ?><i class="widget_premium_feature"><?php _e(" (Available in Premium Editions)", map_bank); ?></i>
 											</h4>
 										</div>
 										<div class="widget-layout-body">
@@ -341,7 +341,7 @@ else
 									<div class="widget-layout">
 										<div class="widget-layout-title">
 											<h4>
-												<?php _e("Directions Settings", map_bank); ?><i class="widget_premium_feature"><?php _e(" (Available in Premium Edition)", map_bank); ?></i>
+												<?php _e("Directions Settings", map_bank); ?><i class="widget_premium_feature"><?php _e(" (Available in Premium Editions)", map_bank); ?></i>
 											</h4>
 										</div>
 										<div class="widget-layout-body">
@@ -594,27 +594,27 @@ else
 			
 			function ux_clr_stroke_color_setting()
 			{
-				alert("<?php _e( "This feature is only available in Premium Edition!", map_bank ); ?>");
+				alert("<?php _e( "This feature is only available in Premium Editions!", map_bank ); ?>");
 			}
 			
 			function ux_clr_fill_color_setting()
 			{
-				alert("<?php _e( "This feature is only available in Premium Edition!", map_bank ); ?>");
+				alert("<?php _e( "This feature is only available in Premium Editions!", map_bank ); ?>");
 			}
 			
 			function ux_clr_fill_color_text_setting()
 			{
-				alert("<?php _e( "This feature is only available in Premium Edition!", map_bank ); ?>");
+				alert("<?php _e( "This feature is only available in Premium Editions!", map_bank ); ?>");
 			}
 			
 			function ux_background_color_setting()
 			{
-				alert("<?php _e( "This feature is only available in Premium Edition!", map_bank ); ?>");
+				alert("<?php _e( "This feature is only available in Premium Editions!", map_bank ); ?>");
 			}
 			
 			function ux_border_color_setting()
 			{
-				alert("<?php _e( "This feature is only available in Premium Edition!", map_bank ); ?>");
+				alert("<?php _e( "This feature is only available in Premium Editions!", map_bank ); ?>");
 			}
 		</script>
 		<?php

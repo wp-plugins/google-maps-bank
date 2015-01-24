@@ -324,7 +324,7 @@ if($version == "")
 			(
 				"INSERT INTO " . google_maps_bank_licensing() . "(version, type, url) VALUES(%s, %s, %s)",
 				"1.0",
-				"Google Maps Bank Pro Edition",
+				"Google Maps Bank",
 				"" . site_url() . ""
 			)
 		);

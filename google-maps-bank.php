@@ -4,7 +4,7 @@ Plugin Name: Google Maps Bank Lite Edition
 Plugin URI: http://tech-banker.com
 Description: Google Maps Bank is the simplest plugin on WordPress. Create a Custom Google Map in easy quick steps!
 Author: Tech Banker
-Version: 1.0
+Version: 1.0.1
 */
 /////////////////////////////////////  Define  Google Maps Bank  Constants  ////////////////////////////////////////
 
@@ -14,6 +14,7 @@ if (!defined("MAP_PLUGIN_DIRNAME")) define("MAP_PLUGIN_DIRNAME", plugin_basename
 if (!defined("MAP_MAIN_UPLOAD_DIR")) define("MAP_MAIN_UPLOAD_DIR", dirname(dirname(dirname(__FILE__)))."/google-maps-bank");
 if (!defined("MAP_BK_TOOLTIP")) define("MAP_BK_TOOLTIP", plugins_url(plugin_basename(dirname(__FILE__))."/assets/images/questionmark_icon.png" , dirname(__FILE__)));
 if (!defined("MAP_BK_MARKER_ICON")) define("MAP_BK_MARKER_ICON", plugins_url(plugin_basename(dirname(__FILE__))."/assets/images/map-icons" ));
+if (!defined("MAP_FILE")) define("MAP_FILE","google-maps-bank/google-maps-bank.php");
 if (!defined("map_bank")) define("map_bank", "map-bank");
 if (!defined("tech_bank")) define("tech_bank", "tech-banker");
 
@@ -56,6 +57,7 @@ if(!function_exists("backend_plugin_css_styles_map_bank"))
 		wp_enqueue_style("colors.css", plugins_url("/assets/css/colors.css",__FILE__));
 		wp_enqueue_style("map_bank.css", plugins_url("/assets/css/map_bank.css",__FILE__));
 		wp_enqueue_style("premium-edition.css", plugins_url("/assets/css/premium-edition.css", __file__));
+		wp_enqueue_style("google-fonts-roboto", "//fonts.googleapis.com/css?family=Roboto Condensed:300|Roboto Condensed:300|Roboto Condensed:300|Roboto Condensed:regular|Roboto Condensed:300");
 		wp_enqueue_style("responsive.css", plugins_url("/assets/css/responsive.css", __file__));
 	}
 }
@@ -309,6 +311,27 @@ if(!function_exists( "plugin_load_textdomain_google_map_bank" ))
 	}
 }
 
+function google_maps_bank_plugin_update_message($args)
+{
+	$response = wp_remote_get( 'http://plugins.svn.wordpress.org/google-maps-bank/trunk/readme.txt' );
+	if ( ! is_wp_error( $response ) && ! empty( $response['body'] ) )
+	{
+		// Output Upgrade Notice
+		$matches        = null;
+		$regexp         = '~==\s*Changelog\s*==\s*=\s*[0-9.]+\s*=(.*)(=\s*' . preg_quote($args['Version']) . '\s*=|$)~Uis';
+		$upgrade_notice = '';
+		if ( preg_match( $regexp, $response['body'], $matches ) ) {
+			$changelog = (array) preg_split('~[\r\n]+~', trim($matches[1]));
+			$upgrade_notice .= '<div class="framework_plugin_message">';
+			foreach ( $changelog as $index => $line ) {
+				$upgrade_notice .= "<p>".$line."</p>";
+			}
+			$upgrade_notice .= '</div> ';
+			echo $upgrade_notice;
+		}
+	}
+}
+
 ///////////////////////////////////  Call Hooks   /////////////////////////////////////////////////////
 add_filter( "wp_default_editor", create_function( '', 'return "html";' ));
 // activation Hook called for installation_for_google_map_bank
@@ -338,4 +361,5 @@ add_shortcode("map_bank", "map_bank_short_code");
 // add_action Hook called for create_shortcode_for_google_map_bank
 add_action( "media_buttons_context", "add_map_shortcode_button", 1);
 add_action("admin_footer","add_map_mce_popup");
+add_action("in_plugin_update_message-".MAP_FILE,"google_maps_bank_plugin_update_message" );
 ?>

@@ -220,11 +220,11 @@ else
 			
 			function bulk_delete()
 			{
-				alert("<?php _e( "This feature is only available in Premium Edition!", map_bank ); ?>");
+				alert("<?php _e( "This feature is only available in Premium Editions!", map_bank ); ?>");
 			}
 			function delete_create_map(map_id)
 			{
-				var confirm_delete =  confirm("<?php _e( "Are you sure, you want to delete this Location ?", map_bank ); ?>");
+				var confirm_delete =  confirm("<?php _e( "Are you sure, you want to delete this Map ?", map_bank ); ?>");
 				if(confirm_delete == true)
 				{
 					jQuery.post(ajaxurl, "map_id="+map_id+"&param=single_map_delete&action=add_map_library&_wpnonce=<?php echo $delete_single_map  ;?>", function(data)

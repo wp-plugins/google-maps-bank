@@ -36,6 +36,14 @@ else
 		(
 			"SELECT * FROM ". map_bank_marker_themes_table()." ORDER BY themes_value ASC"
 		);
+		$map_count = $wpdb->get_var
+		(
+			$wpdb->prepare
+			(
+				"SELECT count(id) FROM ".map_bank_create_new_map_table()." where map_type=%s",
+				"map"
+			)
+		);
 		?>
 		<form id="frm_create_new_map" class="layout-form" style="max-width:1000px;">
 			<div class="fluid-layout">
@@ -123,7 +131,7 @@ else
 																	}
 																}
 																?>
-															</select><i class="widget_premium_feature"><?php _e(" (Available in Premium Edition)", map_bank); ?></i>
+															</select><i class="widget_premium_feature"><?php _e(" (Available in Premium Editions)", map_bank); ?></i>
 														</div>
 													</div>
 												</div>
@@ -196,16 +204,38 @@ else
 					var map_type = jQuery("#ux_ddl_map_type").val();
 					var title= encodeURIComponent(jQuery("#ux_txt_map_title").val());	
 					var map_id = "<?php echo isset($map_id) ? $map_id: "0" ; ?>";
-					jQuery.post(ajaxurl,"map_id="+map_id+"&title="+title+"&map_type="+map_type+"&themes="+themes+"&param=create_new_map&action=add_map_library&_wpnonce=<?php echo $create_map;?>", function(data)
+					<?php 
+					if($map_count < 2)
 					{
-						var id = jQuery.trim(data);
-						setTimeout(function () 
+						?>
+						jQuery.post(ajaxurl,"map_id="+map_id+"&title="+title+"&map_type="+map_type+"&themes="+themes+"&param=create_new_map&action=add_map_library&_wpnonce=<?php echo $create_map;?>", function(data)
 						{
-							jQuery(".loader_opacity").remove();
-							jQuery(".opacity_overlay").remove();
-							window.location.href = "admin.php?page=gmb_add_location&map_id="+id;
-						}, 2000);
-					});
+							var id = jQuery.trim(data);
+							setTimeout(function () 
+							{
+								jQuery(".loader_opacity").remove();
+								jQuery(".opacity_overlay").remove();
+								window.location.href = "admin.php?page=gmb_add_location&map_id="+id;
+							}, 2000);
+						});
+						<?php 
+					}
+					else
+					{
+						?>
+						var test = confirm("<?php _e( "Only 2 Maps can created in Lite Edition.", map_bank ); ?>");
+						if(test == true || test == false)
+						{
+							setTimeout(function () 
+							{
+								jQuery(".loader_opacity").remove();
+								jQuery(".opacity_overlay").remove();
+								window.location.href = "admin.php?page=gmb_dashboard";
+							}, 2000);
+						}
+						<?php 
+					}
+					?>
 				}
 			});
 			

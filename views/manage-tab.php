@@ -378,7 +378,7 @@ else
 																		<td>
 																			<label class="layout-control-label custom-label-width-maps"><b><?php _e("KML Layer", map_bank); ?></b> :</label>
 																			<div class="layout-controls custom-layout-controls-maps manage">
-																				<?php echo $map_kml_layer_update == 1 ? __("Enabled", map_bank) : __("Disabled", map_bank);?> <i class="widget_premium_feature"><?php _e(" (Available in Premium Edition)", map_bank); ?></i>
+																				<?php echo $map_kml_layer_update == 1 ? __("Enabled", map_bank) : __("Disabled", map_bank);?> <i class="widget_premium_feature"><?php _e(" (Available in Premium Editions)", map_bank); ?></i>
 																			</div>
 																			<?php 
 																				if(isset($map_kml_layer_update) && $map_kml_layer_update==1)
@@ -396,7 +396,7 @@ else
 																		<td>
 																			<label class="layout-control-label custom-label-width-maps"><b><?php _e("Weather Layer", map_bank); ?></b> :</label>
 																			<div class="layout-controls custom-layout-controls-maps manage">
-																				<?php echo $map_weather_layer_update  == 1 ? __("Enabled", map_bank) : __("Disabled", map_bank);?> <i class="widget_premium_feature"><?php _e(" (Available in Premium Edition)", map_bank); ?></i>
+																				<?php echo $map_weather_layer_update  == 1 ? __("Enabled", map_bank) : __("Disabled", map_bank);?> <i class="widget_premium_feature"><?php _e(" (Available in Premium Editionss)", map_bank); ?></i>
 																			</div>
 																			<?php 
 																			if(isset($map_weather_layer_update) && $map_weather_layer_update==1)
@@ -436,7 +436,7 @@ else
 																		<td>
 																			<label class="layout-control-label custom-label-width-maps"><b><?php _e("Fusion Table Layer", map_bank); ?></b> :</label>
 																			<div class="layout-controls custom-layout-controls-maps manage">
-																				<?php echo $map_fussion_table_layer_update == 1 ? __("Enabled", map_bank) : __("Disabled", map_bank);?> <i class="widget_premium_feature"><?php _e(" (Available in Premium Edition)", map_bank); ?></i>
+																				<?php echo $map_fussion_table_layer_update == 1 ? __("Enabled", map_bank) : __("Disabled", map_bank);?> <i class="widget_premium_feature"><?php _e(" (Available in Premium Editions)", map_bank); ?></i>
 																			</div>
 																			<?php 
 																			if(isset($map_fussion_table_layer_update) && $map_fussion_table_layer_update==1)
@@ -458,31 +458,31 @@ else
 																	<tr>
 																		<td>
 																			<label class="layout-control-label custom-label-width-maps"><b><?php _e("Traffic Layer", map_bank); ?></b> :</label>
-																			<div class="layout-controls custom-layout-controls-maps manage"><?php echo $map_traffic_layer_update == 1 ? __("Enabled", map_bank) : __("Disabled", map_bank);?> <i class="widget_premium_feature"><?php _e(" (Available in Premium Edition)", map_bank); ?></i></div>
+																			<div class="layout-controls custom-layout-controls-maps manage"><?php echo $map_traffic_layer_update == 1 ? __("Enabled", map_bank) : __("Disabled", map_bank);?> <i class="widget_premium_feature"><?php _e(" (Available in Premium Editions)", map_bank); ?></i></div>
 																		</td>
 																	</tr>
 																	<tr class="<?php echo $alternate_layers;?>">
 																		<td>
 																			<label class="layout-control-label custom-label-width-maps"><b><?php _e("Transit Layer", map_bank); ?></b> :</label>
-																			<div class="layout-controls custom-layout-controls-maps manage"><?php echo $map_transit_layer_update == 1 ? __("Enabled", map_bank) : __("Disabled", map_bank);?> <i class="widget_premium_feature"><?php _e(" (Available in Premium Edition)", map_bank); ?></i></div>
+																			<div class="layout-controls custom-layout-controls-maps manage"><?php echo $map_transit_layer_update == 1 ? __("Enabled", map_bank) : __("Disabled", map_bank);?> <i class="widget_premium_feature"><?php _e(" (Available in Premium Editions)", map_bank); ?></i></div>
 																		</td>
 																	</tr>
 																	<tr>
 																		<td>
 																			<label class="layout-control-label custom-label-width-maps"><b><?php _e("Bycycling Layer", map_bank); ?></b> :</label>
-																			<div class="layout-controls custom-layout-controls-maps manage"><?php echo $map_bicycling_layer_update == 1 ? __("Enabled", map_bank) : __("Disabled", map_bank);?> <i class="widget_premium_feature"><?php _e(" (Available in Premium Edition)", map_bank); ?></i></div>
+																			<div class="layout-controls custom-layout-controls-maps manage"><?php echo $map_bicycling_layer_update == 1 ? __("Enabled", map_bank) : __("Disabled", map_bank);?> <i class="widget_premium_feature"><?php _e(" (Available in Premium Editions)", map_bank); ?></i></div>
 																		</td>
 																	</tr>
 																	<tr class="<?php echo $alternate_layers;?>">
 																		<td>
 																			<label class="layout-control-label custom-label-width-maps"><b><?php _e("Panoramio Layer", map_bank); ?></b> :</label>
-																			<div class="layout-controls custom-layout-controls-maps manage"><?php echo $map_panoramio_layer_update  == 1 ? __("Enabled", map_bank) : __("Disabled", map_bank);?> <i class="widget_premium_feature"><?php _e(" (Available in Premium Edition)", map_bank); ?></i></div>
+																			<div class="layout-controls custom-layout-controls-maps manage"><?php echo $map_panoramio_layer_update  == 1 ? __("Enabled", map_bank) : __("Disabled", map_bank);?> <i class="widget_premium_feature"><?php _e(" (Available in Premium Editions)", map_bank); ?></i></div>
 																		</td>
 																	</tr>
 																	<tr>
 																		<td>
 																			<label class="layout-control-label custom-label-width-maps"><b><?php _e("Map Engine Layer", map_bank); ?></b> :</label>
-																			<div class="layout-controls custom-layout-controls-maps manage"><?php echo $map_engine_layer_update  == 1 ? __("Enabled", map_bank) : __("Disabled", map_bank);?> <i class="widget_premium_feature"><?php _e(" (Available in Premium Edition)", map_bank); ?></i></div>
+																			<div class="layout-controls custom-layout-controls-maps manage"><?php echo $map_engine_layer_update  == 1 ? __("Enabled", map_bank) : __("Disabled", map_bank);?> <i class="widget_premium_feature"><?php _e(" (Available in Premium Editions)", map_bank); ?></i></div>
 																			<?php 
 																			if(isset($map_engine_layer_update) && $map_engine_layer_update==1)
 																			{
@@ -563,7 +563,7 @@ else
 																	<tr class="<?php echo $alternate_layers;?>">
 																		<td>
 																			<label class="layout-control-label custom-label-width-adv-setting"><b><?php _e("Street View", map_bank); ?></b> :</label>
-																			<div class="layout-controls custom-layout-controls-maps manage"><?php echo $map_street_view_update  == 1 ? __("Enabled", map_bank) : __("Disabled", map_bank);?> <i class="widget_premium_feature"><?php _e(" (Available in Premium Edition)", map_bank); ?></i></div>
+																			<div class="layout-controls custom-layout-controls-maps manage"><?php echo $map_street_view_update  == 1 ? __("Enabled", map_bank) : __("Disabled", map_bank);?> <i class="widget_premium_feature"><?php _e(" (Available in Premium Editions)", map_bank); ?></i></div>
 																			<?php 
 																			if(isset($map_street_view_update) && $map_street_view_update==1)
 																			{
@@ -579,7 +579,7 @@ else
 																	<tr>
 																		<td>
 																			<label class="layout-control-label custom-label-width-adv-setting"><b><?php _e("Marker Cluster", map_bank); ?></b> :</label>
-																			<div class="layout-controls custom-layout-controls-maps manage"><?php echo $map_marker_cluster_update == 1 ? __("Enabled", map_bank) : __("Disabled", map_bank);?> <i class="widget_premium_feature"><?php _e(" (Available in Premium Edition)", map_bank); ?></i></div>
+																			<div class="layout-controls custom-layout-controls-maps manage"><?php echo $map_marker_cluster_update == 1 ? __("Enabled", map_bank) : __("Disabled", map_bank);?> <i class="widget_premium_feature"><?php _e(" (Available in Premium Editions)", map_bank); ?></i></div>
 																			<?php 
 																			if(isset($map_marker_cluster_update) && $map_marker_cluster_update==1)
 																			{
@@ -596,7 +596,7 @@ else
 																	<tr class="<?php echo $alternate_layers;?>">
 																		<td>
 																			<label class="layout-control-label custom-label-width-adv-setting"><b><?php _e("Circle Overlay", map_bank); ?></b> :</label>
-																			<div class="layout-controls custom-layout-controls-maps manage"><?php echo $map_circle_overlay_update == 1 ? __("Enabled", map_bank) : __("Disabled", map_bank);?> <i class="widget_premium_feature"><?php _e(" (Available in Premium Edition)", map_bank); ?></i></div>
+																			<div class="layout-controls custom-layout-controls-maps manage"><?php echo $map_circle_overlay_update == 1 ? __("Enabled", map_bank) : __("Disabled", map_bank);?> <i class="widget_premium_feature"><?php _e(" (Available in Premium Editions)", map_bank); ?></i></div>
 																			<?php 
 																			if(isset($map_circle_overlay_update) && $map_circle_overlay_update==1)
 																			{
@@ -623,7 +623,7 @@ else
 																	<tr>
 																		<td>
 																		<label class="layout-control-label custom-label-width-adv-setting"><b><?php _e("Directions", map_bank); ?></b> :</label>
-																			<div class="layout-controls custom-layout-controls-maps manage"><?php echo $map_direction_update == 1 ? __("Enabled", map_bank) : __("Disabled", map_bank);?> <i class="widget_premium_feature"><?php _e(" (Available in Premium Edition)", map_bank); ?></i></div>
+																			<div class="layout-controls custom-layout-controls-maps manage"><?php echo $map_direction_update == 1 ? __("Enabled", map_bank) : __("Disabled", map_bank);?> <i class="widget_premium_feature"><?php _e(" (Available in Premium Editions)", map_bank); ?></i></div>
 																			<?php 
 																			if(isset($map_direction_update) && $map_direction_update==1)
 																			{
@@ -810,7 +810,7 @@ else
 			{
 				function bulk_delete_marker()
 				{
-					alert("<?php _e( "This feature is only available in Premium Edition!", map_bank ); ?>");
+					alert("<?php _e( "This feature is only available in Premium Editions!", map_bank ); ?>");
 				}
 			}
 			
@@ -853,7 +853,7 @@ else
 			{
 				function bulk_delete_polygon()
 				{
-					alert("<?php _e( "This feature is only available in Premium Edition!", map_bank ); ?>");
+					alert("<?php _e( "This feature is only available in Premium Editions!", map_bank ); ?>");
 				}
 			}
 		
@@ -898,7 +898,7 @@ else
 			{
 				function bulk_delete_polyline()
 				{
-					alert("<?php _e( "This feature is only available in Premium Edition!", map_bank ); ?>");
+					alert("<?php _e( "This feature is only available in Premium Editions!", map_bank ); ?>");
 				}
 			}
 			

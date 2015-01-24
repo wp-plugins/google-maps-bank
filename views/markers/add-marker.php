@@ -229,7 +229,7 @@ else
 														<div class="layout-controls-location custom-layout-controls-map-location rdl_maps">
 															<input type="radio" disabled="disabled" <?php echo ($map_marker_animation_update == 0) ? "checked=\"checked\"" : "";?> id="ux_rdl_animation_on"  name="ux_rdl_animation" value="0"/><?php _e("Drop", map_bank); ?>
 															<input type="radio" disabled="disabled" <?php echo ($map_marker_animation_update == 1) ? "checked=\"checked\"" : "";?> id="ux_rdl_animation_off"  name="ux_rdl_animation" value="1"/><?php _e("Bounce", map_bank); ?>
-															<i class="widget_premium_feature"><?php _e(" (Available in Premium Edition)", map_bank); ?></i><br>
+															<i class="widget_premium_feature"><?php _e(" (Available in Premium Editions)", map_bank); ?></i><br>
 														</div>
 													</div>
 												</div>
@@ -245,7 +245,7 @@ else
 														<div class="layout-controls-location custom-layout-controls-map-location rdl_maps">
 															<input type="radio" disabled="disabled" <?php echo ($map_info_window_update == 1) ? "checked=\"checked\"" : "";?> id="ux_rdl_info_window_on" onclick="show_link_info_window();" name="ux_rdl_info_window" value="1"/><?php _e("Enable", map_bank); ?>
 															<input type="radio" disabled="disabled" <?php echo ($map_info_window_update == 0) ? "checked=\"checked\"" : "";?> id="ux_rdl_info_window_off" onclick="show_link_info_window();" name="ux_rdl_info_window" value="0"/><?php _e("Disable", map_bank); ?>
-															<i class="widget_premium_feature"><?php _e(" (Available in Premium Edition)", map_bank); ?></i><br>
+															<i class="widget_premium_feature"><?php _e(" (Available in Premium Editions)", map_bank); ?></i><br>
 														</div>
 													</div>
 												</div>
@@ -532,7 +532,7 @@ else
 			{
 				function bulk_delete_marker()
 				{
-					alert("<?php _e( "This feature is only available in Premium Edition!", map_bank ); ?>");
+					alert("<?php _e( "This feature is only available in Premium Editions!", map_bank ); ?>");
 				}
 			}
 			

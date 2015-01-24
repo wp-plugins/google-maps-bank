@@ -90,7 +90,7 @@ else
 														</label>
 														<div class="layout-controls custom-layout-controls-maps rdl_maps">
 															<input disabled="disabled" type="checkbox" id="ux_chk_weather" <?php echo ($map_weather_layer_update  == 1) ? "checked=\"checked\"" : "";?> name="ux_chk_weather" onclick="weather_layer_impliment();" value="1"/>
-															<span class="span-custom"><?php _e("Tick to Represent Weather Conditions including Temperature and Wind Speed of your Location on the Map.", map_bank); ?></span></br><i class="widget_premium_feature"><?php _e(" (Available in Premium Edition)", map_bank); ?></i>
+															<span class="span-custom"><?php _e("Tick to Represent Weather Conditions including Temperature and Wind Speed of your Location on the Map.", map_bank); ?></span></br><i class="widget_premium_feature"><?php _e(" (Available in Premium Editions)", map_bank); ?></i>
 														</div>
 													</div>
 												</div>
@@ -164,7 +164,7 @@ else
 														</label>
 														<div class="layout-controls custom-layout-controls-maps rdl_maps">
 															<input disabled="disabled" type="checkbox" <?php echo ($map_fussion_table_layer_update == 1) ? "checked=\"checked\"" : "";?> id="ux_chk_fusion_table" name="ux_chk_fusion_table" onclick="chk_fusion_table_layer();" value="1"/>
-															<span class="span-custom"><?php _e("Tick to display your Map with its corresponding Locations and their detailed Information.", map_bank); ?></span><i class="widget_premium_feature"><?php _e(" (Available in Premium Edition)", map_bank); ?></i>
+															<span class="span-custom"><?php _e("Tick to display your Map with its corresponding Locations and their detailed Information.", map_bank); ?></span><i class="widget_premium_feature"><?php _e(" (Available in Premium Editions)", map_bank); ?></i>
 														</div>
 													</div>
 												</div>
@@ -207,7 +207,7 @@ else
 														</label>
 														<div class="layout-controls custom-layout-controls-maps rdl_maps">
 															<input disabled="disabled" type="checkbox" id="ux_chk_traffic" <?php echo ($map_traffic_layer_update  == 1) ? "checked=\"checked\"" : "";?> name="ux_chk_traffic" onclick="traffic_layer_impliment();" value="1"/>
-															<span class="span-custom"><?php _e("Tick to display Real Time Traffic Conditions of supported Locations.", map_bank); ?></span><i class="widget_premium_feature"><?php _e(" (Available in Premium Edition)", map_bank); ?></i>
+															<span class="span-custom"><?php _e("Tick to display Real Time Traffic Conditions of supported Locations.", map_bank); ?></span><i class="widget_premium_feature"><?php _e(" (Available in Premium Editions)", map_bank); ?></i>
 														</div>
 													</div>
 												</div>
@@ -222,7 +222,7 @@ else
 														</label>
 														<div class="layout-controls custom-layout-controls-maps rdl_maps">
 															<input disabled="disabled" type="checkbox" <?php echo ($map_transit_layer_update  == 1) ? "checked=\"checked\"" : "";?> id="ux_chk_transit" name="ux_chk_transit" onclick="transit_layer_impliment();" value="1"/>
-															<span class="span-custom"><?php _e("Tick to show Public Transit Network of Locations supported by Transit Information.", map_bank); ?></span><i class="widget_premium_feature"><?php _e(" (Available in Premium Edition)", map_bank); ?></i>
+															<span class="span-custom"><?php _e("Tick to show Public Transit Network of Locations supported by Transit Information.", map_bank); ?></span><i class="widget_premium_feature"><?php _e(" (Available in Premium Editions)", map_bank); ?></i>
 														</div>
 													</div>
 												</div>
@@ -237,7 +237,7 @@ else
 														</label>
 														<div class="layout-controls custom-layout-controls-maps rdl_maps">
 															<input disabled="disabled" type="checkbox" id="ux_chk_bycycling" <?php echo ($map_bicycling_layer_update == 1) ? "checked=\"checked\"" : "";?> name="ux_chk_bycycling" onclick="bycycle_layer_impliment();" value="1"/>
-															<span  class="span-custom"><?php _e("Tick to find any Bicycle, Bike Paths or other Bicycling specific Overlays on the Map.", map_bank); ?></span><i class="widget_premium_feature"><?php _e(" (Available in Premium Edition)", map_bank); ?></i>
+															<span  class="span-custom"><?php _e("Tick to find any Bicycle, Bike Paths or other Bicycling specific Overlays on the Map.", map_bank); ?></span><i class="widget_premium_feature"><?php _e(" (Available in Premium Editions)", map_bank); ?></i>
 														</div>
 													</div>
 												</div>
@@ -252,7 +252,7 @@ else
 														</label>
 														<div class="layout-controls custom-layout-controls-maps rdl_maps">
 															<input disabled="disabled" type="checkbox" id="ux_chk_panoramio" <?php echo ($map_panoramio_layer_update == 1) ? "checked=\"checked\"" : "";?> name="ux_chk_panoramio" onclick="panoramio_layer_impliment();" value="1"/>
-															<span  class="span-custom"><?php _e("Tick to display a Layer of Geotagged photos in the form of Photos Icons on Map.", map_bank); ?></span><i class="widget_premium_feature"><?php _e(" (Available in Premium Edition)", map_bank); ?></i>
+															<span  class="span-custom"><?php _e("Tick to display a Layer of Geotagged photos in the form of Photos Icons on Map.", map_bank); ?></span><i class="widget_premium_feature"><?php _e(" (Available in Premium Editions)", map_bank); ?></i>
 														</div>
 													</div>
 												</div>
@@ -267,7 +267,7 @@ else
 														</label>
 														<div class="layout-controls custom-layout-controls-maps rdl_maps">
 															<input disabled="disabled" type="checkbox" id="ux_chk_engine_layer" <?php echo ($map_engine_layer_update == 1) ? "checked=\"checked\"" : "";?> name="ux_chk_engine_layer" onclick="engine_layer_impliment();" value="1"/>
-															<span  class="span-custom"><?php _e("Tick to display a Layer of Map Engine on Map.", map_bank); ?></span><i class="widget_premium_feature"><?php _e(" (Available in Premium Edition)", map_bank); ?></i>
+															<span  class="span-custom"><?php _e("Tick to display a Layer of Map Engine on Map.", map_bank); ?></span><i class="widget_premium_feature"><?php _e(" (Available in Premium Editions)", map_bank); ?></i>
 														</div>
 													</div>
 												</div>

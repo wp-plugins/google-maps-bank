@@ -35,7 +35,7 @@ else
 							<?php _e("Watch Google Video!", map_bank); ?>
 						</a>
 						<p>or, 
-							<a target="_blank" href="http://tech-banker.com/products/wp-google-maps-bank/demo/knowledge-base/">
+							<a target="_blank" href="http://tech-banker.com/products/wp-google-maps-bank/knowledge-base/">
 								<?php _e("read documentation here", map_bank); ?>
 							</a>
 						</p>
@@ -104,6 +104,11 @@ else
 				</div>
 			</div>
 		</div>
+	</div>
+	<div class="custom-message red" style="display: block;margin-top:30px;max-width: 965px;">
+		<span>
+			<strong>You will be only allowed to add 2 maps. Kindly purchase Premium Edition for full access.</strong>
+		</span>
 	</div>
 	<script>
 	jQuery(document).ready(function()

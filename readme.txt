@@ -3,7 +3,7 @@ Contributors: contact-banker, Gallery-Bank
 Tags: admin, plugin, comments, google maps, maps, map, map markers, google, google map, wp maps, wp google maps, wp google map, easy map, store locator, map plugin, directions, map directions, google map plugin, routes, polygons, polylines, streetview, location, marker, latitude, longitude, map widget
 Requires at least: 3.3
 Tested up to: 4.1
-Stable tag: 1.0
+Stable tag: 1.0.1
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -96,6 +96,11 @@ If any problem occurs, please contact us at [support@tech-banker.com](mailto:sup
 == Frequently Asked Questions ==
 
 == Changelog ==
+
+= 1.0.1 =
+
+* Bugs Fixed in Google Maps Bank
+* Recommendation Section Changed
 
 = 1.0 =
 

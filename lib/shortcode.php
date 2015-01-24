@@ -47,7 +47,7 @@ else
 				<div class="layout-span12 responsive" style="padding:15px 15px 0 0;">
 					<div class="layout-control-group">
 						<label class="custom-layout-labe-shortcode" for="ux_map_name"><?php _e("Map Name", map_bank); ?> : 
-							<span class="hovertip" data-original-title ="<?php _e("Select your Map from drop-down",map_bank) ;?>">
+							<span class="hovertip" data-original-title ="<?php _e("Click on dropdown to choose Map.",map_bank) ;?>">
 								<img class="tooltip_img" src="<?php echo plugins_url("/assets/images/questionmark_icon.png",dirname(__FILE__))?>"/>
 							</span>
 						</label>
@@ -65,7 +65,7 @@ else
 					</div>
 					<div class="layout-control-group">
 						<label class="custom-layout-labe-shortcode"><?php _e("Map Width", map_bank); ?> :
-							<span class="hovertip" data-original-title ="<?php _e("Specify Width for Map here.",map_bank) ;?>">
+							<span class="hovertip" data-original-title ="<?php _e("Here you can set Width for Map.",map_bank) ;?>">
 								<img class="tooltip_img" src="<?php echo plugins_url("/assets/images/questionmark_icon.png",dirname(__FILE__))?>"/>
 							</span>
 						</label>
@@ -73,7 +73,7 @@ else
 					</div>
 					<div class="layout-control-group">
 						<label class="custom-layout-labe-shortcode"><?php _e("Map Height", map_bank); ?> :
-							<span class="hovertip" data-original-title ="<?php _e("Specify Height for Map here.",map_bank) ;?>">
+							<span class="hovertip" data-original-title ="<?php _e("Here you can set Height for Map.",map_bank) ;?>">
 								<img class="tooltip_img" src="<?php echo plugins_url("/assets/images/questionmark_icon.png",dirname(__FILE__))?>"/>
 							</span>
 						</label>
@@ -83,7 +83,7 @@ else
 						<div class="layout-span6 responsive">
 							<div class="layout-control-group">
 								<label class="custom-layout-labe-shortcode"><?php _e("Zoom Level", map_bank); ?> :
-									<span class="hovertip" data-original-title ="<?php _e("Select Zoom level for Map from drop-down.",map_bank) ;?>">
+									<span class="hovertip" data-original-title ="<?php _e("Select Map Zoom level from here.",map_bank) ;?>">
 										<img class="tooltip_img" src="<?php echo plugins_url("/assets/images/questionmark_icon.png",dirname(__FILE__))?>"/>
 									</span>
 								</label>
@@ -101,12 +101,12 @@ else
 						</div>
 						<div class="layout-span6 responsive">
 							<div class="layout-control-group">
-								<label class="layout-control-label"><?php _e("Scrolling Wheel", map_bank); ?> :
+								<label class="custom-layout-labe-shortcode rdl_maps"><?php _e("Scrolling Wheel", map_bank); ?> :
 									<span class="hovertip" data-original-title ="<?php _e("Tick this checkbox if you want to enble Scrolling Wheel in your Map.",map_bank) ;?>">
 										<img class="tooltip_img" src="<?php echo plugins_url("/assets/images/questionmark_icon.png",dirname(__FILE__))?>"/>
 									</span>
 								</label>
-									<input type="checkbox" checked="checked" name="ux_map_scroll_wheel" id="ux_map_scroll_wheel"/>
+									<input type="checkbox" checked="checked" name="ux_map_scroll_wheel" id="ux_map_scroll_wheel" style="margin-top: 10px;"/>
 							</div>
 						</div>
 					</div>
@@ -118,7 +118,7 @@ else
 						</label>
 						<input type="radio" disabled="disabled" checked="checked" disabled="disabled" id="ux_rdl_map_border_on" name="ux_rdl_map_border" onclick="show_border_settings();" value="1" /><?php _e("Enable", map_bank); ?>
 						<input type="radio" disabled="disabled" id="ux_rdl_map_border_off" disabled="disabled" style="margin-left: 10px;" name="ux_rdl_map_border" onclick="show_border_settings();" value="0" /><?php _e("Disable", map_bank); ?>
-						<i class="widget_premium_feature">  (Available only in Premium Edition)</i>
+						<i class="widget_premium_feature"><?php _e(" (Available in Premium Editions)", map_bank); ?></i>
 					</div>
 					<div id="map_border_settings" style="display: block;">
 						<div class="layout-control-group">
@@ -132,7 +132,7 @@ else
 								for($flag = 1;$flag <=20;$flag++)
 								{
 									?>
-									<option style="color: #FF0000;" value="<?php echo $flag;?>"><?php echo $flag. " px";?> <i class="widget_premium_feature"><?php _e(" (Available in Premium Edition)", map_bank); ?></i></option>
+									<option style="color: #FF0000;" value="<?php echo $flag;?>"><?php echo $flag. " px";?> <i class="widget_premium_feature"><?php _e(" (Available in Premium Editions)", map_bank); ?></i></option>
 									<?php
 								}
 							?>
@@ -145,9 +145,9 @@ else
 							</span>
 							</label>
 							<select disabled="disabled" id="ux_ddl_map_border_style" name="ux_ddl_map_border_style" class="layout-span9">
-								<option value="Solid" class="widget_premium_feature"><?php _e("Solid", map_bank); ?> <i > (Available only in Premium Edition)</i></option>
-								<option value="Dotted" style="color: #FF0000;"><?php _e("Dotted", map_bank); ?> <i class="widget_premium_feature"> (Available only in Premium Edition)</i></option>
-								<option value="Dashed" style="color: #FF0000;"><?php _e("Dashed", map_bank); ?><i class="widget_premium_feature"> (Available only in Premium Edition)</i></option>
+								<option value="Solid" class="widget_premium_feature"><?php _e("Solid", map_bank); ?> <i ><?php _e(" (Available in Premium Editions)", map_bank); ?></i></option>
+								<option value="Dotted" style="color: #FF0000;"><?php _e("Dotted", map_bank); ?> <i class="widget_premium_feature"><?php _e(" (Available in Premium Editions)", map_bank); ?></i></option>
+								<option value="Dashed" style="color: #FF0000;"><?php _e("Dashed", map_bank); ?><i class="widget_premium_feature"><?php _e(" (Available in Premium Editions)", map_bank); ?></i></option>
 							</select>
 						</div>
 						<div class="layout-control-group">
@@ -171,7 +171,7 @@ else
 									for($flag = 1;$flag <=20;$flag++)
 									{
 										?>
-										<option  value="<?php echo $flag;?>"><?php echo $flag. " px";?><i class="widget_premium_feature"><?php _e(" (Available in Premium Edition)", map_bank); ?></i></option>
+										<option  value="<?php echo $flag;?>"><?php echo $flag. " px";?><i class="widget_premium_feature"><?php _e(" (Available in Premium Editions)", map_bank); ?></i></option>
 										<?php
 									}
 								?>
@@ -246,7 +246,7 @@ else
 			
 			function ux_clr_map_border_color_setting()
 			{
-				alert("<?php _e( "This feature is only available in Paid Premium Version!", map_bank ); ?>");
+				alert("<?php _e( "This feature is only available in Premium Editions!", map_bank ); ?>");
 			}
 			
 		</script>

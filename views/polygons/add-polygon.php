@@ -495,7 +495,7 @@ else
 			{
 				function bulk_delete_polygon()
 				{
-					alert("<?php _e( "This feature is only available in Premium Edition!", map_bank ); ?>");
+					alert("<?php _e( "This feature is only available in Premium Editions!", map_bank ); ?>");
 				}
 			}
 			
