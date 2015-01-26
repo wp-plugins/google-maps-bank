@@ -7,13 +7,13 @@ Stable tag: 1.0.1
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
-Google Maps Bank comes loaded with high quality markers, ploygons, polylines, google map layers and advance settings.
+Google Maps Bank provides directions, interactive maps, and satellite/aerial imagery of anything. It's more than a Map.
 
 == Description ==
 
 **[WP Google Maps Bank](http://tech-banker.com/products/wp-google-maps-bank/)** is the simplest yet most powerful plugin ever created for WordPress!
 
-Add a customized **Google Map** to your WordPress Posts/Pages quickly and easily with the supplied shortcode. 
+Add a customized **Map** to your WordPress Posts/Pages quickly and easily with the supplied shortcode. 
 
 **Google Maps Bank Lite Edition** allows you to create upto 2 Google Maps with upto 5 Markers, 1 Polyline and 1 Polygon.
 
@@ -21,14 +21,14 @@ Add a customized **Google Map** to your WordPress Posts/Pages quickly and easily
 
 Creating a **[Google Maps Bank](http://tech-banker.com/products/wp-google-maps-bank/)** has been divided into 7 Steps making it very simple and understandable for a WordPress admin to quickly get done what is needed as per requirements.  
 
-**[Google Maps Bank](http://tech-banker.com/products/wp-google-maps-bank/)** Regular updates and simplicity of usage along with efficient functionality makes it a perfect choice for your wordpress site to have stunning look.
+**[Google Maps Bank](http://tech-banker.com/products/wp-google-maps-bank/)** regularly updates the features and simplicity of usage along with efficient functionality makes it a perfect choice for your wordpress site to have stunning look.
 
 **[Google Maps Bank](http://tech-banker.com/products/wp-google-maps-bank/)** can be also upgraded to Premium Editions as and when required without loosing an existing data.
 
 **[Support Desk - Feel Free to ask your Queries](http://tech-banker.com/forums/forum/google-maps-bank-support/)**
 
 
-= Key Features in **Google Maps Bank Lite Edition** : =
+= Key Features in Google Maps Bank Lite Edition : =
 
 * **Create Maps using a 7 Step Wizard** - Google Maps Bank has been designed and developed keeping in mind simplicity and usefulness. A Custom Google Map can be easily created using a 7 Step Wizard.
 * **User Friendly Interface with AJAX Based Functionality** - The Best Point of Google Maps Bank is its User Interface. A Layman or a newbie to WordPress can easily use it hazzle free.
@@ -36,9 +36,9 @@ Creating a **[Google Maps Bank](http://tech-banker.com/products/wp-google-maps-b
 * **Multi-Lingual Plugin** - Google Maps Bank is now available in around 36 Languages worldwide. It means that you don't need to have English Skills in order to create a simple Map. 
 * **Dashboard Section** - Dashboard has been developed to give an overview of the different Maps created using Google Maps Bank.
 * **Upto 2 Maps can be created** - You can create upto 2 Custom Maps using the Google Maps Lite Edition.
-* **Different Google Map Types** - You can choose Different Map types i.e Roadmap, Terrain, Satellite and Hybrid
+* **Different Google Map Types** - You can choose Different Map types i.e Roadmap, Terrain, Satellite and Hybrid.
 * **Location on Map** - Type Address and locate it on the Map easily and give directions to your users.
-* **Markers on Map** - Add upto 5 Markers with 800+ High Quality Marker Icons and choose them from Marker Categories. Drag Google Map Markers in Custom Google Map to an exact location as per your requirements.
+* **Markers on Map** - Add upto 5 Markers with 800+ High Quality Marker Icons and choose them from Marker Categories. Drag Map Markers in a Custom Google Map to an exact location as per your requirements.
 * **Polygons on Map** - Add upto 1 Polygon in Custom Google Map with full settings.
 * **Polylines on Map** - Add upto 1 Polyline in Custom Google Map with full settings.
 * **Advanced Settings** - Advanced Settings in a custom Map ables to switch on/off Pan Controls, Zoom, and even much more.
@@ -51,39 +51,36 @@ Creating a **[Google Maps Bank](http://tech-banker.com/products/wp-google-maps-b
 
 = Key Features in Google Maps Bank Premium Editions : =
 
-* **Custom Google Maps in Google Maps Bank can be created using a 7 Step Wizard.**
-* **User Friendly Interface with AJAX Based Functionality**
-* **Super Easy to Use, No Coding Required at all!**
-* **Multi-Lingual. Now Available in 36 Languages.**
-* **Responsive Custom Google Maps**
-* **Dashboard with an overiew of Created Custom Google Maps using Google Maps Bank**
-* **Choose from 4 Google Map Types: Roadmap, Terrain, Satellite and Hybrid**
-* **Type Address and locate it on the Map.**
-* **Add unlimited Markers with 800+ High Quality Marker Icons and choose them from Marker Categories.**
-* **Ability to assign an Info Window for each Marker.**
-* **Ability to add bounce/drop animation effect to your Marker.**
-* **Add unlimited Polygons in your Custom Google Map with full settings.**
-* **Add unlimited Polylines in your Custom Google Map with full settings.**
-* **Ability to add a Google Map Weather Layer in your Custom Google Map.**
-* **Ability to add a Google Map Cloud Layer in your Custom Google Map.**
-* **Ability to add a Google Map Traffic Layer in your Custom Google Map.**
-* **Ability to add a Google Map Transit Layer in your Custom Google Map.**
-* **Ability to add a Google Map Bicycling Layer in your Custom Google Map.**
-* **Ability to add a Google Map Panorama Layer in your Custom Google Map.**
-* **Ability to add a Google Map Map Engine Layer in your Custom Google Map.**
-* **Ability to add a Google Map Bicycling Layer in your Custom Google Map.**
-* **Ability to add a Google Map Bicycling Layer in your Custom Google Map.**
-* **Ability to add a Google Map Bicycling Layer in your Custom Google Map.**
-* **Ability to add Fusion Tables  in your Custom Google Map.**
-* **Ability to Enable/Disable Center By Nearest Location in your Custom Google Map.**
-* **Ability to Enable/Disable Map Draggable in your Custom Google Map.**
-* **Ability to Enable/Disable Map Draggable in your Custom Google Map.**
-* **Ability to Enable/Disable Map Type Control in your Custom Google Map.**
-* **Ability to Enable/Disable Scale Control in your Custom Google Map.**
-* **Ability to Enable/Disable Pan Control in your Custom Google Map.**
-* **Ability to Enable/Disable Street View Control in your Custom Google Map.**
-* **Ability to Enable/Disable Marker Cluster Control in your Custom Google Map.**
-* **Ability to Enable/Disable Directions Control in your Custom Google Map.**
+* **Create Maps using a 7 Step Wizard** - Google Maps Bank has been designed and developed keeping in mind simplicity and usefulness. A Custom Google Map can be easily created using a 7 Step Wizard.
+* **User Friendly Interface with AJAX Based Functionality** - The Best Point of Google Maps Bank is its User Interface. A Layman or a newbie to WordPress can easily use it hazzle free.
+* **Super Easy to Use, No Coding Required at all!** - Simple Steps and no Coding at All make it a User's Heaven. It also doesn't require any API Key to use it.
+* **Multi-Lingual Plugin** - Google Maps Bank is now available in around 36 Languages worldwide. It means that you don't need to have English Skills in order to create a simple Map. 
+* **Responsive Maps** - Google Maps Bank provided a feature to make its Maps fully Responsive to suit your website needs.
+* **Dashboard Section** - Dashboard has been developed to give an overview of the different Maps created using Google Maps Bank.
+* **Unlimited Maps can be created** - You can create unlimited Custom Maps using the Google Maps Premium Editions.
+* **Different Google Map Types** - You can choose Different Map types i.e Roadmap, Terrain, Satellite and Hybrid.
+* **Location on Map** - Type Address and locate it on the Map easily and give directions to your users.
+* **Markers on Map** - Add Unlimited Markers with 800+ High Quality Marker Icons and choose them from Marker Categories. Drag Map Markers in a Custom Google Map to an exact location as per your requirements.
+* **Info Window on Markers** - Create and Enjoy Info Windows with each Marker created in a Map using Google Maps Bank.
+* **Animation Effects on Markers** - You can easily create Drag/Drop Animation Effects on Markers created in a Map using Google Maps Bank.
+* **Polygons on Map** - Add unlimited Polygons with full settings in a Map using Google Maps Bank.
+* **Polylines on Map** - Add unlimited Polylines with full settings in a Map using Google Maps Bank.
+* **Weather Layer on a Map** - Create a Map with Weather Layer enabled/disabled in a Map using Google Maps Bank.
+* **Cloud Layer on a Map** - Create a Map with Cloud Layer enabled/disabled in a Map using Google Maps Bank.
+* **Traffic Layer on a Map**- Create a Map with Traffic Layer enabled/disabled in a Map using Google Maps Bank.
+* **Transit Layer on a Map** - Create a Map with Transit Layer enabled/disabled in a Map using Google Maps Bank.
+* **Bicycling Layer on a Map** - Create a Map with Bicycling Layer enabled/disabled in a Map using Google Maps Bank.
+* **Panorama Layer on a Map** - Create a Map with Panoram Layer enabled/disabled in a Map using Google Maps Bank.
+* **Maps Engine Layer on a Map** - Create a Map with Engines Layer enabled/disabled in a Map using Google Maps Bank.
+* **Fusion Tables on a Map** - Create a Map with Fusion Tables enabled/disabled in a Map using Google Maps Bank.
+* **Center By Nearest Location in a Map** - Ability to Enable/Disable Center By Nearest Location in your Custom Google Map.
+* **Map Draggable** - Ability to Enable/Disable Map Draggable in your Custom Google Map using Google Maps Bank.
+* **Map Type Control** - Ability to Enable/Disable Map Type Control in your Custom Google Map using Google Maps Bank.
+* **Scale Control** - Ability to Enable/Disable Scale Control in your Custom Google Map using Google Maps Bank.
+* **Pan Control** - Ability to Enable/Disable Pan Control in your Custom Google Map using Google Maps Bank.
+* **Steet View Control** - Ability to Enable/Disable Street View Control in your Custom Google Map using Google Maps Bank.
+* **Marker Cluster Control** - Ability to Enable/Disable Marker Cluster Control in your Custom Google Map using Google Maps Bank.
+* **Directions on a Map**- Ability to Enable/Disable Directions Control in your Custom Google Map using Google Maps Bank.
 * **Widgets**
 * **Bulk Deletion of Google Maps**
 
