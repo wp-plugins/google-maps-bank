@@ -7,15 +7,21 @@ Stable tag: 1.0.1
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
-Google Maps Bank comes handy with  Markers, Polylines, Polygons, Layers, Directions, Advanced Settings. What else needed!
+Google Maps Bank comes loaded with high quality markers, ploygons, polylines, google map layers and advance settings. Best for creating a Custom Map!
 
 == Description ==
 
-**WP Google Maps Bank** is the simplest yet powerful plugin ever created for WordPress!
+**[WP Google Maps Bank](http://tech-banker.com/products/wp-google-maps-bank/)** is the simplest yet most powerful plugin ever created for WordPress!
 
-Add a customized Google map to your WordPress posts and/or pages quickly and easily with the supplied shortcode.
+Add a customized **Google Map** to your WordPress Posts/Pages quickly and easily with the supplied shortcode. 
 
-While the lite version of Google Maps Bank allows you to create a Google map with markers, polylines and polygons, the Pro version allows you to do so much more! 
+**[Google Maps Bank Lite Edition](http://tech-banker.com/products/wp-google-maps-bank/)** allows you to create upto 2 Google Maps with upto 5 Markers, 1 Polyline and 1 Polygon. 
+
+Creating a **[Google Maps Bank](http://tech-banker.com/products/wp-google-maps-bank/)** has been divided into 7 Steps making it very simple and understandable for a WordPress admin to quickly get done what is needed as per requirements.  
+
+**[Google Maps Bank](http://tech-banker.com/products/wp-google-maps-bank/)** Regular updates and simplicity of usage along with efficient functionality makes it a perfect choice for your wordpress site to have stunning look.
+
+**[Google Maps Bank](http://tech-banker.com/products/wp-google-maps-bank/)** can be also upgraded to Premium Editions as and when required without loosing an existing data.
 
 **[Google Maps Bank](http://tech-banker.com/products/wp-google-maps-bank/)**
 
