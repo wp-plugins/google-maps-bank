@@ -97,7 +97,7 @@ Creating a **[Google Maps Bank](http://tech-banker.com/products/wp-google-maps-b
 
 If any problem occurs, please contact us at [support@tech-banker.com](mailto:support@tech-banker.com).
 
-### If you think, that you found a bug in our **[Google Maps Bank](http://tech-banker.com/products/wp-google-maps-bank/)** plugin or have any question contact us at [support@tech-banker.com](mailto:support@tech-banker.com).
+#### If you think, that you found a bug in our **[Google Maps Bank](http://tech-banker.com/products/wp-google-maps-bank/)** plugin or have any question contact us at [support@tech-banker.com](mailto:support@tech-banker.com).
 
 == Installation ==
 
