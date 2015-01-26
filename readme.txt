@@ -1,4 +1,4 @@
-=== Google Maps Bank - Custom Google Maps Builder ===
+=== WP Google Maps Bank - Custom Google Maps Builder ===
 Contributors: contact-banker, Gallery-Bank
 Tags: admin, plugin, best google maps, best maps, comments, custom google map, custom google maps, Custom Google Map, Custom Google Maps, google map, google maps, maps, map, map markers, wp maps, wp google maps, wp google map, easy map, store locator, map plugin, directions, map directions, google map plugin, routes, polygons, polylines, streetview, location, marker, latitude, longitude, map widget
 Requires at least: 3.3
@@ -10,6 +10,8 @@ License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Google Maps Bank provides directions, interactive maps, and satellite/aerial imagery of anything. It's more than a Map.
 
 == Description ==
+
+#### WP Google Maps Bank - Best Plugin to create a Map on WordPress.
 
 **[WP Google Maps Bank](http://tech-banker.com/products/wp-google-maps-bank/)** is the simplest yet most powerful plugin ever created for WordPress!
 
@@ -65,7 +67,8 @@ Creating a **[Google Maps Bank](http://tech-banker.com/products/wp-google-maps-b
 * **Animation Effects on Markers** - You can easily create Drag/Drop Animation Effects on Markers created in a Map using Google Maps Bank.
 * **Polygons on Map** - Add unlimited Polygons with full settings in a Map using Google Maps Bank.
 * **Polylines on Map** - Add unlimited Polylines with full settings in a Map using Google Maps Bank.
-* **Weather Layer on a Map** - Create a Map with Weather Layer enabled/disabled in a Map using Google Maps Bank.
+* **KML Layer on a Map** - Create a Map with Weather Layer enabled/disabled in a Map using Google Maps Bank.
+* **Weather Layer on a Map** - Create a Map with KML Layer enabled/disabled in a Map using Google Maps Bank.
 * **Cloud Layer on a Map** - Create a Map with Cloud Layer enabled/disabled in a Map using Google Maps Bank.
 * **Traffic Layer on a Map**- Create a Map with Traffic Layer enabled/disabled in a Map using Google Maps Bank.
 * **Transit Layer on a Map** - Create a Map with Transit Layer enabled/disabled in a Map using Google Maps Bank.
@@ -97,7 +100,7 @@ Creating a **[Google Maps Bank](http://tech-banker.com/products/wp-google-maps-b
 
 If any problem occurs, please contact us at [support@tech-banker.com](mailto:support@tech-banker.com).
 
-#### If you think, that you found a bug in our **[Google Maps Bank](http://tech-banker.com/products/wp-google-maps-bank/)** plugin or have any question contact us at [support@tech-banker.com](mailto:support@tech-banker.com).
+#### If you think, that you found a bug in our Google Maps Bank plugin or have any question contact us at [support@tech-banker.com](mailto:support@tech-banker.com).
 
 == Installation ==
 
@@ -119,7 +122,7 @@ After downloading the ZIP file,
 
 == Frequently Asked Questions == 
 
-### If you think, that you found a bug in our **[Google Maps Bank](http://tech-banker.com/products/wp-google-maps-bank/)** plugin or have any question contact us at [support@tech-banker.com](mailto:support@tech-banker.com).
+#### If you think, that you found a bug in our Google Maps Bank plugin or have any question contact us at [support@tech-banker.com](mailto:support@tech-banker.com).
 
 
 == Other Notes ==
