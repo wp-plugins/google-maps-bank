@@ -61,8 +61,8 @@ Creating a **[Google Maps Bank](http://tech-banker.com/products/wp-google-maps-b
 * **Choose from 4 Google Map Types: Roadmap, Terrain, Satellite and Hybrid**
 * **Type Address and locate it on the Map.**
 * **Add unlimited Markers with 800+ High Quality Marker Icons and choose them from Marker Categories.**
-* **Ability to assign an Info Window for each Marker.
-* **Ability to add bounce/drop animation effect to your Marker.
+* **Ability to assign an Info Window for each Marker.**
+* **Ability to add bounce/drop animation effect to your Marker.**
 * **Add unlimited Polygons in your Custom Map with full settings.**
 * **Add unlimited Polylines in your Custom Map with full settings.**
 * **Ability to add a Google Map Weather Layer in your Custom Map.**
