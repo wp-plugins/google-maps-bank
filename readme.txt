@@ -52,40 +52,41 @@ Creating a **[Google Maps Bank](http://tech-banker.com/products/wp-google-maps-b
 
 = Key Features in Google Maps Bank Premium Editions : =
 
-* Create Unlimited Google maps! 
-* 113 Different Google map Themes to beautify your Google map
-* Create Unlimited map markers as you need by simply typing in the address
-* Create Unlimited Polygons!
-* Create Unlimited Polylines!
-* Add descriptions, links and images to your map markers.
-* Add categories to your map markers
-* Add animations to your map markers!
-* Filter markers by category
-* Mashup multiple Google maps
-* Add different marker icons, or your own icons to make your map really stand out!
-* List your Google Map markers in the three ways; Basic listing, Carousel, Advanced Table
-* Allow your visitors to get directions to your markers.
-* Google Map Weather Layer
-* Google Map Cloud Layer
-* Google Map Traffic Layer
-* Google Map Transit Layer
-* Google Map Bicycling Layer
-* Google Map Panorama Layer
-* Google Map Map Engine Layer
-* Google Map Streetview supported
-* Marker Cluster settings for Google Map
-* Link Fusion tables to your Google Map
-* Show your visitor's location on the Map
-* Circle Overlay advance settings
-* Edit Google Map with click of a button
-* Set Google Map Border Settings for customizing as per your website's look & feel
-* Widgets
-* Bulk Deletion of Google Maps
-* Responsive Google Map
-* Roles & Capabilities
-* More advanced options for the Store Locator
-* WordPress Network friendly
-* Get the [WP Google Maps Bank Premium Editions](http://tech-banker.com/products/wp-google-maps-bank/)
+* **Custom Maps in Google Maps Bank can be created using a 7 Step Wizard.**
+* **User Friendly Interface with AJAX Based Functionality**
+* **Super Easy to Use, No Coding Required at all!**
+* **Multi-Lingual. Now Available in 36 Languages.**
+* **Responsive Custom Maps**
+* **Dashboard with an overiew of Created Custom Maps using Google Maps Bank**
+* **Choose from 4 Google Map Types: Roadmap, Terrain, Satellite and Hybrid**
+* **Type Address and locate it on the Map.**
+* **Add unlimited Markers with 800+ High Quality Marker Icons and choose them from Marker Categories.**
+* **Ability to assign an Info Window for each Marker.
+* **Ability to add bounce/drop animation effect to your Marker.
+* **Add unlimited Polygons in your Custom Map with full settings.**
+* **Add unlimited Polylines in your Custom Map with full settings.**
+* **Ability to add a Google Map Weather Layer in your Custom Map.**
+* **Ability to add a Google Map Cloud Layer in your Custom Map.**
+* **Ability to add a Google Map Traffic Layer in your Custom Map.**
+* **Ability to add a Google Map Transit Layer in your Custom Map.**
+* **Ability to add a Google Map Bicycling Layer in your Custom Map.**
+* **Ability to add a Google Map Panorama Layer in your Custom Map.**
+* **Ability to add a Google Map Map Engine Layer in your Custom Map.**
+* **Ability to add a Google Map Bicycling Layer in your Custom Map.**
+* **Ability to add a Google Map Bicycling Layer in your Custom Map.**
+* **Ability to add a Google Map Bicycling Layer in your Custom Map.**
+* **Ability to add Fusion Tables  in your Custom Map.**
+* **Ability to Enable/Disable Center By Nearest Location in your Custom Map.**
+* **Ability to Enable/Disable Map Draggable in your Custom Map.**
+* **Ability to Enable/Disable Map Draggable in your Custom Map.**
+* **Ability to Enable/Disable Map Type Control in your Custom Map.**
+* **Ability to Enable/Disable Scale Control in your Custom Map.**
+* **Ability to Enable/Disable Pan Control in your Custom Map.**
+* **Ability to Enable/Disable Street View Control in your Custom Map.**
+* **Ability to Enable/Disable Marker Cluster Control in your Custom Map.**
+* **Ability to Enable/Disable Directions Control in your Custom Map.**
+* **Widgets**
+* **Bulk Deletion of Google Maps**
 
 
 **[Support Desk - Feel Free to ask your Queries](http://tech-banker.com/forums/forum/google-maps-bank-support/)**
