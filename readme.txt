@@ -15,7 +15,9 @@ Google Maps Bank comes loaded with high quality markers, ploygons, polylines, go
 
 Add a customized **Google Map** to your WordPress Posts/Pages quickly and easily with the supplied shortcode. 
 
-**[Google Maps Bank Lite Edition](http://tech-banker.com/products/wp-google-maps-bank/)** allows you to create upto 2 Google Maps with upto 5 Markers, 1 Polyline and 1 Polygon. 
+**Google Maps Bank Lite Edition** allows you to create upto 2 Google Maps with upto 5 Markers, 1 Polyline and 1 Polygon.
+
+**Google Maps Bank Lite Edition** using Google Maps API v3. 
 
 Creating a **[Google Maps Bank](http://tech-banker.com/products/wp-google-maps-bank/)** has been divided into 7 Steps making it very simple and understandable for a WordPress admin to quickly get done what is needed as per requirements.  
 
@@ -23,36 +25,30 @@ Creating a **[Google Maps Bank](http://tech-banker.com/products/wp-google-maps-b
 
 **[Google Maps Bank](http://tech-banker.com/products/wp-google-maps-bank/)** can be also upgraded to Premium Editions as and when required without loosing an existing data.
 
-**[Google Maps Bank](http://tech-banker.com/products/wp-google-maps-bank/)**
-
 **[Support Desk - Feel Free to ask your Queries](http://tech-banker.com/forums/forum/google-maps-bank-support/)**
 
 
 = Key Features in Google Maps Bank Lite Edition : =
 
-* Super easy to use, no coding required!
-* Multi-Lingual. Available now in 36 Languages.
-* Shortcode Wizard in your Page/Post.
-* 800+ Marker Images on Google Map
-* Automatic Plugin update Notification with New Features , Bugs Fixing and much more
-* With Free Lite Edition, you can create upto 2 Google Maps
-* Create 5 Google Map markers as you need by simply typing in the address
-* Drag Google map markers to an exact location
-* Add Location on Google Map with auto genrated logitute and latitude on base of location
-* Add upto 1 Colorful Polygon to your Google Map to highlight or show a specific area on the Google Map
-* Add upto 1 Colorful Polyline to your Google Map to highlight or show a specific path on the Google Map
-* Edit your Google Map markers with the click of a button
-* Edit your Google Map location with the click of a button 
-* Edit your Google Map ploygon with click of a button
-* Edit your Google Map ployline with click of a button
-* Set Different Google Map control like Pan Control,Over View Map,Draggable etc
-* UTF-8 character support
-* Support for localization
-* Choose from four Google maps types: roadmap, terrain, satellite and hybrid
-* Delete Google Map with the click of a button
-* Define your own width, height and zoom level for your Google Map
-* Store locator functionality
-* Create a map in less than a 30 seconds!
+* **Custom Maps in Google Maps Bank can be created using a 7 Step Wizard.**
+* **User Friendly Interface with AJAX Based Functionality**
+* **Super Easy to Use, No Coding Required at all!**
+* **Multi-Lingual. Now Available in 36 Languages.**
+* **Dashboard with an overiew of Created Custom Maps using Google Maps Bank**
+* **Create upto 2 Custom Maps using Google Maps Bank**
+* **Choose from 4 Google Map Types: Roadmap, Terrain, Satellite and Hybrid**
+* **Type Address and locate it on the Map.**
+* **Add upto 5 Markers with 800+ High Quality Marker Icons and choose them from Marker Categories.**
+* **Drag Google Map Markers in Custom Map to an exact location as per your requirements.**
+* **Add upto 1 Polygon in Custom Map with full settings.**
+* **Add upto 1 Polyline in Custom Map with full settings.**
+* **Advanced Settings in Custom Map ables to switch on/off Pan Controls, Zoom, and much more.**
+* **Ability to Edit Map, Location, Markers, Polygons, Polylines.**
+* **Shortcode Wizard in your Page/Post.**
+* **UTF-8 Character Set Support**
+* **Support for Localization**
+* **Create a Custom Map using Google Maps Bank in few minutes!**
+* **Automatic Plugin update Notification with New Features , Bugs Fixing and much more**
 
 = Key Features in Google Maps Bank Premium Editions : =
 
