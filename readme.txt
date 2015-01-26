@@ -28,27 +28,26 @@ Creating a **[Google Maps Bank](http://tech-banker.com/products/wp-google-maps-b
 **[Support Desk - Feel Free to ask your Queries](http://tech-banker.com/forums/forum/google-maps-bank-support/)**
 
 
-= Key Features in Google Maps Bank Lite Edition : =
+= Key Features in **Google Maps Bank Lite Edition** : =
 
-* **Custom Google Maps in Google Maps Bank can be created using a 7 Step Wizard.**
-* **User Friendly Interface with AJAX Based Functionality**
-* **Super Easy to Use, No Coding Required at all!**
-* **Multi-Lingual. Now Available in 36 Languages.**
-* **Dashboard with an overiew of Created Custom Google Maps using Google Maps Bank**
-* **Create upto 2 Custom Google Maps using Google Maps Bank**
-* **Choose from 4 Google Map Types: Roadmap, Terrain, Satellite and Hybrid**
-* **Type Address and locate it on the Map.**
-* **Add upto 5 Markers with 800+ High Quality Marker Icons and choose them from Marker Categories.**
-* **Drag Google Map Markers in Custom Google Map to an exact location as per your requirements.**
-* **Add upto 1 Polygon in Custom Google Map with full settings.**
-* **Add upto 1 Polyline in Custom Google Map with full settings.**
-* **Advanced Settings in Custom Google Map ables to switch on/off Pan Controls, Zoom, and much more.**
-* **Ability to Edit Map, Location, Markers, Polygons, Polylines.**
-* **Shortcode Wizard in your Page/Post.**
-* **UTF-8 Character Set Support**
+* **Create Maps using a 7 Step Wizard** - Google Maps Bank has been designed and developed keeping in mind simplicity and usefulness. A Custom Google Map can be easily created using a 7 Step Wizard.
+* **User Friendly Interface with AJAX Based Functionality** - The Best Point of Google Maps Bank is its User Interface. A Layman or a newbie to WordPress can easily use it hazzle free.
+* **Super Easy to Use, No Coding Required at all!** - Simple Steps and no Coding at All make it a User's Heaven. It also doesn't require any API Key to use it.
+* **Multi-Lingual Plugin** - Google Maps Bank is now available in around 36 Languages worldwide. It means that you don't need to have English Skills in order to create a simple Map. 
+* **Dashboard Section** - Dashboard has been developed to give an overview of the different Maps created using Google Maps Bank.
+* **Upto 2 Maps can be created** - You can create upto 2 Custom Maps using the Google Maps Lite Edition.
+* **Different Google Map Types** - You can choose Different Map types i.e Roadmap, Terrain, Satellite and Hybrid
+* **Location on Map** - Type Address and locate it on the Map easily and give directions to your users.
+* **Markers on Map** - Add upto 5 Markers with 800+ High Quality Marker Icons and choose them from Marker Categories. Drag Google Map Markers in Custom Google Map to an exact location as per your requirements.
+* **Polygons on Map** - Add upto 1 Polygon in Custom Google Map with full settings.
+* **Polylines on Map** - Add upto 1 Polyline in Custom Google Map with full settings.
+* **Advanced Settings** - Advanced Settings in a custom Map ables to switch on/off Pan Controls, Zoom, and even much more.
+* **Manage Existing Maps** - Ability to Edit Map, Location, Markers, Polygons, Polylines.**
+* **Shortcode Wizard** - It enables to embed a Shortcode of the Map created using Google Maps Bank  in your Page/Post.
+* **UTF-8 Character Set Support** - It supports UTF-8 Character Set which means you can give titles and descriptions in any language you would like to.
 * **Support for Localization**
 * **Create a Custom Google Map using Google Maps Bank in few minutes!**
-* **Automatic Plugin update Notification with New Features , Bugs Fixing and much more**
+* **Automatic Plugin update Notifications with New Features , Bugs Fixing and much more**
 
 = Key Features in Google Maps Bank Premium Editions : =
 
