@@ -1,4 +1,4 @@
-=== WP Google Maps Bank - Custom Google Maps Builder ===
+=== WP Google Maps Bank - Best Map Builder ===
 Contributors: contact-banker, Gallery-Bank
 Tags: admin, plugin, best google maps, best maps, comments, custom google map, custom google maps, Custom Google Map, Custom Google Maps, google map, google maps, maps, map, map markers, wp maps, wp google maps, wp google map, easy map, store locator, map plugin, directions, map directions, google map plugin, routes, polygons, polylines, streetview, location, marker, latitude, longitude, map widget
 Requires at least: 3.3
