@@ -7,7 +7,7 @@ Stable tag: 1.0.1
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
-Google Maps Bank comes loaded with high quality markers, ploygons, polylines, google map layers and advance settings. Best for creating a Custom Google Map!
+Google Maps Bank comes loaded with high quality markers, ploygons, polylines, google map layers and advance settings.
 
 == Description ==
 
