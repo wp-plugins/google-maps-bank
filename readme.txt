@@ -1,13 +1,13 @@
-=== Google Maps Bank - Custom Maps Builder ===
+=== Google Maps Bank - Custom Google Maps Builder ===
 Contributors: contact-banker, Gallery-Bank
-Tags: admin, plugin, best google maps, best maps, comments, custom google map, custom google maps, custom map, custom maps, google map, google maps, maps, map, map markers, wp maps, wp google maps, wp google map, easy map, store locator, map plugin, directions, map directions, google map plugin, routes, polygons, polylines, streetview, location, marker, latitude, longitude, map widget
+Tags: admin, plugin, best google maps, best maps, comments, custom google map, custom google maps, Custom Google Map, Custom Google Maps, google map, google maps, maps, map, map markers, wp maps, wp google maps, wp google map, easy map, store locator, map plugin, directions, map directions, google map plugin, routes, polygons, polylines, streetview, location, marker, latitude, longitude, map widget
 Requires at least: 3.3
 Tested up to: 4.1
 Stable tag: 1.0.1
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
-Google Maps Bank comes loaded with high quality markers, ploygons, polylines, google map layers and advance settings. Best for creating a Custom Map!
+Google Maps Bank comes loaded with high quality markers, ploygons, polylines, google map layers and advance settings. Best for creating a Custom Google Map!
 
 == Description ==
 
@@ -30,61 +30,61 @@ Creating a **[Google Maps Bank](http://tech-banker.com/products/wp-google-maps-b
 
 = Key Features in Google Maps Bank Lite Edition : =
 
-* **Custom Maps in Google Maps Bank can be created using a 7 Step Wizard.**
+* **Custom Google Maps in Google Maps Bank can be created using a 7 Step Wizard.**
 * **User Friendly Interface with AJAX Based Functionality**
 * **Super Easy to Use, No Coding Required at all!**
 * **Multi-Lingual. Now Available in 36 Languages.**
-* **Dashboard with an overiew of Created Custom Maps using Google Maps Bank**
-* **Create upto 2 Custom Maps using Google Maps Bank**
+* **Dashboard with an overiew of Created Custom Google Maps using Google Maps Bank**
+* **Create upto 2 Custom Google Maps using Google Maps Bank**
 * **Choose from 4 Google Map Types: Roadmap, Terrain, Satellite and Hybrid**
 * **Type Address and locate it on the Map.**
 * **Add upto 5 Markers with 800+ High Quality Marker Icons and choose them from Marker Categories.**
-* **Drag Google Map Markers in Custom Map to an exact location as per your requirements.**
-* **Add upto 1 Polygon in Custom Map with full settings.**
-* **Add upto 1 Polyline in Custom Map with full settings.**
-* **Advanced Settings in Custom Map ables to switch on/off Pan Controls, Zoom, and much more.**
+* **Drag Google Map Markers in Custom Google Map to an exact location as per your requirements.**
+* **Add upto 1 Polygon in Custom Google Map with full settings.**
+* **Add upto 1 Polyline in Custom Google Map with full settings.**
+* **Advanced Settings in Custom Google Map ables to switch on/off Pan Controls, Zoom, and much more.**
 * **Ability to Edit Map, Location, Markers, Polygons, Polylines.**
 * **Shortcode Wizard in your Page/Post.**
 * **UTF-8 Character Set Support**
 * **Support for Localization**
-* **Create a Custom Map using Google Maps Bank in few minutes!**
+* **Create a Custom Google Map using Google Maps Bank in few minutes!**
 * **Automatic Plugin update Notification with New Features , Bugs Fixing and much more**
 
 = Key Features in Google Maps Bank Premium Editions : =
 
-* **Custom Maps in Google Maps Bank can be created using a 7 Step Wizard.**
+* **Custom Google Maps in Google Maps Bank can be created using a 7 Step Wizard.**
 * **User Friendly Interface with AJAX Based Functionality**
 * **Super Easy to Use, No Coding Required at all!**
 * **Multi-Lingual. Now Available in 36 Languages.**
-* **Responsive Custom Maps**
-* **Dashboard with an overiew of Created Custom Maps using Google Maps Bank**
+* **Responsive Custom Google Maps**
+* **Dashboard with an overiew of Created Custom Google Maps using Google Maps Bank**
 * **Choose from 4 Google Map Types: Roadmap, Terrain, Satellite and Hybrid**
 * **Type Address and locate it on the Map.**
 * **Add unlimited Markers with 800+ High Quality Marker Icons and choose them from Marker Categories.**
 * **Ability to assign an Info Window for each Marker.**
 * **Ability to add bounce/drop animation effect to your Marker.**
-* **Add unlimited Polygons in your Custom Map with full settings.**
-* **Add unlimited Polylines in your Custom Map with full settings.**
-* **Ability to add a Google Map Weather Layer in your Custom Map.**
-* **Ability to add a Google Map Cloud Layer in your Custom Map.**
-* **Ability to add a Google Map Traffic Layer in your Custom Map.**
-* **Ability to add a Google Map Transit Layer in your Custom Map.**
-* **Ability to add a Google Map Bicycling Layer in your Custom Map.**
-* **Ability to add a Google Map Panorama Layer in your Custom Map.**
-* **Ability to add a Google Map Map Engine Layer in your Custom Map.**
-* **Ability to add a Google Map Bicycling Layer in your Custom Map.**
-* **Ability to add a Google Map Bicycling Layer in your Custom Map.**
-* **Ability to add a Google Map Bicycling Layer in your Custom Map.**
-* **Ability to add Fusion Tables  in your Custom Map.**
-* **Ability to Enable/Disable Center By Nearest Location in your Custom Map.**
-* **Ability to Enable/Disable Map Draggable in your Custom Map.**
-* **Ability to Enable/Disable Map Draggable in your Custom Map.**
-* **Ability to Enable/Disable Map Type Control in your Custom Map.**
-* **Ability to Enable/Disable Scale Control in your Custom Map.**
-* **Ability to Enable/Disable Pan Control in your Custom Map.**
-* **Ability to Enable/Disable Street View Control in your Custom Map.**
-* **Ability to Enable/Disable Marker Cluster Control in your Custom Map.**
-* **Ability to Enable/Disable Directions Control in your Custom Map.**
+* **Add unlimited Polygons in your Custom Google Map with full settings.**
+* **Add unlimited Polylines in your Custom Google Map with full settings.**
+* **Ability to add a Google Map Weather Layer in your Custom Google Map.**
+* **Ability to add a Google Map Cloud Layer in your Custom Google Map.**
+* **Ability to add a Google Map Traffic Layer in your Custom Google Map.**
+* **Ability to add a Google Map Transit Layer in your Custom Google Map.**
+* **Ability to add a Google Map Bicycling Layer in your Custom Google Map.**
+* **Ability to add a Google Map Panorama Layer in your Custom Google Map.**
+* **Ability to add a Google Map Map Engine Layer in your Custom Google Map.**
+* **Ability to add a Google Map Bicycling Layer in your Custom Google Map.**
+* **Ability to add a Google Map Bicycling Layer in your Custom Google Map.**
+* **Ability to add a Google Map Bicycling Layer in your Custom Google Map.**
+* **Ability to add Fusion Tables  in your Custom Google Map.**
+* **Ability to Enable/Disable Center By Nearest Location in your Custom Google Map.**
+* **Ability to Enable/Disable Map Draggable in your Custom Google Map.**
+* **Ability to Enable/Disable Map Draggable in your Custom Google Map.**
+* **Ability to Enable/Disable Map Type Control in your Custom Google Map.**
+* **Ability to Enable/Disable Scale Control in your Custom Google Map.**
+* **Ability to Enable/Disable Pan Control in your Custom Google Map.**
+* **Ability to Enable/Disable Street View Control in your Custom Google Map.**
+* **Ability to Enable/Disable Marker Cluster Control in your Custom Google Map.**
+* **Ability to Enable/Disable Directions Control in your Custom Google Map.**
 * **Widgets**
 * **Bulk Deletion of Google Maps**
 
