@@ -84,6 +84,7 @@ Creating a **[Google Maps Bank](http://tech-banker.com/products/wp-google-maps-b
 * **Widgets**
 * **Bulk Deletion of Google Maps**
 
+### If you think, that you found a bug in our **[Google Maps Bank](http://tech-banker.com/products/wp-google-maps-bank/)** plugin or have any question contact us at [support@tech-banker.com](mailto:support@tech-banker.com).
 
 **[Support Desk - Feel Free to ask your Queries](http://tech-banker.com/forums/forum/google-maps-bank-support/)**
 
@@ -114,6 +115,11 @@ After downloading the ZIP file,
 > * Now you have a newly created .zip file which can be installed as described here.*  
 > * Click "Install Now" button.  
 > * Click "Activate Plugin" button for activating the plugin.  
+
+== Frequently Asked Questions == 
+
+### If you think, that you found a bug in our **[Google Maps Bank](http://tech-banker.com/products/wp-google-maps-bank/)** plugin or have any question contact us at [support@tech-banker.com](mailto:support@tech-banker.com).
+
 
 == Other Notes ==
 
