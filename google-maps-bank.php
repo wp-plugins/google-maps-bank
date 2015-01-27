@@ -4,8 +4,8 @@ Plugin Name: Google Maps Bank Lite Edition
 Plugin URI: http://tech-banker.com
 Description: Google Maps Bank provides directions, interactive maps, and satellite/aerial imagery of anything. It's more than a Map.
 Author: Tech Banker
-Author URI : http://tech-banker.com
-Version: 1.0.1
+Author URI: http://tech-banker.com
+Version: 1.0.2
 */
 /////////////////////////////////////  Define  Google Maps Bank  Constants  ////////////////////////////////////////
 
@@ -359,8 +359,21 @@ add_action("admin_menu", "create_global_menus_for_google_map_bank");
 // add_action Hook called for function create_short_code_for_google_map_bank
 add_shortcode("map_bank", "map_bank_short_code");
 
+// add_action Hook called for create_widget_for_google_map_bank
+add_filter("widget_text", "do_shortcode");
+add_action("widgets_init", create_function("", "return register_widget(\"MapWidget\");"));
+if(file_exists(MAP_BK_PLUGIN_DIR ."/lib/map-widget.php"))
+{
+	include_once MAP_BK_PLUGIN_DIR ."lib/map-widget.php";
+}
+
 // add_action Hook called for create_shortcode_for_google_map_bank
 add_action( "media_buttons_context", "add_map_shortcode_button", 1);
 add_action("admin_footer","add_map_mce_popup");
-add_action("in_plugin_update_message-".MAP_FILE,"google_maps_bank_plugin_update_message" );
+add_action("in_plugin_update_message-".MAP_FILE,"google_maps_bank_plugin_update_message");
+$version = get_option("google-maps-bank-version-number");
+if($version == "" || $version == "1.0")
+{
+	add_action("admin_init", "plugin_install_script_for_map_bank");
+}
 ?>

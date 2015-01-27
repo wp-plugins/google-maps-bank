@@ -192,17 +192,17 @@ else
 												class="css3_grid_row_17 row_style_2 css3_grid_row_17_responsive"><span
 												class="css3_grid_vertical_align_table"><span
 													class="css3_grid_vertical_align"><span><span
-															class="css3_hidden_caption">Manage Polylines</span><span
-															class="css3_grid_tooltip"><span>Allows you to manage the
-																	existing Polylines by editing or deleting them as per
-																	your requirement.</span>Manage Polylines</span></span></span></span></li>
+															class="css3_hidden_caption">Map Height/Width</span><span
+															class="css3_grid_tooltip"><span>You can set Height and
+																	Width for Map.</span>Map Height/Width</span></span></span></span></li>
 											<li
 												class="css3_grid_row_18 row_style_4 css3_grid_row_18_responsive"><span
 												class="css3_grid_vertical_align_table"><span
 													class="css3_grid_vertical_align"><span><span
-															class="css3_hidden_caption">Map Height/Width</span><span
-															class="css3_grid_tooltip"><span>You can set Height and
-																	Width for Map.</span>Map Height/Width</span></span></span></span></li>
+															class="css3_hidden_caption">Manage Polylines</span><span
+															class="css3_grid_tooltip"><span>Allows you to manage the
+																	existing Polylines by editing or deleting them as per
+																	your requirement.</span>Manage Polylines</span></span></span></span></li>
 											<li
 												class="css3_grid_row_19 row_style_2 css3_grid_row_19_responsive"><span
 												class="css3_grid_vertical_align_table"><span
@@ -215,13 +215,29 @@ else
 												class="css3_grid_row_20 row_style_4 css3_grid_row_20_responsive"><span
 												class="css3_grid_vertical_align_table"><span
 													class="css3_grid_vertical_align"><span><span
+															class="css3_hidden_caption">Map Controls</span><span
+															class="css3_grid_tooltip"><span>It allows you to set
+																	different settings for the map like Pan-Control,
+																	Draggable, Over-View-Map etc.</span>Map Controls</span></span></span></span></li>
+											<li
+												class="css3_grid_row_21 row_style_2 css3_grid_row_21_responsive"><span
+												class="css3_grid_vertical_align_table"><span
+													class="css3_grid_vertical_align"><span><span
+															class="css3_hidden_caption">Widgets Map</span><span
+															class="css3_grid_tooltip"><span>Widgets allows map to be
+																	show in your sidebar, footer, header etc.</span>Widgets
+																Map</span></span></span></span></li>
+											<li
+												class="css3_grid_row_22 row_style_4 css3_grid_row_22_responsive"><span
+												class="css3_grid_vertical_align_table"><span
+													class="css3_grid_vertical_align"><span><span
 															class="css3_hidden_caption">Map Themes</span><span
 															class="css3_grid_tooltip"><span>You can implement 113
 																	different layouts for your map using Map Themes like
 																	Old Map, Red Alert, Pink and Blue, Purple Rain and much
 																	more.</span>Map Themes</span></span></span></span></li>
 											<li
-												class="css3_grid_row_21 row_style_2 css3_grid_row_21_responsive"><span
+												class="css3_grid_row_23 row_style_2 css3_grid_row_23_responsive"><span
 												class="css3_grid_vertical_align_table"><span
 													class="css3_grid_vertical_align"><span><span
 															class="css3_hidden_caption">Info Window</span><span
@@ -229,7 +245,7 @@ else
 																	which is used to display all your information regarding
 																	your location on the map.</span>Info Window</span></span></span></span></li>
 											<li
-												class="css3_grid_row_22 row_style_4 css3_grid_row_22_responsive"><span
+												class="css3_grid_row_24 row_style_4 css3_grid_row_24_responsive"><span
 												class="css3_grid_vertical_align_table"><span
 													class="css3_grid_vertical_align"><span><span
 															class="css3_hidden_caption">Marker Animation</span><span
@@ -237,7 +253,7 @@ else
 																	and bounce to you marker on the map.</span>Marker
 																Animation</span></span></span></span></li>
 											<li
-												class="css3_grid_row_23 row_style_2 css3_grid_row_23_responsive"><span
+												class="css3_grid_row_25 row_style_2 css3_grid_row_25_responsive"><span
 												class="css3_grid_vertical_align_table"><span
 													class="css3_grid_vertical_align"><span><span
 															class="css3_hidden_caption">KML Layer</span><span
@@ -245,7 +261,7 @@ else
 																	display the Geographic Information given by the KML
 																	Link.</span>KML Layer</span></span></span></span></li>
 											<li
-												class="css3_grid_row_24 row_style_4 css3_grid_row_24_responsive"><span
+												class="css3_grid_row_26 row_style_4 css3_grid_row_26_responsive"><span
 												class="css3_grid_vertical_align_table"><span
 													class="css3_grid_vertical_align"><span><span
 															class="css3_hidden_caption">Fusion Table Layer</span><span
@@ -255,7 +271,7 @@ else
 																	Locations and their detailed Information.</span>Fusion
 																Table Layer</span></span></span></span></li>
 											<li
-												class="css3_grid_row_25 row_style_2 css3_grid_row_25_responsive"><span
+												class="css3_grid_row_27 row_style_2 css3_grid_row_27_responsive"><span
 												class="css3_grid_vertical_align_table"><span
 													class="css3_grid_vertical_align"><span><span
 															class="css3_hidden_caption">Weather Layer</span><span
@@ -265,7 +281,7 @@ else
 																	Wind Speed of your Location on the Map. </span>Weather
 																Layer</span></span></span></span></li>
 											<li
-												class="css3_grid_row_26 row_style_4 css3_grid_row_26_responsive"><span
+												class="css3_grid_row_28 row_style_4 css3_grid_row_28_responsive"><span
 												class="css3_grid_vertical_align_table"><span
 													class="css3_grid_vertical_align"><span><span
 															class="css3_hidden_caption">Traffic Layer</span><span
@@ -273,7 +289,7 @@ else
 																	Real Time Traffic Conditions of supported Locations on
 																	the Map.</span>Traffic Layer</span></span></span></span></li>
 											<li
-												class="css3_grid_row_27 row_style_2 css3_grid_row_27_responsive"><span
+												class="css3_grid_row_29 row_style_2 css3_grid_row_29_responsive"><span
 												class="css3_grid_vertical_align_table"><span
 													class="css3_grid_vertical_align"><span><span
 															class="css3_hidden_caption">Transit Layer</span><span
@@ -281,7 +297,7 @@ else
 																	Transit Network of Locations supported by Transit
 																	Information on the Map.</span>Transit Layer</span></span></span></span></li>
 											<li
-												class="css3_grid_row_28 row_style_4 css3_grid_row_28_responsive"><span
+												class="css3_grid_row_30 row_style_4 css3_grid_row_30_responsive"><span
 												class="css3_grid_vertical_align_table"><span
 													class="css3_grid_vertical_align"><span><span
 															class="css3_hidden_caption">Bicycling Layer</span><span
@@ -289,15 +305,7 @@ else
 																	Bicycle, Bike Paths or other Bicycling specific
 																	Overlays on the Map. </span>Bicycling Layer</span></span></span></span></li>
 											<li
-												class="css3_grid_row_29 row_style_2 css3_grid_row_29_responsive"><span
-												class="css3_grid_vertical_align_table"><span
-													class="css3_grid_vertical_align"><span><span
-															class="css3_hidden_caption">Widgets Map</span><span
-															class="css3_grid_tooltip"><span>Widgets allows map to be
-																	show in your sidebar, footer, header etc.</span>Widgets
-																Map</span></span></span></span></li>
-											<li
-												class="css3_grid_row_30 row_style_4 css3_grid_row_30_responsive"><span
+												class="css3_grid_row_31 row_style_2 css3_grid_row_31_responsive"><span
 												class="css3_grid_vertical_align_table"><span
 													class="css3_grid_vertical_align"><span><span
 															class="css3_hidden_caption">Plugin Settings</span><span
@@ -305,21 +313,13 @@ else
 																	the capabilities of plugin among different roles of
 																	WordPress users.</span>Plugin Settings</span></span></span></span></li>
 											<li
-												class="css3_grid_row_31 row_style_2 css3_grid_row_31_responsive"><span
+												class="css3_grid_row_32 row_style_4 css3_grid_row_32_responsive"><span
 												class="css3_grid_vertical_align_table"><span
 													class="css3_grid_vertical_align"><span><span
 															class="css3_hidden_caption">Scrolling Wheel</span><span
 															class="css3_grid_tooltip"><span>Make you map user
 																	friendly by using scroll wheel feature for you map.</span>Scrolling
 																Wheel</span></span></span></span></li>
-											<li
-												class="css3_grid_row_32 row_style_4 css3_grid_row_32_responsive"><span
-												class="css3_grid_vertical_align_table"><span
-													class="css3_grid_vertical_align"><span><span
-															class="css3_hidden_caption">Map Controls</span><span
-															class="css3_grid_tooltip"><span>It allows you to set
-																	different settings for the map like Pan-Control,
-																	Draggable, Over-View-Map etc.</span>Map Controls</span></span></span></span></li>
 											<li
 												class="css3_grid_row_33 row_style_2 css3_grid_row_33_responsive"><span
 												class="css3_grid_vertical_align_table"><span
@@ -523,14 +523,14 @@ else
 												class="css3_grid_row_17 row_style_1 css3_grid_row_17_responsive align_center"><span
 												class="css3_grid_vertical_align_table"><span
 													class="css3_grid_vertical_align"><span><span
-															class="css3_hidden_caption">Manage Polylines</span><img
+															class="css3_hidden_caption">Map Height/Width</span><img
 															src="http://tech-banker.com/wp-content/plugins/css3_web_pricing_tables_grids/img/tick_10.png"
 															alt="yes"></span></span></span></li>
 											<li
 												class="css3_grid_row_18 row_style_3 css3_grid_row_18_responsive align_center"><span
 												class="css3_grid_vertical_align_table"><span
 													class="css3_grid_vertical_align"><span><span
-															class="css3_hidden_caption">Map Height/Width</span><img
+															class="css3_hidden_caption">Manage Polylines</span><img
 															src="http://tech-banker.com/wp-content/plugins/css3_web_pricing_tables_grids/img/tick_10.png"
 															alt="yes"></span></span></span></li>
 											<li
@@ -544,91 +544,91 @@ else
 												class="css3_grid_row_20 row_style_3 css3_grid_row_20_responsive align_center"><span
 												class="css3_grid_vertical_align_table"><span
 													class="css3_grid_vertical_align"><span><span
-															class="css3_hidden_caption">Map Themes</span><img
-															src="http://tech-banker.com/wp-content/plugins/css3_web_pricing_tables_grids/img/cross_04.png"
-															alt="no"></span></span></span></li>
+															class="css3_hidden_caption">Map Controls</span><img
+															src="http://tech-banker.com/wp-content/plugins/css3_web_pricing_tables_grids/img/tick_10.png"
+															alt="yes"></span></span></span></li>
 											<li
 												class="css3_grid_row_21 row_style_1 css3_grid_row_21_responsive align_center"><span
 												class="css3_grid_vertical_align_table"><span
 													class="css3_grid_vertical_align"><span><span
-															class="css3_hidden_caption">Info Window</span><img
-															src="http://tech-banker.com/wp-content/plugins/css3_web_pricing_tables_grids/img/cross_04.png"
-															alt="no"></span></span></span></li>
+															class="css3_hidden_caption">Widgets Map</span><img
+															src="http://tech-banker.com/wp-content/plugins/css3_web_pricing_tables_grids/img/tick_10.png"
+															alt="yes"></span></span></span></li>
 											<li
 												class="css3_grid_row_22 row_style_3 css3_grid_row_22_responsive align_center"><span
 												class="css3_grid_vertical_align_table"><span
 													class="css3_grid_vertical_align"><span><span
-															class="css3_hidden_caption">Marker Animation</span><img
+															class="css3_hidden_caption">Map Themes</span><img
 															src="http://tech-banker.com/wp-content/plugins/css3_web_pricing_tables_grids/img/cross_04.png"
 															alt="no"></span></span></span></li>
 											<li
 												class="css3_grid_row_23 row_style_1 css3_grid_row_23_responsive align_center"><span
 												class="css3_grid_vertical_align_table"><span
 													class="css3_grid_vertical_align"><span><span
-															class="css3_hidden_caption">KML Layer</span><img
+															class="css3_hidden_caption">Info Window</span><img
 															src="http://tech-banker.com/wp-content/plugins/css3_web_pricing_tables_grids/img/cross_04.png"
 															alt="no"></span></span></span></li>
 											<li
 												class="css3_grid_row_24 row_style_3 css3_grid_row_24_responsive align_center"><span
 												class="css3_grid_vertical_align_table"><span
 													class="css3_grid_vertical_align"><span><span
-															class="css3_hidden_caption">Fusion Table Layer</span><img
+															class="css3_hidden_caption">Marker Animation</span><img
 															src="http://tech-banker.com/wp-content/plugins/css3_web_pricing_tables_grids/img/cross_04.png"
 															alt="no"></span></span></span></li>
 											<li
 												class="css3_grid_row_25 row_style_1 css3_grid_row_25_responsive align_center"><span
 												class="css3_grid_vertical_align_table"><span
 													class="css3_grid_vertical_align"><span><span
-															class="css3_hidden_caption">Weather Layer</span><img
+															class="css3_hidden_caption">KML Layer</span><img
 															src="http://tech-banker.com/wp-content/plugins/css3_web_pricing_tables_grids/img/cross_04.png"
 															alt="no"></span></span></span></li>
 											<li
 												class="css3_grid_row_26 row_style_3 css3_grid_row_26_responsive align_center"><span
 												class="css3_grid_vertical_align_table"><span
 													class="css3_grid_vertical_align"><span><span
-															class="css3_hidden_caption">Traffic Layer</span><img
+															class="css3_hidden_caption">Fusion Table Layer</span><img
 															src="http://tech-banker.com/wp-content/plugins/css3_web_pricing_tables_grids/img/cross_04.png"
 															alt="no"></span></span></span></li>
 											<li
 												class="css3_grid_row_27 row_style_1 css3_grid_row_27_responsive align_center"><span
 												class="css3_grid_vertical_align_table"><span
 													class="css3_grid_vertical_align"><span><span
-															class="css3_hidden_caption">Transit Layer</span><img
+															class="css3_hidden_caption">Weather Layer</span><img
 															src="http://tech-banker.com/wp-content/plugins/css3_web_pricing_tables_grids/img/cross_04.png"
 															alt="no"></span></span></span></li>
 											<li
 												class="css3_grid_row_28 row_style_3 css3_grid_row_28_responsive align_center"><span
 												class="css3_grid_vertical_align_table"><span
 													class="css3_grid_vertical_align"><span><span
-															class="css3_hidden_caption">Bicycling Layer</span><img
+															class="css3_hidden_caption">Traffic Layer</span><img
 															src="http://tech-banker.com/wp-content/plugins/css3_web_pricing_tables_grids/img/cross_04.png"
 															alt="no"></span></span></span></li>
 											<li
 												class="css3_grid_row_29 row_style_1 css3_grid_row_29_responsive align_center"><span
 												class="css3_grid_vertical_align_table"><span
 													class="css3_grid_vertical_align"><span><span
-															class="css3_hidden_caption">Widgets Map</span><img
+															class="css3_hidden_caption">Transit Layer</span><img
 															src="http://tech-banker.com/wp-content/plugins/css3_web_pricing_tables_grids/img/cross_04.png"
 															alt="no"></span></span></span></li>
 											<li
 												class="css3_grid_row_30 row_style_3 css3_grid_row_30_responsive align_center"><span
 												class="css3_grid_vertical_align_table"><span
 													class="css3_grid_vertical_align"><span><span
-															class="css3_hidden_caption">Plugin Settings</span><img
+															class="css3_hidden_caption">Bicycling Layer</span><img
 															src="http://tech-banker.com/wp-content/plugins/css3_web_pricing_tables_grids/img/cross_04.png"
 															alt="no"></span></span></span></li>
 											<li
 												class="css3_grid_row_31 row_style_1 css3_grid_row_31_responsive align_center"><span
 												class="css3_grid_vertical_align_table"><span
 													class="css3_grid_vertical_align"><span><span
-															class="css3_hidden_caption">Scrolling Wheel</span><img
+															class="css3_hidden_caption">Plugin Settings</span><img
 															src="http://tech-banker.com/wp-content/plugins/css3_web_pricing_tables_grids/img/cross_04.png"
 															alt="no"></span></span></span></li>
 											<li
 												class="css3_grid_row_32 row_style_3 css3_grid_row_32_responsive align_center"><span
 												class="css3_grid_vertical_align_table"><span
 													class="css3_grid_vertical_align"><span><span
-															class="css3_hidden_caption">Map Controls</span><img
+															class="css3_hidden_caption">Scrolling Wheel</span><img
 															src="http://tech-banker.com/wp-content/plugins/css3_web_pricing_tables_grids/img/cross_04.png"
 															alt="no"></span></span></span></li>
 											<li
@@ -831,14 +831,14 @@ else
 												class="css3_grid_row_17 row_style_2 css3_grid_row_17_responsive align_center"><span
 												class="css3_grid_vertical_align_table"><span
 													class="css3_grid_vertical_align"><span><span
-															class="css3_hidden_caption">Manage Polylines</span><img
+															class="css3_hidden_caption">Map Height/Width</span><img
 															src="http://tech-banker.com/wp-content/plugins/css3_web_pricing_tables_grids/img/tick_10.png"
 															alt="yes"></span></span></span></li>
 											<li
 												class="css3_grid_row_18 row_style_4 css3_grid_row_18_responsive align_center"><span
 												class="css3_grid_vertical_align_table"><span
 													class="css3_grid_vertical_align"><span><span
-															class="css3_hidden_caption">Map Height/Width</span><img
+															class="css3_hidden_caption">Manage Polylines</span><img
 															src="http://tech-banker.com/wp-content/plugins/css3_web_pricing_tables_grids/img/tick_10.png"
 															alt="yes"></span></span></span></li>
 											<li
@@ -852,91 +852,91 @@ else
 												class="css3_grid_row_20 row_style_4 css3_grid_row_20_responsive align_center"><span
 												class="css3_grid_vertical_align_table"><span
 													class="css3_grid_vertical_align"><span><span
-															class="css3_hidden_caption">Map Themes</span><img
+															class="css3_hidden_caption">Map Controls</span><img
 															src="http://tech-banker.com/wp-content/plugins/css3_web_pricing_tables_grids/img/tick_10.png"
 															alt="yes"></span></span></span></li>
 											<li
 												class="css3_grid_row_21 row_style_2 css3_grid_row_21_responsive align_center"><span
 												class="css3_grid_vertical_align_table"><span
 													class="css3_grid_vertical_align"><span><span
-															class="css3_hidden_caption">Info Window</span><img
+															class="css3_hidden_caption">Widgets Map</span><img
 															src="http://tech-banker.com/wp-content/plugins/css3_web_pricing_tables_grids/img/tick_10.png"
 															alt="yes"></span></span></span></li>
 											<li
 												class="css3_grid_row_22 row_style_4 css3_grid_row_22_responsive align_center"><span
 												class="css3_grid_vertical_align_table"><span
 													class="css3_grid_vertical_align"><span><span
-															class="css3_hidden_caption">Marker Animation</span><img
+															class="css3_hidden_caption">Map Themes</span><img
 															src="http://tech-banker.com/wp-content/plugins/css3_web_pricing_tables_grids/img/tick_10.png"
 															alt="yes"></span></span></span></li>
 											<li
 												class="css3_grid_row_23 row_style_2 css3_grid_row_23_responsive align_center"><span
 												class="css3_grid_vertical_align_table"><span
 													class="css3_grid_vertical_align"><span><span
-															class="css3_hidden_caption">KML Layer</span><img
+															class="css3_hidden_caption">Info Window</span><img
 															src="http://tech-banker.com/wp-content/plugins/css3_web_pricing_tables_grids/img/tick_10.png"
 															alt="yes"></span></span></span></li>
 											<li
 												class="css3_grid_row_24 row_style_4 css3_grid_row_24_responsive align_center"><span
 												class="css3_grid_vertical_align_table"><span
 													class="css3_grid_vertical_align"><span><span
-															class="css3_hidden_caption">Fusion Table Layer</span><img
+															class="css3_hidden_caption">Marker Animation</span><img
 															src="http://tech-banker.com/wp-content/plugins/css3_web_pricing_tables_grids/img/tick_10.png"
 															alt="yes"></span></span></span></li>
 											<li
 												class="css3_grid_row_25 row_style_2 css3_grid_row_25_responsive align_center"><span
 												class="css3_grid_vertical_align_table"><span
 													class="css3_grid_vertical_align"><span><span
-															class="css3_hidden_caption">Weather Layer</span><img
+															class="css3_hidden_caption">KML Layer</span><img
 															src="http://tech-banker.com/wp-content/plugins/css3_web_pricing_tables_grids/img/tick_10.png"
 															alt="yes"></span></span></span></li>
 											<li
 												class="css3_grid_row_26 row_style_4 css3_grid_row_26_responsive align_center"><span
 												class="css3_grid_vertical_align_table"><span
 													class="css3_grid_vertical_align"><span><span
-															class="css3_hidden_caption">Traffic Layer</span><img
+															class="css3_hidden_caption">Fusion Table Layer</span><img
 															src="http://tech-banker.com/wp-content/plugins/css3_web_pricing_tables_grids/img/tick_10.png"
 															alt="yes"></span></span></span></li>
 											<li
 												class="css3_grid_row_27 row_style_2 css3_grid_row_27_responsive align_center"><span
 												class="css3_grid_vertical_align_table"><span
 													class="css3_grid_vertical_align"><span><span
-															class="css3_hidden_caption">Transit Layer</span><img
+															class="css3_hidden_caption">Weather Layer</span><img
 															src="http://tech-banker.com/wp-content/plugins/css3_web_pricing_tables_grids/img/tick_10.png"
 															alt="yes"></span></span></span></li>
 											<li
 												class="css3_grid_row_28 row_style_4 css3_grid_row_28_responsive align_center"><span
 												class="css3_grid_vertical_align_table"><span
 													class="css3_grid_vertical_align"><span><span
-															class="css3_hidden_caption">Bicycling Layer</span><img
+															class="css3_hidden_caption">Traffic Layer</span><img
 															src="http://tech-banker.com/wp-content/plugins/css3_web_pricing_tables_grids/img/tick_10.png"
 															alt="yes"></span></span></span></li>
 											<li
 												class="css3_grid_row_29 row_style_2 css3_grid_row_29_responsive align_center"><span
 												class="css3_grid_vertical_align_table"><span
 													class="css3_grid_vertical_align"><span><span
-															class="css3_hidden_caption">Widgets Map</span><img
+															class="css3_hidden_caption">Transit Layer</span><img
 															src="http://tech-banker.com/wp-content/plugins/css3_web_pricing_tables_grids/img/tick_10.png"
 															alt="yes"></span></span></span></li>
 											<li
 												class="css3_grid_row_30 row_style_4 css3_grid_row_30_responsive align_center"><span
 												class="css3_grid_vertical_align_table"><span
 													class="css3_grid_vertical_align"><span><span
-															class="css3_hidden_caption">Plugin Settings</span><img
+															class="css3_hidden_caption">Bicycling Layer</span><img
 															src="http://tech-banker.com/wp-content/plugins/css3_web_pricing_tables_grids/img/tick_10.png"
 															alt="yes"></span></span></span></li>
 											<li
 												class="css3_grid_row_31 row_style_2 css3_grid_row_31_responsive align_center"><span
 												class="css3_grid_vertical_align_table"><span
 													class="css3_grid_vertical_align"><span><span
-															class="css3_hidden_caption">Scrolling Wheel</span><img
+															class="css3_hidden_caption">Plugin Settings</span><img
 															src="http://tech-banker.com/wp-content/plugins/css3_web_pricing_tables_grids/img/tick_10.png"
 															alt="yes"></span></span></span></li>
 											<li
 												class="css3_grid_row_32 row_style_4 css3_grid_row_32_responsive align_center"><span
 												class="css3_grid_vertical_align_table"><span
 													class="css3_grid_vertical_align"><span><span
-															class="css3_hidden_caption">Map Controls</span><img
+															class="css3_hidden_caption">Scrolling Wheel</span><img
 															src="http://tech-banker.com/wp-content/plugins/css3_web_pricing_tables_grids/img/tick_10.png"
 															alt="yes"></span></span></span></li>
 											<li
@@ -1140,14 +1140,14 @@ else
 												class="css3_grid_row_17 row_style_1 css3_grid_row_17_responsive align_center"><span
 												class="css3_grid_vertical_align_table"><span
 													class="css3_grid_vertical_align"><span><span
-															class="css3_hidden_caption">Manage Polylines</span><img
+															class="css3_hidden_caption">Map Height/Width</span><img
 															src="http://tech-banker.com/wp-content/plugins/css3_web_pricing_tables_grids/img/tick_10.png"
 															alt="yes"></span></span></span></li>
 											<li
 												class="css3_grid_row_18 row_style_3 css3_grid_row_18_responsive align_center"><span
 												class="css3_grid_vertical_align_table"><span
 													class="css3_grid_vertical_align"><span><span
-															class="css3_hidden_caption">Map Height/Width</span><img
+															class="css3_hidden_caption">Manage Polylines</span><img
 															src="http://tech-banker.com/wp-content/plugins/css3_web_pricing_tables_grids/img/tick_10.png"
 															alt="yes"></span></span></span></li>
 											<li
@@ -1161,91 +1161,91 @@ else
 												class="css3_grid_row_20 row_style_3 css3_grid_row_20_responsive align_center"><span
 												class="css3_grid_vertical_align_table"><span
 													class="css3_grid_vertical_align"><span><span
-															class="css3_hidden_caption">Map Themes</span><img
+															class="css3_hidden_caption">Map Controls</span><img
 															src="http://tech-banker.com/wp-content/plugins/css3_web_pricing_tables_grids/img/tick_10.png"
 															alt="yes"></span></span></span></li>
 											<li
 												class="css3_grid_row_21 row_style_1 css3_grid_row_21_responsive align_center"><span
 												class="css3_grid_vertical_align_table"><span
 													class="css3_grid_vertical_align"><span><span
-															class="css3_hidden_caption">Info Window</span><img
+															class="css3_hidden_caption">Widgets Map</span><img
 															src="http://tech-banker.com/wp-content/plugins/css3_web_pricing_tables_grids/img/tick_10.png"
 															alt="yes"></span></span></span></li>
 											<li
 												class="css3_grid_row_22 row_style_3 css3_grid_row_22_responsive align_center"><span
 												class="css3_grid_vertical_align_table"><span
 													class="css3_grid_vertical_align"><span><span
-															class="css3_hidden_caption">Marker Animation</span><img
+															class="css3_hidden_caption">Map Themes</span><img
 															src="http://tech-banker.com/wp-content/plugins/css3_web_pricing_tables_grids/img/tick_10.png"
 															alt="yes"></span></span></span></li>
 											<li
 												class="css3_grid_row_23 row_style_1 css3_grid_row_23_responsive align_center"><span
 												class="css3_grid_vertical_align_table"><span
 													class="css3_grid_vertical_align"><span><span
-															class="css3_hidden_caption">KML Layer</span><img
+															class="css3_hidden_caption">Info Window</span><img
 															src="http://tech-banker.com/wp-content/plugins/css3_web_pricing_tables_grids/img/tick_10.png"
 															alt="yes"></span></span></span></li>
 											<li
 												class="css3_grid_row_24 row_style_3 css3_grid_row_24_responsive align_center"><span
 												class="css3_grid_vertical_align_table"><span
 													class="css3_grid_vertical_align"><span><span
-															class="css3_hidden_caption">Fusion Table Layer</span><img
+															class="css3_hidden_caption">Marker Animation</span><img
 															src="http://tech-banker.com/wp-content/plugins/css3_web_pricing_tables_grids/img/tick_10.png"
 															alt="yes"></span></span></span></li>
 											<li
 												class="css3_grid_row_25 row_style_1 css3_grid_row_25_responsive align_center"><span
 												class="css3_grid_vertical_align_table"><span
 													class="css3_grid_vertical_align"><span><span
-															class="css3_hidden_caption">Weather Layer</span><img
+															class="css3_hidden_caption">KML Layer</span><img
 															src="http://tech-banker.com/wp-content/plugins/css3_web_pricing_tables_grids/img/tick_10.png"
 															alt="yes"></span></span></span></li>
 											<li
 												class="css3_grid_row_26 row_style_3 css3_grid_row_26_responsive align_center"><span
 												class="css3_grid_vertical_align_table"><span
 													class="css3_grid_vertical_align"><span><span
-															class="css3_hidden_caption">Traffic Layer</span><img
+															class="css3_hidden_caption">Fusion Table Layer</span><img
 															src="http://tech-banker.com/wp-content/plugins/css3_web_pricing_tables_grids/img/tick_10.png"
 															alt="yes"></span></span></span></li>
 											<li
 												class="css3_grid_row_27 row_style_1 css3_grid_row_27_responsive align_center"><span
 												class="css3_grid_vertical_align_table"><span
 													class="css3_grid_vertical_align"><span><span
-															class="css3_hidden_caption">Transit Layer</span><img
+															class="css3_hidden_caption">Weather Layer</span><img
 															src="http://tech-banker.com/wp-content/plugins/css3_web_pricing_tables_grids/img/tick_10.png"
 															alt="yes"></span></span></span></li>
 											<li
 												class="css3_grid_row_28 row_style_3 css3_grid_row_28_responsive align_center"><span
 												class="css3_grid_vertical_align_table"><span
 													class="css3_grid_vertical_align"><span><span
-															class="css3_hidden_caption">Bicycling Layer</span><img
+															class="css3_hidden_caption">Traffic Layer</span><img
 															src="http://tech-banker.com/wp-content/plugins/css3_web_pricing_tables_grids/img/tick_10.png"
 															alt="yes"></span></span></span></li>
 											<li
 												class="css3_grid_row_29 row_style_1 css3_grid_row_29_responsive align_center"><span
 												class="css3_grid_vertical_align_table"><span
 													class="css3_grid_vertical_align"><span><span
-															class="css3_hidden_caption">Widgets Map</span><img
+															class="css3_hidden_caption">Transit Layer</span><img
 															src="http://tech-banker.com/wp-content/plugins/css3_web_pricing_tables_grids/img/tick_10.png"
 															alt="yes"></span></span></span></li>
 											<li
 												class="css3_grid_row_30 row_style_3 css3_grid_row_30_responsive align_center"><span
 												class="css3_grid_vertical_align_table"><span
 													class="css3_grid_vertical_align"><span><span
-															class="css3_hidden_caption">Plugin Settings</span><img
+															class="css3_hidden_caption">Bicycling Layer</span><img
 															src="http://tech-banker.com/wp-content/plugins/css3_web_pricing_tables_grids/img/tick_10.png"
 															alt="yes"></span></span></span></li>
 											<li
 												class="css3_grid_row_31 row_style_1 css3_grid_row_31_responsive align_center"><span
 												class="css3_grid_vertical_align_table"><span
 													class="css3_grid_vertical_align"><span><span
-															class="css3_hidden_caption">Scrolling Wheel</span><img
+															class="css3_hidden_caption">Plugin Settings</span><img
 															src="http://tech-banker.com/wp-content/plugins/css3_web_pricing_tables_grids/img/tick_10.png"
 															alt="yes"></span></span></span></li>
 											<li
 												class="css3_grid_row_32 row_style_3 css3_grid_row_32_responsive align_center"><span
 												class="css3_grid_vertical_align_table"><span
 													class="css3_grid_vertical_align"><span><span
-															class="css3_hidden_caption">Map Controls</span><img
+															class="css3_hidden_caption">Scrolling Wheel</span><img
 															src="http://tech-banker.com/wp-content/plugins/css3_web_pricing_tables_grids/img/tick_10.png"
 															alt="yes"></span></span></span></li>
 											<li
@@ -1448,14 +1448,14 @@ else
 												class="css3_grid_row_17 row_style_2 css3_grid_row_17_responsive align_center"><span
 												class="css3_grid_vertical_align_table"><span
 													class="css3_grid_vertical_align"><span><span
-															class="css3_hidden_caption">Manage Polylines</span><img
+															class="css3_hidden_caption">Map Height/Width</span><img
 															src="http://tech-banker.com/wp-content/plugins/css3_web_pricing_tables_grids/img/tick_10.png"
 															alt="yes"></span></span></span></li>
 											<li
 												class="css3_grid_row_18 row_style_4 css3_grid_row_18_responsive align_center"><span
 												class="css3_grid_vertical_align_table"><span
 													class="css3_grid_vertical_align"><span><span
-															class="css3_hidden_caption">Map Height/Width</span><img
+															class="css3_hidden_caption">Manage Polylines</span><img
 															src="http://tech-banker.com/wp-content/plugins/css3_web_pricing_tables_grids/img/tick_10.png"
 															alt="yes"></span></span></span></li>
 											<li
@@ -1469,91 +1469,91 @@ else
 												class="css3_grid_row_20 row_style_4 css3_grid_row_20_responsive align_center"><span
 												class="css3_grid_vertical_align_table"><span
 													class="css3_grid_vertical_align"><span><span
-															class="css3_hidden_caption">Map Themes</span><img
+															class="css3_hidden_caption">Map Controls</span><img
 															src="http://tech-banker.com/wp-content/plugins/css3_web_pricing_tables_grids/img/tick_10.png"
 															alt="yes"></span></span></span></li>
 											<li
 												class="css3_grid_row_21 row_style_2 css3_grid_row_21_responsive align_center"><span
 												class="css3_grid_vertical_align_table"><span
 													class="css3_grid_vertical_align"><span><span
-															class="css3_hidden_caption">Info Window</span><img
+															class="css3_hidden_caption">Widgets Map</span><img
 															src="http://tech-banker.com/wp-content/plugins/css3_web_pricing_tables_grids/img/tick_10.png"
 															alt="yes"></span></span></span></li>
 											<li
 												class="css3_grid_row_22 row_style_4 css3_grid_row_22_responsive align_center"><span
 												class="css3_grid_vertical_align_table"><span
 													class="css3_grid_vertical_align"><span><span
-															class="css3_hidden_caption">Marker Animation</span><img
+															class="css3_hidden_caption">Map Themes</span><img
 															src="http://tech-banker.com/wp-content/plugins/css3_web_pricing_tables_grids/img/tick_10.png"
 															alt="yes"></span></span></span></li>
 											<li
 												class="css3_grid_row_23 row_style_2 css3_grid_row_23_responsive align_center"><span
 												class="css3_grid_vertical_align_table"><span
 													class="css3_grid_vertical_align"><span><span
-															class="css3_hidden_caption">KML Layer</span><img
+															class="css3_hidden_caption">Info Window</span><img
 															src="http://tech-banker.com/wp-content/plugins/css3_web_pricing_tables_grids/img/tick_10.png"
 															alt="yes"></span></span></span></li>
 											<li
 												class="css3_grid_row_24 row_style_4 css3_grid_row_24_responsive align_center"><span
 												class="css3_grid_vertical_align_table"><span
 													class="css3_grid_vertical_align"><span><span
-															class="css3_hidden_caption">Fusion Table Layer</span><img
+															class="css3_hidden_caption">Marker Animation</span><img
 															src="http://tech-banker.com/wp-content/plugins/css3_web_pricing_tables_grids/img/tick_10.png"
 															alt="yes"></span></span></span></li>
 											<li
 												class="css3_grid_row_25 row_style_2 css3_grid_row_25_responsive align_center"><span
 												class="css3_grid_vertical_align_table"><span
 													class="css3_grid_vertical_align"><span><span
-															class="css3_hidden_caption">Weather Layer</span><img
+															class="css3_hidden_caption">KML Layer</span><img
 															src="http://tech-banker.com/wp-content/plugins/css3_web_pricing_tables_grids/img/tick_10.png"
 															alt="yes"></span></span></span></li>
 											<li
 												class="css3_grid_row_26 row_style_4 css3_grid_row_26_responsive align_center"><span
 												class="css3_grid_vertical_align_table"><span
 													class="css3_grid_vertical_align"><span><span
-															class="css3_hidden_caption">Traffic Layer</span><img
+															class="css3_hidden_caption">Fusion Table Layer</span><img
 															src="http://tech-banker.com/wp-content/plugins/css3_web_pricing_tables_grids/img/tick_10.png"
 															alt="yes"></span></span></span></li>
 											<li
 												class="css3_grid_row_27 row_style_2 css3_grid_row_27_responsive align_center"><span
 												class="css3_grid_vertical_align_table"><span
 													class="css3_grid_vertical_align"><span><span
-															class="css3_hidden_caption">Transit Layer</span><img
+															class="css3_hidden_caption">Weather Layer</span><img
 															src="http://tech-banker.com/wp-content/plugins/css3_web_pricing_tables_grids/img/tick_10.png"
 															alt="yes"></span></span></span></li>
 											<li
 												class="css3_grid_row_28 row_style_4 css3_grid_row_28_responsive align_center"><span
 												class="css3_grid_vertical_align_table"><span
 													class="css3_grid_vertical_align"><span><span
-															class="css3_hidden_caption">Bicycling Layer</span><img
+															class="css3_hidden_caption">Traffic Layer</span><img
 															src="http://tech-banker.com/wp-content/plugins/css3_web_pricing_tables_grids/img/tick_10.png"
 															alt="yes"></span></span></span></li>
 											<li
 												class="css3_grid_row_29 row_style_2 css3_grid_row_29_responsive align_center"><span
 												class="css3_grid_vertical_align_table"><span
 													class="css3_grid_vertical_align"><span><span
-															class="css3_hidden_caption">Widgets Map</span><img
+															class="css3_hidden_caption">Transit Layer</span><img
 															src="http://tech-banker.com/wp-content/plugins/css3_web_pricing_tables_grids/img/tick_10.png"
 															alt="yes"></span></span></span></li>
 											<li
 												class="css3_grid_row_30 row_style_4 css3_grid_row_30_responsive align_center"><span
 												class="css3_grid_vertical_align_table"><span
 													class="css3_grid_vertical_align"><span><span
-															class="css3_hidden_caption">Plugin Settings</span><img
+															class="css3_hidden_caption">Bicycling Layer</span><img
 															src="http://tech-banker.com/wp-content/plugins/css3_web_pricing_tables_grids/img/tick_10.png"
 															alt="yes"></span></span></span></li>
 											<li
 												class="css3_grid_row_31 row_style_2 css3_grid_row_31_responsive align_center"><span
 												class="css3_grid_vertical_align_table"><span
 													class="css3_grid_vertical_align"><span><span
-															class="css3_hidden_caption">Scrolling Wheel</span><img
+															class="css3_hidden_caption">Plugin Settings</span><img
 															src="http://tech-banker.com/wp-content/plugins/css3_web_pricing_tables_grids/img/tick_10.png"
 															alt="yes"></span></span></span></li>
 											<li
 												class="css3_grid_row_32 row_style_4 css3_grid_row_32_responsive align_center"><span
 												class="css3_grid_vertical_align_table"><span
 													class="css3_grid_vertical_align"><span><span
-															class="css3_hidden_caption">Map Controls</span><img
+															class="css3_hidden_caption">Scrolling Wheel</span><img
 															src="http://tech-banker.com/wp-content/plugins/css3_web_pricing_tables_grids/img/tick_10.png"
 															alt="yes"></span></span></span></li>
 											<li
@@ -1756,14 +1756,14 @@ else
 												class="css3_grid_row_17 row_style_1 css3_grid_row_17_responsive align_center"><span
 												class="css3_grid_vertical_align_table"><span
 													class="css3_grid_vertical_align"><span><span
-															class="css3_hidden_caption">Manage Polylines</span><img
+															class="css3_hidden_caption">Map Height/Width</span><img
 															src="http://tech-banker.com/wp-content/plugins/css3_web_pricing_tables_grids/img/tick_10.png"
 															alt="yes"></span></span></span></li>
 											<li
 												class="css3_grid_row_18 row_style_3 css3_grid_row_18_responsive align_center"><span
 												class="css3_grid_vertical_align_table"><span
 													class="css3_grid_vertical_align"><span><span
-															class="css3_hidden_caption">Map Height/Width</span><img
+															class="css3_hidden_caption">Manage Polylines</span><img
 															src="http://tech-banker.com/wp-content/plugins/css3_web_pricing_tables_grids/img/tick_10.png"
 															alt="yes"></span></span></span></li>
 											<li
@@ -1777,91 +1777,91 @@ else
 												class="css3_grid_row_20 row_style_3 css3_grid_row_20_responsive align_center"><span
 												class="css3_grid_vertical_align_table"><span
 													class="css3_grid_vertical_align"><span><span
-															class="css3_hidden_caption">Map Themes</span><img
+															class="css3_hidden_caption">Map Controls</span><img
 															src="http://tech-banker.com/wp-content/plugins/css3_web_pricing_tables_grids/img/tick_10.png"
 															alt="yes"></span></span></span></li>
 											<li
 												class="css3_grid_row_21 row_style_1 css3_grid_row_21_responsive align_center"><span
 												class="css3_grid_vertical_align_table"><span
 													class="css3_grid_vertical_align"><span><span
-															class="css3_hidden_caption">Info Window</span><img
+															class="css3_hidden_caption">Widgets Map</span><img
 															src="http://tech-banker.com/wp-content/plugins/css3_web_pricing_tables_grids/img/tick_10.png"
 															alt="yes"></span></span></span></li>
 											<li
 												class="css3_grid_row_22 row_style_3 css3_grid_row_22_responsive align_center"><span
 												class="css3_grid_vertical_align_table"><span
 													class="css3_grid_vertical_align"><span><span
-															class="css3_hidden_caption">Marker Animation</span><img
+															class="css3_hidden_caption">Map Themes</span><img
 															src="http://tech-banker.com/wp-content/plugins/css3_web_pricing_tables_grids/img/tick_10.png"
 															alt="yes"></span></span></span></li>
 											<li
 												class="css3_grid_row_23 row_style_1 css3_grid_row_23_responsive align_center"><span
 												class="css3_grid_vertical_align_table"><span
 													class="css3_grid_vertical_align"><span><span
-															class="css3_hidden_caption">KML Layer</span><img
+															class="css3_hidden_caption">Info Window</span><img
 															src="http://tech-banker.com/wp-content/plugins/css3_web_pricing_tables_grids/img/tick_10.png"
 															alt="yes"></span></span></span></li>
 											<li
 												class="css3_grid_row_24 row_style_3 css3_grid_row_24_responsive align_center"><span
 												class="css3_grid_vertical_align_table"><span
 													class="css3_grid_vertical_align"><span><span
-															class="css3_hidden_caption">Fusion Table Layer</span><img
+															class="css3_hidden_caption">Marker Animation</span><img
 															src="http://tech-banker.com/wp-content/plugins/css3_web_pricing_tables_grids/img/tick_10.png"
 															alt="yes"></span></span></span></li>
 											<li
 												class="css3_grid_row_25 row_style_1 css3_grid_row_25_responsive align_center"><span
 												class="css3_grid_vertical_align_table"><span
 													class="css3_grid_vertical_align"><span><span
-															class="css3_hidden_caption">Weather Layer</span><img
+															class="css3_hidden_caption">KML Layer</span><img
 															src="http://tech-banker.com/wp-content/plugins/css3_web_pricing_tables_grids/img/tick_10.png"
 															alt="yes"></span></span></span></li>
 											<li
 												class="css3_grid_row_26 row_style_3 css3_grid_row_26_responsive align_center"><span
 												class="css3_grid_vertical_align_table"><span
 													class="css3_grid_vertical_align"><span><span
-															class="css3_hidden_caption">Traffic Layer</span><img
+															class="css3_hidden_caption">Fusion Table Layer</span><img
 															src="http://tech-banker.com/wp-content/plugins/css3_web_pricing_tables_grids/img/tick_10.png"
 															alt="yes"></span></span></span></li>
 											<li
 												class="css3_grid_row_27 row_style_1 css3_grid_row_27_responsive align_center"><span
 												class="css3_grid_vertical_align_table"><span
 													class="css3_grid_vertical_align"><span><span
-															class="css3_hidden_caption">Transit Layer</span><img
+															class="css3_hidden_caption">Weather Layer</span><img
 															src="http://tech-banker.com/wp-content/plugins/css3_web_pricing_tables_grids/img/tick_10.png"
 															alt="yes"></span></span></span></li>
 											<li
 												class="css3_grid_row_28 row_style_3 css3_grid_row_28_responsive align_center"><span
 												class="css3_grid_vertical_align_table"><span
 													class="css3_grid_vertical_align"><span><span
-															class="css3_hidden_caption">Bicycling Layer</span><img
+															class="css3_hidden_caption">Traffic Layer</span><img
 															src="http://tech-banker.com/wp-content/plugins/css3_web_pricing_tables_grids/img/tick_10.png"
 															alt="yes"></span></span></span></li>
 											<li
 												class="css3_grid_row_29 row_style_1 css3_grid_row_29_responsive align_center"><span
 												class="css3_grid_vertical_align_table"><span
 													class="css3_grid_vertical_align"><span><span
-															class="css3_hidden_caption">Widgets Map</span><img
+															class="css3_hidden_caption">Transit Layer</span><img
 															src="http://tech-banker.com/wp-content/plugins/css3_web_pricing_tables_grids/img/tick_10.png"
 															alt="yes"></span></span></span></li>
 											<li
 												class="css3_grid_row_30 row_style_3 css3_grid_row_30_responsive align_center"><span
 												class="css3_grid_vertical_align_table"><span
 													class="css3_grid_vertical_align"><span><span
-															class="css3_hidden_caption">Plugin Settings</span><img
+															class="css3_hidden_caption">Bicycling Layer</span><img
 															src="http://tech-banker.com/wp-content/plugins/css3_web_pricing_tables_grids/img/tick_10.png"
 															alt="yes"></span></span></span></li>
 											<li
 												class="css3_grid_row_31 row_style_1 css3_grid_row_31_responsive align_center"><span
 												class="css3_grid_vertical_align_table"><span
 													class="css3_grid_vertical_align"><span><span
-															class="css3_hidden_caption">Scrolling Wheel</span><img
+															class="css3_hidden_caption">Plugin Settings</span><img
 															src="http://tech-banker.com/wp-content/plugins/css3_web_pricing_tables_grids/img/tick_10.png"
 															alt="yes"></span></span></span></li>
 											<li
 												class="css3_grid_row_32 row_style_3 css3_grid_row_32_responsive align_center"><span
 												class="css3_grid_vertical_align_table"><span
 													class="css3_grid_vertical_align"><span><span
-															class="css3_hidden_caption">Map Controls</span><img
+															class="css3_hidden_caption">Scrolling Wheel</span><img
 															src="http://tech-banker.com/wp-content/plugins/css3_web_pricing_tables_grids/img/tick_10.png"
 															alt="yes"></span></span></span></li>
 											<li

@@ -105,11 +105,6 @@ else
 			</div>
 		</div>
 	</div>
-	<div class="custom-message red" style="display: block;margin-top:30px;max-width: 965px;">
-		<span>
-			<strong>You will be only allowed to add 2 maps. Kindly purchase Premium Edition for full access.</strong>
-		</span>
-	</div>
 	<script>
 	jQuery(document).ready(function()
 	{
@@ -136,6 +131,7 @@ else
 		}
 		?>
 		<a class="nav-tab" id="manage_map" href="admin.php?page=manage_map"><?php _e("Manage Maps", map_bank);?></a>
+		<a class="nav-tab" id="short_code_map" href="admin.php?page=short_code_map"><?php _e("Short Codes", map_bank);?></a>
 		<a class="nav-tab" id="gmb_recommended_plugins" href="admin.php?page=gmb_recommended_plugins"><?php _e("Recommendations", map_bank);?></a>
 		<a class="nav-tab" id="gmb_pro_version" href="admin.php?page=gmb_pro_version"><?php _e("Premium Editions", map_bank);?></a>
 		<a class="nav-tab" id="gmb_other_services" href="admin.php?page=gmb_other_services"><?php _e("Our Other Services", map_bank);?></a>

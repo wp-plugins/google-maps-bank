@@ -42,6 +42,12 @@ else
 	);
 	$wp_admin_bar->add_menu( array(
 		"parent" => "map_bank_links",
+		"id"     => "short_code_links",
+		"href"  => site_url() ."/wp-admin/admin.php?page=short_code_map",
+		"title" => __("Short Codes", map_bank))/* set the sub-menu name */
+	);
+	$wp_admin_bar->add_menu( array(
+		"parent" => "map_bank_links",
 		"id"     => "system_status_links",
 		"href"  => site_url() ."/wp-admin/admin.php?page=gmb_system_status",
 		"title" => __( "System Status", map_bank))/* set the sub-menu name */

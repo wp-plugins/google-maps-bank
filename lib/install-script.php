@@ -85,23 +85,6 @@ if(!function_exists("create_table_plugin_settings_gmb"))
 	}
 }
 
-if(!function_exists("create_table_google_maps_bank_licensing"))
-{
-	function create_table_google_maps_bank_licensing()
-	{
-		$sql = "CREATE TABLE IF NOT EXISTS " . google_maps_bank_licensing() . "(
-				licensing_id int(10) NOT NULL AUTO_INCREMENT,
-				version varchar(10) NOT NULL,
-				type varchar(100) NOT NULL,
-				url text NOT NULL,
-				api_key text NOT NULL,
-				order_id varchar(100) NOT NULL,
-				PRIMARY KEY (licensing_id)
-				) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_general_ci" ;
-		dbDelta($sql);
-	}
-}
-
 if($version == "")
 {
 	if (count($wpdb->get_var("SHOW TABLES LIKE '" . map_bank_create_new_map_table() . "'")) == 0)
@@ -314,20 +297,6 @@ if($version == "")
 			$plugin_setting_value["plugin_settings_value"] = $innerKey;
 			$insert_plugin_settings->insert_data(map_bank_plugin_settings_table(),$plugin_setting_value);
 		}
-	}
-	if (count($wpdb->get_var("SHOW TABLES LIKE '" . google_maps_bank_licensing() . "'")) == 0)
-	{
-		create_table_google_maps_bank_licensing();
-		$wpdb->query
-		(
-			$wpdb->prepare
-			(
-				"INSERT INTO " . google_maps_bank_licensing() . "(version, type, url) VALUES(%s, %s, %s)",
-				"1.0",
-				"Google Maps Bank",
-				"" . site_url() . ""
-			)
-		);
 	}
 	
 }
