@@ -66,6 +66,11 @@ else
 							<h4><?php _e("Step 3 - Add Marker", map_bank); ?></h4>
 						</div>
 						<div class="widget-layout-body">
+							<div>
+								<input type="button" onclick="proceed_to_back();" id="ux_btn_action" name="ux_btn_action" class="btn btn-danger" value="<?php _e("<< Back to Previous Step", map_bank); ?>"/>
+								<input type="button" onclick="proceed_to_step();" id="ux_btn_action" name="ux_btn_action" class="btn btn-danger" style="float:right;" value="<?php _e("Proceed to Next Step >>", map_bank); ?>"/>
+							</div>
+							<div class="separator-doubled" style="margin-bottom: 20px;"></div> 
 							<div class="fluid-layout">
 								<div class="layout-span12 responsive">
 									<div class="widget-layout">

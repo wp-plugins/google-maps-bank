@@ -1,13 +1,13 @@
-=== WP Google Maps Bank - Google Map Builder ===
+=== WP Google Maps Bank - Google Maps Builder ===
 Contributors: contact-banker, Gallery-Bank
 Tags: admin, plugin, best google maps, best maps, comments, custom google map, custom google maps, Custom Google Map, Custom Google Maps, google map, google maps, maps, map, map markers, wp maps, wp google maps, wp google map, easy map, store locator, map plugin, directions, map directions, google map plugin, routes, polygons, polylines, streetview, location, marker, latitude, longitude, map widget
 Requires at least: 3.3
 Tested up to: 4.1
-Stable tag: 1.0.3
+Stable tag: 1.0.4
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
-Google Maps Bank provides directions, interactive maps, and satellite/aerial imagery of anything. It's more than a Map.
+Google Maps Bank provides directions, interactive maps, and satellite/aerial imagery of anything. It's more than just a Map.
 
 == Description ==
 
@@ -50,6 +50,7 @@ Creating a **[Google Maps Bank](http://tech-banker.com/products/wp-google-maps-b
 * **Support for Localization**
 * **Create a Custom Google Map using Google Maps Bank in few minutes!**
 * **Automatic Plugin update Notifications with New Features , Bugs Fixing and much more**
+* **Widgets for displaying Google Maps** - A widget can be used to display Google Map on Sidebar, Footer or anywhere needed using the Google Maps Bank Widget
 
 = Key Features in Google Maps Bank Premium Editions : =
 
@@ -84,8 +85,8 @@ Creating a **[Google Maps Bank](http://tech-banker.com/products/wp-google-maps-b
 * **Steet View Control** - Ability to Enable/Disable Street View Control in your Custom Google Map using Google Maps Bank.
 * **Marker Cluster Control** - Ability to Enable/Disable Marker Cluster Control in your Custom Google Map using Google Maps Bank.
 * **Directions on a Map**- Ability to Enable/Disable Directions Control in your Custom Google Map using Google Maps Bank.
-* **Widgets**
-* **Bulk Deletion of Google Maps**
+* **Widgets for displaying Google Maps** - A widget can be used to display Google Map on Sidebar, Footer or anywhere needed using the Google Maps Bank Widget
+* **Bulk Deletion of Google Maps** - You will be able to delete the maps using Bulk Deletion.
 
 
 **[Support Desk - Feel Free to ask your Queries](http://tech-banker.com/forums/forum/google-maps-bank-support/)**
@@ -152,6 +153,11 @@ If any problem occurs, please contact us at [support@tech-banker.com](mailto:sup
 14. Manage Maps - Manage Layers
 
 == Changelog ==
+
+= 1.0.4 =
+
+* Bugs Fixed in Google Maps Bank
+* Added New Buttoms on top of each Step.
 
 = 1.0.3 =
 

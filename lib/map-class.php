@@ -42,18 +42,7 @@ else
 					global $wpdb;
 					$wpdb->delete($tbl, $where);
 				}
-				function direction_delete($tbl,$keys,$map_id)
-				{
-					global $wpdb;
-					$wpdb->query
-					(
-						$wpdb->prepare
-						(
-							"DELETE FROM ".$tbl." WHERE map_id = %d AND map_meta_key IN (".$keys.")",
-							$map_id
-						)
-					);
-				}
+				
 			}
 		}
 		if(isset($_REQUEST["param"]))
@@ -77,6 +66,14 @@ else
 						$meta_map_array["map_title"] = htmlspecialchars(esc_attr($_REQUEST["title"]));
 						$meta_map_array["map_type"] = intval($_REQUEST["map_type"]);
 						$meta_map_array["map_themes"] = esc_attr($_REQUEST["themes"]);
+						$map_count = $wpdb->get_var
+						(
+							$wpdb->prepare
+							(
+								"SELECT count(id) FROM ".map_bank_create_new_map_table()." where map_type=%s",
+								"map"
+							)
+						);
 						
 						if($map_id != 0)
 						{
@@ -91,16 +88,24 @@ else
 						}
 						else
 						{
-							$insert->insert_data(map_bank_create_new_map_table(),$new_map);
-							$lastid = $wpdb->insert_id;
-							foreach ($meta_map_array as $key => $val)
+							if($map_count < 2)
 							{
-								$meta_map_value["map_id"] = $lastid;
-								$meta_map_value["map_meta_key"] = $key;
-								$meta_map_value["map_meta_value"] = $val;
-								$insert->insert_data(map_bank_meta_table(),$meta_map_value,$meta_map_key);
+								$insert->insert_data(map_bank_create_new_map_table(),$new_map);
+								$lastid = $wpdb->insert_id;
+								foreach ($meta_map_array as $key => $val)
+								{
+									$meta_map_value["map_id"] = $lastid;
+									$meta_map_value["map_meta_key"] = $key;
+									$meta_map_value["map_meta_value"] = $val;
+									$insert->insert_data(map_bank_meta_table(),$meta_map_value,$meta_map_key);
+								}
+								echo $lastid;
 							}
-							echo $lastid;
+							else 
+							{
+								echo "0";
+							}
+							
 						}
 						die();
 					}

@@ -38,6 +38,11 @@ else
 						</div>
 						<div class="widget-layout-body">
 							<div class="fluid-layout">
+								<input type="button" onclick="proceed_to_back();" id="ux_btn_action" name="ux_btn_action"  class="btn btn-danger" value="<?php _e("Back to Manage Maps", map_bank); ?>"/>
+								<input type="submit" id="ux_btn_action" name="ux_btn_action" class="btn btn-danger" style="float:right;" value="<?php _e("Update Location", map_bank); ?>" />
+							</div>
+							<div class="separator-doubled" style="margin-bottom: 20px;"></div> 
+							<div class="fluid-layout">
 								<div class="layout-span6 responsive">
 									<div class="layout-control-group">
 										<label class="layout-control-label-location layout-control-label"><?php _e("Formatted Address", map_bank); ?> :

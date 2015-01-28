@@ -44,6 +44,11 @@ else
 							<h4><?php _e("Step 6 - Add Layers", map_bank); ?></h4>
 						</div>
 						<div class="widget-layout-body">
+							<div>
+								<input type="button" onclick="proceed_to_back();" id="ux_btn_action" name="ux_btn_action" class="btn btn-danger" value="<?php _e("<< Back to Previous Step", map_bank); ?>"/>
+								<input type="submit" id="ux_btn_action" name="ux_btn_action" class="btn btn-danger" value="<?php _e("Proceed to Next Step >>", map_bank); ?>" style="float:right; margin-right:8px"/>
+							</div>
+							<div class="separator-doubled" style="margin-bottom: 20px;"></div> 
 							<div class="fluid-layout">
 								<div class="layout-span12">
 									<div class="widget-layout">
