@@ -33,7 +33,15 @@ Creating a **[Google Maps Bank](http://tech-banker.com/products/wp-google-maps-b
 
 > * [Google Maps Bank](http://tech-banker.com/products/wp-google-maps-bank/)
 > * [Google Maps Bank Demos](http://tech-banker.com/products/wp-google-maps-bank/demo/)
+> * [Google Maps Bank - KML Layer Demo](http://tech-banker.com/products/wp-google-maps-bank/demo/google-map-kml-layer-demo/)
+> * [Google Maps Bank - Weather Layer Demo](http://tech-banker.com/products/wp-google-maps-bank/demo/google-map-weather-layer-demo/)
+> * [Google Maps Bank - Fusion Table Layer Demo](http://tech-banker.com/products/wp-google-maps-bank/demo/google-map-fusion-table-layer-demo/)
+> * [Google Maps Bank - Traffic Layer Demo](http://tech-banker.com/products/wp-google-maps-bank/demo/google-map-traffic-layer-demo/)
+> * [Google Maps Bank - Transit Layer Demo](http://tech-banker.com/products/wp-google-maps-bank/demo/google-map-transit-layer-demo/)
 > * [Google Maps Bank - Bicycling Layer Demo](http://tech-banker.com/products/wp-google-maps-bank/demo/google-map-bicycling-layer-demo/)
+> * [Google Maps Bank - Panorama Layer Demo](http://tech-banker.com/products/wp-google-maps-bank/demo/google-map-panorama-layer-demo/)
+> * [Google Maps Bank - Map Engine Layer Demo](http://tech-banker.com/products/wp-google-maps-bank/demo/google-map-map-engine-layer-demo/)
+
 
 = Key Features in Google Maps Bank Lite Edition : =
 
