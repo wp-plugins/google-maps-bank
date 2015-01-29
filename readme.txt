@@ -29,6 +29,11 @@ Creating a **[Google Maps Bank](http://tech-banker.com/products/wp-google-maps-b
 
 **[Support Desk - Feel Free to ask your Queries](http://tech-banker.com/forums/forum/google-maps-bank-support/)**
 
+> #### **Live Demos - Google Maps Bank**
+
+> * [Google Maps Bank](http://tech-banker.com/products/wp-google-maps-bank/)
+> * [Google Maps Bank Demos](http://tech-banker.com/products/wp-google-maps-bank/demo/)
+> * [Google Maps Bank - Bicycling Layer Demo](http://tech-banker.com/products/wp-google-maps-bank/demo/google-map-bicycling-layer-demo/)
 
 = Key Features in Google Maps Bank Lite Edition : =
 
