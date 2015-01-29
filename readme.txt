@@ -33,6 +33,8 @@ Creating a **[Google Maps Bank](http://tech-banker.com/products/wp-google-maps-b
 
 > * [Google Maps Bank](http://tech-banker.com/products/wp-google-maps-bank/)
 > * [Google Maps Bank Demos](http://tech-banker.com/products/wp-google-maps-bank/demo/)
+> * [Google Maps Bank - Marker Cluser Deno](http://tech-banker.com/products/wp-google-maps-bank/demo/google-map-marker-cluster-demo/)
+> * [Google Maps Bank - 45 Degree Imagery Demo](http://tech-banker.com/products/wp-google-maps-bank/demo/google-map-45-degree-imagery-demo/)
 > * [Google Maps Bank - KML Layer Demo](http://tech-banker.com/products/wp-google-maps-bank/demo/google-map-kml-layer-demo/)
 > * [Google Maps Bank - Weather Layer Demo](http://tech-banker.com/products/wp-google-maps-bank/demo/google-map-weather-layer-demo/)
 > * [Google Maps Bank - Fusion Table Layer Demo](http://tech-banker.com/products/wp-google-maps-bank/demo/google-map-fusion-table-layer-demo/)
