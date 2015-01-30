@@ -5,7 +5,7 @@ Plugin URI: http://tech-banker.com
 Description: Google Maps Bank provides directions, interactive maps, and satellite/aerial imagery of anything. It's more than a Map.
 Author: Tech Banker
 Author URI: http://tech-banker.com
-Version: 1.0.4
+Version: 1.0.5
 */
 /////////////////////////////////////  Define  Google Maps Bank  Constants  ////////////////////////////////////////
 

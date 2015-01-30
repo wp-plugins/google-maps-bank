@@ -48,11 +48,6 @@ if(!function_exists("get_frontend_geo_settings"))
 		return array_unique($map_marker_array, SORT_REGULAR);
 	}
 }
-
-$map_border = "1";
-$border_width = "1";
-$border_style = "solid";
-$border_color = "#000000";
 $border_radius = "1";
 $frontend_settings_data = get_frontend_map_settings($map_id,$frontend_map,"map");
 $marker = get_frontend_geo_settings($map_id,$frontend_map,"marker");
@@ -91,7 +86,6 @@ if(isset($map_type_data))
 .map_canvas_class_<?php echo $map_id;?>_<?php echo $unique_id;?>
 {
 	max-width: none !important;
-	border:<?php echo  $border_width."px"." ".$border_style." ".$border_color; ?>;
 	width:<?php echo $map_width . "px"; ?>;
 	height:<?php echo  $map_height. "px"; ?>;
 }

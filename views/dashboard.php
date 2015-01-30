@@ -144,7 +144,7 @@ else
 														switch($map["map_type"])
 														{
 															case "1":
-																echo "Road Map Satellite";
+																echo "Road Map";
 															break;
 															case "2":
 																echo "Terrain";
@@ -153,7 +153,7 @@ else
 																echo "Hybrid";
 															break;
 															case "4":
-																echo "Street Map";
+																echo "Satellite";
 															break;
 														}
 														?>

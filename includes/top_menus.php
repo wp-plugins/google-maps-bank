@@ -13,7 +13,7 @@ else
 	));
 	$wp_admin_bar->add_menu( array(
 		"parent" => "map_bank_links",
-		"id"     => "dashboard_links",
+		"id"     => "gmb_dashboard_links",
 		"href"  => site_url() ."/wp-admin/admin.php?page=gmb_dashboard",
 		"title" => __("Dashboard", map_bank))/* set the sub-menu name */
 	);
@@ -48,7 +48,7 @@ else
 	);
 	$wp_admin_bar->add_menu( array(
 		"parent" => "map_bank_links",
-		"id"     => "system_status_links",
+		"id"     => "gmb_system_status_links",
 		"href"  => site_url() ."/wp-admin/admin.php?page=gmb_system_status",
 		"title" => __( "System Status", map_bank))/* set the sub-menu name */
 	);
@@ -60,15 +60,16 @@ else
 	);
 	$wp_admin_bar->add_menu( array(
 		"parent" => "map_bank_links",
+		"id"     => "gmb_pro_version_link",
+		"href"  => site_url() ."/wp-admin/admin.php?page=gmb_pro_version",
+		"title" => __("Premium Editions", map_bank))/* set the sub-menu name */
+	);
+	$wp_admin_bar->add_menu( array(
+		"parent" => "map_bank_links",
 		"id"     => "other_services_linkes",
 		"href"  => site_url() ."/wp-admin/admin.php?page=gmb_other_services",
 		"title" => __("Our Other Services", map_bank))/* set the sub-menu name */
 	);
-	$wp_admin_bar->add_menu( array(
-		"parent" => "map_bank_pro_version",
-		"id"     => "pro_version_link",
-		"href"  => site_url() ."/wp-admin/admin.php?page=gmb_pro_version",
-		"title" => __("Premium Editions", map_bank))/* set the sub-menu name */
-	);
+	
 }
 ?>

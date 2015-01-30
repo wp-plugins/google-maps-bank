@@ -450,7 +450,7 @@ else
 							<div class="separator-doubled"></div> 
 							<div style="margin-top: 10px;">
 								<input type="button" onclick="proceed_to_back();" id="ux_btn_action" name="ux_btn_action" class="btn btn-danger" value="<?php _e("<< Back to Previous Step", map_bank); ?>"/>
-								<input type="submit" id="ux_btn_action" name="ux_btn_action" class="btn btn-danger" value="<?php _e("Submit Changes", map_bank); ?>" style="float:right; margin-right:8px"/>
+								<input type="submit" id="ux_btn_action" name="ux_btn_action" class="btn btn-danger" value="<?php _e("Create Map", map_bank); ?>" style="float:right; margin-right:8px"/>
 							</div>
 						</div>
 					</div>
