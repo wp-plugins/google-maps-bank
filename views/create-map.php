@@ -53,7 +53,7 @@ else
 					{
 						include_once MAP_BK_PLUGIN_DIR ."/includes/headers.php";
 					}
-				?>
+					?>
 					<div class="widget-layout">
 						<div class="widget-layout-title">
 							<h4><?php _e("Step 1 - Add New Map", map_bank); ?></h4>

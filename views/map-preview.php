@@ -197,16 +197,20 @@ else
 							{
 								scrollwheel: true,
 								zoomControl: true,
-								zoomControlOptions: 
-								{
-									style: google.maps.ZoomControlStyle.LARGE
+								zoomControlOptions: {
+									style: google.maps.ZoomControlStyle.SMALL,
+									position: google.maps.ControlPosition.LEFT_CENTER
 								},
 								zoom: 12,
 								center: latlng,
 								styles : <?php echo isset($map_themes) ? $map_themes:"default1" ;?>,
+								rotateControl : true,
 								mapTypeId: google.maps.MapTypeId.<?php echo isset($map_type) ? $map_type : "ROADMAP";?>,
 								overviewMapControl:true,
 								panControl: true,
+								panControlOptions: {
+									position: google.maps.ControlPosition.RIGHT_TOP
+								},
 								draggable: true,
 								scaleControl: true,
 								visible:true,

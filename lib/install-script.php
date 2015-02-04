@@ -301,4 +301,9 @@ if($version == "")
 	
 }
 update_option("google-maps-bank-version-number","1.0");
+$plugin_updation = get_option("google-maps-bank-automatic-update");
+if($plugin_updation == "")
+{
+	update_option("google-maps-bank-automatic-update",1);
+}
 ?>

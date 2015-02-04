@@ -166,7 +166,7 @@ else
 						$meta_map_array = array();
 						$meta_map_value = array();
 						$meta_map_key = array();
-						$map_icon = plugins_url("/assets/images/map-icons/culture/aboriginal.png",dirname(__FILE__));
+						$map_icon = plugins_url("/assets/images/map-icons/aboriginal.png",dirname(__FILE__));
 						$meta_map_array["marker_location"] = esc_attr($_REQUEST["geocomplete_marker"]);
 						$meta_map_array["map_marker"] = esc_attr($_REQUEST["marker_icon_image"]) != "" ? esc_attr($_REQUEST["marker_icon_image"]) :$map_icon;
 						$meta_map_array["marker_category"] = intval($_REQUEST["ux_ddl_Marker"]);
@@ -196,7 +196,7 @@ else
 						$meta_map_array = array();
 						$meta_map_value = array();
 						$meta_map_key = array();
-						$map_icon = plugins_url("/assets/images/map-icons/culture/aboriginal.png",dirname(__FILE__));
+						$map_icon = plugins_url("/assets/images/map-icons/aboriginal.png",dirname(__FILE__));
 						$meta_map_array["marker_location"] = esc_attr($_REQUEST["geocomplete_marker"]);
 						$meta_map_array["map_marker"] = esc_attr($_REQUEST["marker_icon_image"]) != "0" ? esc_attr($_REQUEST["marker_icon_image"]) :$map_icon;
 						$meta_map_array["marker_category"] = intval($_REQUEST["ux_ddl_Marker"]);
@@ -478,6 +478,14 @@ else
 						$where = array();
 						$where["id"] = intval($_REQUEST["map_id"]);
 						$delete_single_map->delete_data(map_bank_create_new_map_table(),$where);
+						die();
+					}
+				break;
+				case "google_map_plugin_updates":
+					if(wp_verify_nonce( $_REQUEST["_wpnonce"], "update_plugin_nonce"))
+					{
+						$plugin_update = esc_attr($_REQUEST["google_map_updates"]);
+						update_option("google-maps-bank-automatic-update",$plugin_update);
 						die();
 					}
 				break;

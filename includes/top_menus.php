@@ -42,9 +42,15 @@ else
 	);
 	$wp_admin_bar->add_menu( array(
 		"parent" => "map_bank_links",
-		"id"     => "short_code_links",
+		"id"     => "gmb_short_code_links",
 		"href"  => site_url() ."/wp-admin/admin.php?page=short_code_map",
 		"title" => __("Short Codes", map_bank))/* set the sub-menu name */
+	);
+	$wp_admin_bar->add_menu( array(
+		"parent" => "map_bank_links",
+		"id"     => "gmb_plugin_updates_links",
+		"href"  => site_url() ."/wp-admin/admin.php?page=gmb_plugin_updates",
+		"title" => __("Plugin Updates", map_bank))/* set the sub-menu name */
 	);
 	$wp_admin_bar->add_menu( array(
 		"parent" => "map_bank_links",
@@ -54,7 +60,7 @@ else
 	);
 	$wp_admin_bar->add_menu( array(
 		"parent" => "map_bank_links",
-		"id"     => "recommended_plugins_links",
+		"id"     => "gmb_recommended_plugins_links",
 		"href"  => site_url() ."/wp-admin/admin.php?page=gmb_recommended_plugins",
 		"title" => __("Recommendations", map_bank))/* set the sub-menu name */
 	);
@@ -66,7 +72,7 @@ else
 	);
 	$wp_admin_bar->add_menu( array(
 		"parent" => "map_bank_links",
-		"id"     => "other_services_linkes",
+		"id"     => "gmb_other_services_linkes",
 		"href"  => site_url() ."/wp-admin/admin.php?page=gmb_other_services",
 		"title" => __("Our Other Services", map_bank))/* set the sub-menu name */
 	);

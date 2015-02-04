@@ -5,7 +5,7 @@ Plugin URI: http://tech-banker.com
 Description: Google Maps Bank provides directions, interactive maps, and satellite/aerial imagery of anything. It's more than a Map.
 Author: Tech Banker
 Author URI: http://tech-banker.com
-Version: 1.0.5
+Version: 1.0.6
 */
 /////////////////////////////////////  Define  Google Maps Bank  Constants  ////////////////////////////////////////
 
@@ -333,10 +333,60 @@ function google_maps_bank_plugin_update_message($args)
 	}
 }
 
+$is_option_auto_update = get_option("google-maps-bank-automatic-update");
+
+if($is_option_auto_update == "" || $is_option_auto_update == "1")
+{
+	if (!wp_next_scheduled("google_maps_bank_auto_update"))
+	{
+		wp_schedule_event(time(), "daily", "google_maps_bank_auto_update");
+	}
+	add_action("google_maps_bank_auto_update", "google_maps_bank_plugin_autoUpdate");
+}
+else
+{
+	wp_clear_scheduled_hook("google_maps_bank_auto_update");
+}
+if(!function_exists( "google_maps_bank_plugin_autoUpdate" ))
+{
+	function google_maps_bank_plugin_autoUpdate()
+	{
+		try
+		{
+			require_once(ABSPATH . "wp-admin/includes/class-wp-upgrader.php");
+			require_once(ABSPATH . "wp-admin/includes/misc.php");
+			define("FS_METHOD", "direct");
+			require_once(ABSPATH . "wp-includes/update.php");
+			require_once(ABSPATH . "wp-admin/includes/file.php");
+			wp_update_plugins();
+			ob_start();
+			$plugin_upgrader = new Plugin_Upgrader();
+			$plugin_upgrader->upgrade("google-maps-bank/google-maps-bank.php");
+			$output = @ob_get_contents();
+			@ob_end_clean();
+		}
+		catch(Exception $e)
+		{
+		}
+	}
+}
+
+if(!function_exists( "plugin_uninstall_hook_for_google_maps_bank" ))
+{
+	function plugin_uninstall_hook_for_google_maps_bank()
+	{
+		delete_option("google-maps-bank-automatic-update");
+		wp_clear_scheduled_hook("google_maps_bank_auto_update");
+	}
+}
+
 ///////////////////////////////////  Call Hooks   /////////////////////////////////////////////////////
 add_filter( "wp_default_editor", create_function( '', 'return "html";' ));
 // activation Hook called for installation_for_google_map_bank
 register_activation_hook(__FILE__,"plugin_install_script_for_map_bank");
+
+// uninstall Hook called for installation_for_google_map_bank
+register_uninstall_hook(__FILE__, "plugin_uninstall_hook_for_google_maps_bank");
 
 // add_action Hook called for function backend_plugin_css_styles_for_google_map_bank
 add_action("admin_init","backend_plugin_css_styles_map_bank");

@@ -104,14 +104,12 @@ img
 	word-wrap: break-word;
 }
 </style>
-
 <?php
 if(file_exists(MAP_BK_PLUGIN_DIR ."/views/themes.php"))
 {
 	include_once MAP_BK_PLUGIN_DIR ."/views/themes.php";
 }?>
 <script type="text/javascript">
-	
 	function initialize_<?php echo $map_id;?>_<?php echo $unique_id;?>()
 	{
 		var bounds = new google.maps.LatLngBounds();
@@ -274,12 +272,9 @@ if(file_exists(MAP_BK_PLUGIN_DIR ."/views/themes.php"))
 	}
 </script>
 <div id="map_canvas_<?php echo $map_id;?>_<?php echo $unique_id;?>" class="map_canvas_class_<?php echo $map_id;?>_<?php echo $unique_id;?>"></div>
-
 <script type="text/javascript">
-
 jQuery(document).ready(function()
 {
 	initialize_<?php echo $map_id;?>_<?php echo $unique_id;?>();
 });
-
 </script>
