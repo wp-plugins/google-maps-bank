@@ -97,6 +97,59 @@ Creating a **[Google Maps Bank](http://tech-banker.com/products/wp-google-maps-b
 
 **[Like & Support Us on Facebook](https://www.facebook.com/TechBanker/)**
 
+
+= Google Maps Bank is now available in the following Languages =
+
+* Albanian (sq)
+* Arabic (ar)
+* Brazilian Portuguese (pt_BR)
+* Bulgarian (bg_BG)
+* Croatian (hr)
+* Chinese (zh_CN)
+* Chinese - Hong Kong (zh_HK)
+* Chinese - Singapore (zh_sg)
+* Chinese - Taiwan (zh_TW)
+* Chinese - (zh)
+* Czech (cs_CZ)
+* Danish (da_DK)
+* Dutch (nl_NL)
+* Dutch - Belgium (nl_BE)
+* English (en_GB)
+* English (en_US)
+* Estonian (et)
+* Finnish (fi)
+* French (fr_FR)
+* French - Belgium (fr_BE)
+* French - Canada (fr_CA)
+* French - Switzerland (fr_ch)
+* German (de_DE)
+* Greek (el)
+* Hebrew (he_IL)
+* Hungarian (hu_HU)
+* Indonesian (id_ID)
+* Italian (it_IT)
+* Japanese (ja)
+* Korean (ko_KR)
+* Malay Malaysia (ms_MY)
+* Polish (pl_PL)
+* Portuguese (pt_PT)
+* Romanian (ro_RO)
+* Russian (ru_RU)
+* Russian - Ukraine (ru_UA)
+* Serbian (sr_RS)
+* Slovenian (sl_SL)
+* Slovak (sk_SK)
+* Spanish - Chile (es_CL)
+* Spanish - Peru (es_PE)
+* Spanish - Puerto Rico (es_PR)
+* Spanish - Venezuela (es_VE)
+* Spanish - Columbia (es_CO)
+* Spanish - Spain (es_ES)
+* Swedish (sv_SE)
+* Turkish (tr_TR)
+* Thai (th)
+* Ukrainian (uk)
+
 = Technical Support =
 
 If any problem occurs, please contact us at [support@tech-banker.com](mailto:support@tech-banker.com).
@@ -154,12 +207,13 @@ If any problem occurs, please contact us at [support@tech-banker.com](mailto:sup
 
 == Changelog ==
 
-= 1.1 =
+= 1.0.7 =
 
-* Manage Maps section revamp.
-* Add Polygons section revamp.
-* Add Polylines section revamp.
-* Added new feature of Feature Request.
+* Manage Maps section Revamped.
+* Add Polygons section Revamped.
+* Add Polylines section Revamped.
+* Added New Feature of Feature Request.
+* Added New Languages
 
 = 1.0.6 =
 
