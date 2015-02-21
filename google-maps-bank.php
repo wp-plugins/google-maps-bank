@@ -5,7 +5,7 @@ Plugin URI: http://tech-banker.com
 Description: Google Maps Bank provides directions, interactive maps, and satellite/aerial imagery of anything. It's more than a Map.
 Author: Tech Banker
 Author URI: http://tech-banker.com
-Version: 1.0.6
+Version: 1.1
 */
 /////////////////////////////////////  Define  Google Maps Bank  Constants  ////////////////////////////////////////
 
@@ -26,7 +26,6 @@ if(!function_exists("frontend_plugin_js_scripts_map_bank"))
 	function frontend_plugin_js_scripts_map_bank()
 	{
 		wp_enqueue_script("jquery");
-		wp_enqueue_script("jquery_google_map.js", plugins_url("/assets/js/jquery_google_map.js",__FILE__));
 	}
 }
 
@@ -40,7 +39,6 @@ if(!function_exists("backend_plugin_js_scripts_map_bank"))
 		wp_enqueue_script("farbtastic");
 		wp_enqueue_script("jquery.dataTables.min.js", plugins_url("/assets/js/jquery.dataTables.min.js",__FILE__));
 		wp_enqueue_script("jquery.validate.min.js", plugins_url("/assets/js/jquery.validate.min.js",__FILE__));
-		wp_enqueue_script("jquery_google_map.js", plugins_url("/assets/js/jquery_google_map.js",__FILE__));
 		wp_enqueue_script("jquery.Tooltip.js", plugins_url("/assets/js/jquery.Tooltip.js",__FILE__));
 	}
 }
@@ -422,7 +420,7 @@ add_action( "media_buttons_context", "add_map_shortcode_button", 1);
 add_action("admin_footer","add_map_mce_popup");
 add_action("in_plugin_update_message-".MAP_FILE,"google_maps_bank_plugin_update_message");
 $version = get_option("google-maps-bank-version-number");
-if($version == "" || $version == "1.0")
+if($version == "" || $version == "1.0"  || $version == "1.1")
 {
 	add_action("admin_init", "plugin_install_script_for_map_bank");
 }

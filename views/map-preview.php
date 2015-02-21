@@ -64,10 +64,29 @@ else
 		if(file_exists(MAP_BK_PLUGIN_DIR ."/views/themes.php"))
 		{
 			include_once MAP_BK_PLUGIN_DIR ."/views/themes.php";
+			
 		}
 		?>
-		<script type="text/javascript">
-		
+		<script type="text/javascript">	var polyline_data = jQuery("#ux_txt_polyline_data").val();
+			window.google = window.google || {};
+			google.maps = google.maps || {};
+			(function() {
+			function getScript(src) {
+				document.write('<' + 'script src="' + src + '"s' +
+					' type="text/javascript"><' + '/script>');
+				}
+				
+			var modules = google.maps.modules = {};
+			google.maps.__gjsload__ = function(name, text) {
+					modules[name] = text;
+				};
+				google.maps.Load = function(apiLoad) {
+					delete google.maps.Load;
+				apiLoad([0.009999999776482582,[[["http://mt0.googleapis.com/vt?lyrs=m@271000000\u0026src=api\u0026hl=en\u0026","http://mt1.googleapis.com/vt?lyrs=m@271000000\u0026src=api\u0026hl=en\u0026"],null,null,null,null,"m@271000000",["https://mts0.google.com/vt?lyrs=m@271000000\u0026src=api\u0026hl=en\u0026","https://mts1.google.com/vt?lyrs=m@271000000\u0026src=api\u0026hl=en\u0026"]],[["http://khm0.googleapis.com/kh?v=156\u0026hl=en\u0026","http://khm1.googleapis.com/kh?v=156\u0026hl=en\u0026"],null,null,null,1,"156",["https://khms0.google.com/kh?v=156\u0026hl=en\u0026","https://khms1.google.com/kh?v=156\u0026hl=en\u0026"]],[["http://mt0.googleapis.com/vt?lyrs=h@271000000\u0026src=api\u0026hl=en\u0026","http://mt1.googleapis.com/vt?lyrs=h@271000000\u0026src=api\u0026hl=en\u0026"],null,null,null,null,"h@271000000",["https://mts0.google.com/vt?lyrs=h@271000000\u0026src=api\u0026hl=en\u0026","https://mts1.google.com/vt?lyrs=h@271000000\u0026src=api\u0026hl=en\u0026"]],[["http://mt0.googleapis.com/vt?lyrs=t@132,r@271000000\u0026src=api\u0026hl=en\u0026","http://mt1.googleapis.com/vt?lyrs=t@132,r@271000000\u0026src=api\u0026hl=en\u0026"],null,null,null,null,"t@132,r@271000000",["https://mts0.google.com/vt?lyrs=t@132,r@271000000\u0026src=api\u0026hl=en\u0026","https://mts1.google.com/vt?lyrs=t@132,r@271000000\u0026src=api\u0026hl=en\u0026"]],null,null,[["http://cbk0.googleapis.com/cbk?","http://cbk1.googleapis.com/cbk?"]],[["http://khm0.googleapis.com/kh?v=84\u0026hl=en\u0026","http://khm1.googleapis.com/kh?v=84\u0026hl=en\u0026"],null,null,null,null,"84",["https://khms0.google.com/kh?v=84\u0026hl=en\u0026","https://khms1.google.com/kh?v=84\u0026hl=en\u0026"]],[["http://mt0.googleapis.com/mapslt?hl=en\u0026","http://mt1.googleapis.com/mapslt?hl=en\u0026"]],[["http://mt0.googleapis.com/mapslt/ft?hl=en\u0026","http://mt1.googleapis.com/mapslt/ft?hl=en\u0026"]],[["http://mt0.googleapis.com/vt?hl=en\u0026","http://mt1.googleapis.com/vt?hl=en\u0026"]],[["http://mt0.googleapis.com/mapslt/loom?hl=en\u0026","http://mt1.googleapis.com/mapslt/loom?hl=en\u0026"]],[["https://mts0.googleapis.com/mapslt?hl=en\u0026","https://mts1.googleapis.com/mapslt?hl=en\u0026"]],[["https://mts0.googleapis.com/mapslt/ft?hl=en\u0026","https://mts1.googleapis.com/mapslt/ft?hl=en\u0026"]],[["https://mts0.googleapis.com/mapslt/loom?hl=en\u0026","https://mts1.googleapis.com/mapslt/loom?hl=en\u0026"]]],["en","GB",null,0,null,null,"http://maps.gstatic.com/mapfiles/","http://csi.gstatic.com","https://maps.googleapis.com","http://maps.googleapis.com",null,"https://maps.google.com"],["http://maps.gstatic.com/maps-api-v3/api/js/17/13","3.17.13"],[2448734379],1,null,null,null,null,null,"",["panoramio","places","weather"],null,0,"http://khm.googleapis.com/mz?v=156\u0026",null,"https://earthbuilder.googleapis.com","https://earthbuilder.googleapis.com",null,"http://mt.googleapis.com/vt/icon",[["http://mt0.googleapis.com/vt","http://mt1.googleapis.com/vt"],["https://mts0.googleapis.com/vt","https://mts1.googleapis.com/vt"],[null,[[0,"m",271000000]],[null,"en","GB",null,18,null,null,null,null,null,null,[[47],[37,[["smartmaps"]]]]],0],[null,[[0,"m",271000000]],[null,"en","GB",null,18,null,null,null,null,null,null,[[47],[37,[["smartmaps"]]]]],3],[null,[[0,"m",271000000]],[null,"en","GB",null,18,null,null,null,null,null,null,[[50],[37,[["smartmaps"]]]]],0],[null,[[0,"m",271000000]],[null,"en","GB",null,18,null,null,null,null,null,null,[[50],[37,[["smartmaps"]]]]],3],[null,[[4,"t",132],[0,"r",132000000]],[null,"en","GB",null,18,null,null,null,null,null,null,[[63],[37,[["smartmaps"]]]]],0],[null,[[4,"t",132],[0,"r",132000000]],[null,"en","GB",null,18,null,null,null,null,null,null,[[63],[37,[["smartmaps"]]]]],3],[null,null,[null,"en","GB",null,18],0],[null,null,[null,"en","GB",null,18],3],[null,null,[null,"en","GB",null,18],6],[null,null,[null,"en","GB",null,18],0],["https://mts0.google.com/vt","https://mts1.google.com/vt"],"/maps/vt",271000000,132],2,500,["http://geo0.ggpht.com/cbk","http://www.gstatic.com/landmark/tour","http://www.gstatic.com/landmark/config","/maps/preview/reveal?authuser=0","/maps/preview/log204","/gen204?tbm=map","http://static.panoramio.com.storage.googleapis.com/photos/"],["https://www.google.com/maps/api/js/widget?pb=!1m2!1u17!2s13!2sen!3sGB","https://www.google.com/maps/api/js/slave_widget?pb=!1m2!1u17!2s13"],0], loadScriptTime);
+				};
+				var loadScriptTime = (new Date).getTime();
+				getScript("http://maps.google.com/maps/api/js?libraries=places,&language=<?php echo isset($map_language) ? $map_language : "en";?>&sensor=false");
+			})();
 			function initialize() 
 			{
 				var layer;
@@ -343,19 +362,40 @@ else
 							if(!isset($_REQUEST["pgon_id"]))
 							{
 								?>
-								shape_new = new google.maps.Polygon({
-									draggable: true,
-									strokeColor: line_color,
-									strokeOpacity: line_opacity,
-									fillColor: polygon_color,
-									fillOpacity: polygon_opacity
-								});
+								if(polygon_data_array != "")
+								{
+									var polygon_cord_exist = [];
+									for(i = 0; i < polygon_data_array.length; i++)
+									{
+										var latLang = polygon_data_array[i].split(",");
+										var latLangAccurate = new google.maps.LatLng(latLang[0],latLang[1]);
+										polygon_cord_exist.push(latLangAccurate);
+									}
+									shape_new = new google.maps.Polygon({
+										paths: polygon_cord_exist,
+										draggable: true,
+										strokeColor: line_color,
+										strokeOpacity: line_opacity,
+										fillColor: polygon_color,
+										fillOpacity: polygon_opacity
+									});
+								}
+								else
+								{
+									shape_new = new google.maps.Polygon({
+										draggable: true,
+										strokeColor: line_color,
+										strokeOpacity: line_opacity,
+										fillColor: polygon_color,
+										fillOpacity: polygon_opacity
+									});
+								}
 								shape_new.setMap(map);
 								google.maps.event.addListener(map, "click", addPoint);
 								google.maps.event.addListener(shape_new, "dragend", getPolygonCoords);
 								google.maps.event.addListener(shape_new.getPath(), "insert_at", getPolygonCoords);
 								google.maps.event.addListener(shape_new.getPath(), "set_at", getPolygonCoords);
-							<?php
+								<?php
 							}
 						break;
 						case "gmb_add_polyline":
@@ -387,6 +427,74 @@ else
 							if(!isset($_REQUEST["pline_id"]))
 							{
 								?>
+								if(polyline_data_array != "")
+								{
+									var polyline_cord_exist = [];
+									for(i = 0; i < polyline_data_array.length; i++)
+									{
+										var latLang = polyline_data_array[i].split(",");
+										var latLangAccurate = new google.maps.LatLng(latLang[0],latLang[1]);
+										polyline_cord_exist.push(latLangAccurate);
+									}
+									if(polyline_border_type == 2)
+									{
+										var lineSymbol = 
+										{
+											path: "M 0,-1 0,1 0,-1",
+											strokeOpacity: polyline_opacity,
+											strokeColor: polyline_color,
+											strokeWeight: polyline_thicknes
+										};
+										line = new google.maps.Polyline(
+										{
+											path: polyline_cord_exist,
+											draggable:true,
+											strokeOpacity: 0,
+											icons: [{
+												icon: lineSymbol,
+												offset: "0",
+												repeat: "20px"
+											}]
+										});
+										line.setMap(map);
+									}
+									else if(polyline_border_type == 1)
+									{
+										var lineSymbol = 
+										{
+											path: "M 0,-0.1 0,0.1",
+											strokeOpacity: polyline_opacity,
+											strokeColor: polyline_color,
+											strokeWeight: polyline_thicknes
+										};
+										line = new google.maps.Polyline(
+										{
+											path: polyline_cord_exist,
+											draggable:true,
+											strokeOpacity: 0,
+											icons: [{
+											icon: lineSymbol,
+											offset: "0",
+											repeat: "10px"
+											}]
+										});
+										line.setMap(map);
+									}
+									else if(polyline_border_type == 0)
+									{
+										line = new google.maps.Polyline(
+										{
+											path: polyline_cord_exist,
+											draggable:true,
+											strokeOpacity: polyline_opacity,
+											strokeColor: polyline_color,
+											strokeWeight: polyline_thicknes
+										});
+										line.setMap(map);
+									}
+								}
+								else
+								{
 									if(polyline_border_type == 2)
 									{
 										var lineSymbol = 
@@ -429,7 +537,7 @@ else
 										});
 										line.setMap(map);
 									}
-									else
+									else if(polyline_border_type == 0)
 									{
 										line = new google.maps.Polyline(
 										{
@@ -440,6 +548,7 @@ else
 										});
 										line.setMap(map);
 									}
+								}
 								google.maps.event.addListener(map, "click", addNewPoint);
 								google.maps.event.addListener(line, "dragend", getPolylineCoords);
 								google.maps.event.addListener(line.getPath(), "insert_at", getPolylineCoords);
@@ -493,10 +602,13 @@ else
 							<?php
 						break;
 						case"gmb_edit_marker":
+							?>
+							var position = new google.maps.LatLng("<?php echo $map_location_latitude;?>", "<?php echo $map_location_longitude;?>");
+							<?php
+							
 							if(isset($_REQUEST["mid"]))
 							{
 								?>
-								var position = new google.maps.LatLng("<?php echo $map_location_latitude;?>", "<?php echo $map_location_longitude;?>");
 								bounds.extend(position);
 								marker = new google.maps.Marker(
 								{
@@ -588,13 +700,34 @@ else
 							if(!isset($_REQUEST["pgon_id"]))
 							{
 								?>
-								shape_new = new google.maps.Polygon({
-									draggable: true,
-									strokeColor: line_color,
-									strokeOpacity: line_opacity,
-									fillColor: polygon_color,
-									fillOpacity: polygon_opacity
-								});
+								if(polygon_data_array != "")
+								{
+									var polygon_cord_exist = [];
+									for(i = 0; i < polygon_data_array.length; i++)
+									{
+										var latLang = polygon_data_array[i].split(",");
+										var latLangAccurate = new google.maps.LatLng(latLang[0],latLang[1]);
+										polygon_cord_exist.push(latLangAccurate);
+									}
+									shape_new = new google.maps.Polygon({
+										paths: polygon_cord_exist,
+										draggable: true,
+										strokeColor: line_color,
+										strokeOpacity: line_opacity,
+										fillColor: polygon_color,
+										fillOpacity: polygon_opacity
+									});
+								}
+								else
+								{
+									shape_new = new google.maps.Polygon({
+										draggable: true,
+										strokeColor: line_color,
+										strokeOpacity: line_opacity,
+										fillColor: polygon_color,
+										fillOpacity: polygon_opacity
+									});
+								}
 								shape_new.setMap(map);
 								google.maps.event.addListener(map, "click", addPoint);
 								google.maps.event.addListener(shape_new, "dragend", getPolygonCoords);
@@ -731,58 +864,127 @@ else
 							if(!isset($_REQUEST["pline_id"]))
 							{
 								?>
-								if(polyline_border_type == 2)
+								if(polyline_data_array != "")
 								{
-									var lineSymbol = 
+									var polyline_cord_exist = [];
+									for(i = 0; i < polyline_data_array.length; i++)
 									{
-										path: "M 0,-1 0,1 0,-1",
-										strokeOpacity: polyline_opacity,
-										strokeColor: polyline_color,
-										strokeWeight: polyline_thicknes
-									};
-									line = new google.maps.Polyline(
+										var latLang = polyline_data_array[i].split(",");
+										var latLangAccurate = new google.maps.LatLng(latLang[0],latLang[1]);
+										polyline_cord_exist.push(latLangAccurate);
+									}
+									if(polyline_border_type == 2)
 									{
-										draggable:true,
-										strokeOpacity: 0,
-										icons: [{
+										var lineSymbol = 
+										{
+											path: "M 0,-1 0,1 0,-1",
+											strokeOpacity: polyline_opacity,
+											strokeColor: polyline_color,
+											strokeWeight: polyline_thicknes
+										};
+										line = new google.maps.Polyline(
+										{
+											path: polyline_cord_exist,
+											draggable:true,
+											strokeOpacity: 0,
+											icons: [{
+												icon: lineSymbol,
+												offset: "0",
+												repeat: "20px"
+											}]
+										});
+										line.setMap(map);
+									}
+									else if(polyline_border_type == 1)
+									{
+										var lineSymbol = 
+										{
+											path: "M 0,-0.1 0,0.1",
+											strokeOpacity: polyline_opacity,
+											strokeColor: polyline_color,
+											strokeWeight: polyline_thicknes
+										};
+										line = new google.maps.Polyline(
+										{
+											path: polyline_cord_exist,
+											draggable:true,
+											strokeOpacity: 0,
+											icons: [{
 											icon: lineSymbol,
 											offset: "0",
-											repeat: "20px"
-										}]
-									});
-									line.setMap(map);
+											repeat: "10px"
+											}]
+										});
+										line.setMap(map);
+									}
+									else if(polyline_border_type == 0)
+									{
+										line = new google.maps.Polyline(
+										{
+											path: polyline_cord_exist,
+											draggable:true,
+											strokeOpacity: polyline_opacity,
+											strokeColor: polyline_color,
+											strokeWeight: polyline_thicknes
+										});
+										line.setMap(map);
+									}
 								}
-								else if(polyline_border_type == 1)
+								else
 								{
-									var lineSymbol = 
+									if(polyline_border_type == 2)
 									{
-										path: "M 0,-0.1 0,0.1",
-										strokeOpacity: polyline_opacity,
-										strokeColor: polyline_color,
-										strokeWeight: polyline_thicknes
-									};
-									line = new google.maps.Polyline(
+										var lineSymbol = 
+										{
+											path: "M 0,-1 0,1 0,-1",
+											strokeOpacity: polyline_opacity,
+											strokeColor: polyline_color,
+											strokeWeight: polyline_thicknes
+										};
+										line = new google.maps.Polyline(
+										{
+											draggable:true,
+											strokeOpacity: 0,
+											icons: [{
+												icon: lineSymbol,
+												offset: "0",
+												repeat: "20px"
+											}]
+										});
+										line.setMap(map);
+									}
+									else if(polyline_border_type == 1)
 									{
-										draggable:true,
-										strokeOpacity: 0,
-										icons: [{
-										icon: lineSymbol,
-										offset: "0",
-										repeat: "10px"
-										}]
-									});
-									line.setMap(map);
-								}
-								else if(polyline_border_type == 0)
-								{
-									line = new google.maps.Polyline(
+										var lineSymbol = 
+										{
+											path: "M 0,-0.1 0,0.1",
+											strokeOpacity: polyline_opacity,
+											strokeColor: polyline_color,
+											strokeWeight: polyline_thicknes
+										};
+										line = new google.maps.Polyline(
+										{
+											draggable:true,
+											strokeOpacity: 0,
+											icons: [{
+											icon: lineSymbol,
+											offset: "0",
+											repeat: "10px"
+											}]
+										});
+										line.setMap(map);
+									}
+									else if(polyline_border_type == 0)
 									{
-										draggable:true,
-										strokeOpacity: polyline_opacity,
-										strokeColor: polyline_color,
-										strokeWeight: polyline_thicknes
-									});
-									line.setMap(map);
+										line = new google.maps.Polyline(
+										{
+											draggable:true,
+											strokeOpacity: polyline_opacity,
+											strokeColor: polyline_color,
+											strokeWeight: polyline_thicknes
+										});
+										line.setMap(map);
+									}
 								}
 								google.maps.event.addListener(map, "click", addNewPoint);
 								google.maps.event.addListener(line, "dragend", getPolylineCoords);
@@ -934,7 +1136,6 @@ else
 				}
 				?>
 			}
-			
 			function codeLatLng() 
 			{
 				var latitude = jQuery("#lat").val(); 
@@ -1080,6 +1281,7 @@ else
 			function getPolygonCoords() 
 			{
 				var len = shape_new.getPath().getLength();
+				
 				var htmlStr = "";
 				for (var i = 0; i < len; i++) 
 				{

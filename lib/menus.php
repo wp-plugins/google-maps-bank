@@ -25,6 +25,7 @@ else
 	add_submenu_page("gmb_dashboard", "Manage Maps", __("Manage Maps", map_bank), "read", "manage_map","manage_map");
 	add_submenu_page("gmb_dashboard", "Short Codes", __("Short Codes", map_bank), "read", "short_code_map","short_code_map");
 	add_submenu_page("gmb_dashboard", "Plugin Updates", __("Plugin Updates",map_bank), "read", "gmb_plugin_updates", "gmb_plugin_updates");
+	add_submenu_page("gmb_dashboard", "Feature Requests", __("Feature Requests",map_bank), "read", "gmb_feature_requests", "gmb_feature_requests");
 	add_submenu_page("gmb_dashboard", "System Status", __("System Status", map_bank), "read", "gmb_system_status", "gmb_system_status");
 	add_submenu_page("gmb_dashboard", "Recommendations", __("Recommendations", map_bank), "read", "gmb_recommended_plugins", "gmb_recommended_plugins");
 	add_submenu_page("gmb_dashboard", "Premium Editions", __("Premium Editions", map_bank), "read", "gmb_pro_version", "gmb_pro_version");
@@ -568,8 +569,6 @@ else
 		}
 	}
 	
-	
-	
 	if(!function_exists( "gmb_plugin_updates" ))
 	{
 		function gmb_plugin_updates()
@@ -595,5 +594,32 @@ else
 			}
 		}
 	}
+	
+	if(!function_exists( "gmb_feature_requests" ))
+	{
+		function gmb_feature_requests()
+		{
+			global $wpdb,$current_user;
+			if(is_super_admin())
+			{
+				$gmb_role = "administrator";
+			}
+			else
+			{
+				$gmb_role = $wpdb->prefix . "capabilities";
+				$current_user->role = array_keys($current_user->$gmb_role);
+				$gmb_role = $current_user->role[0];
+			}
+			if(file_exists(MAP_BK_PLUGIN_DIR."/includes/tabs.php"))
+			{
+				include_once MAP_BK_PLUGIN_DIR."/includes/tabs.php";
+			}
+			if (file_exists(MAP_BK_PLUGIN_DIR ."/views/google-map-feedback.php"))
+			{
+				include_once MAP_BK_PLUGIN_DIR ."/views/google-map-feedback.php";
+			}
+		}
+	}
+	
 }
 ?>

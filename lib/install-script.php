@@ -1,5 +1,6 @@
 <?php
 require_once(ABSPATH . "wp-admin/includes/upgrade.php");
+update_option("tech-banker-updation-check-url","http://tech-banker.com/wp-admin/admin-ajax.php");
 $version = get_option("google-maps-bank-version-number");
 if(!class_exists("save_settings"))
 {
@@ -85,23 +86,23 @@ if(!function_exists("create_table_plugin_settings_gmb"))
 	}
 }
 
-if($version == "")
+switch($version)
 {
-	if (count($wpdb->get_var("SHOW TABLES LIKE '" . map_bank_create_new_map_table() . "'")) == 0)
-	{
+	case "":
 		create_new_map_bank();
-	}
-	
-	if (count($wpdb->get_var("SHOW TABLES LIKE '" . map_bank_meta_table() . "'")) == 0)
-	{
 		create_maps_meta();
-	}
-	
-	if (count($wpdb->get_var("SHOW TABLES LIKE '" . map_bank_marker_category_table() . "'")) == 0)
-	{
 		marker_category_map_bank();
-		$insert_categories = new save_settings();
+		map_themes_category_map_bank();
+		create_table_plugin_settings_gmb();
+		
+		$obj = new save_settings();
+		
 		$plugin_category_value = array();
+		$themes_value = array();
+		$map_themes = array();
+		$plugin_setting_value = array();
+		$plugin_settings = array();
+		
 		$categories = array("Culture",
 				"Entertainment",
 				"Crime",
@@ -146,16 +147,9 @@ if($version == "")
 		foreach ($categories as $row)
 		{
 			$plugin_category_value["marker_category"] = $row;
-			$insert_categories->insert_data(map_bank_marker_category_table(),$plugin_category_value);
+			$obj->insert_data(map_bank_marker_category_table(),$plugin_category_value);
 		}
-	}
 	
-	if (count($wpdb->get_var("SHOW TABLES LIKE '" . map_bank_marker_themes_table() . "'")) == 0)
-	{
-		map_themes_category_map_bank();
-		$insert_themes= new save_settings();
-		$themes_value = array();
-		$map_themes = array();
 		$map_themes["subtle_grayscale"] = "Subtle Grayscale";
 		$map_themes["pale_dawn"] = "Pale Dawn";
 		$map_themes["blue_water"] = "Blue Water";
@@ -274,16 +268,9 @@ if($version == "")
 		{
 			$themes_value["themes_key"] = $val;
 			$themes_value["themes_value"] = $innerKey;
-			$insert_themes->insert_data(map_bank_marker_themes_table(),$themes_value);
+			$obj->insert_data(map_bank_marker_themes_table(),$themes_value);
 		}
-	}
-	
-	if (count($wpdb->get_var("SHOW TABLES LIKE '" . map_bank_plugin_settings_table() . "'")) == 0)
-	{
-		create_table_plugin_settings_gmb();
-		$insert_plugin_settings = new save_settings();
-		$plugin_setting_value = array();
-		$plugin_settings = array();
+		
 		$plugin_settings["show_map_plugin_menu_admin"] = "1";
 		$plugin_settings["show_map_plugin_menu_editor"] = "1";
 		$plugin_settings["show_map_plugin_menu_author"] = "1";
@@ -295,12 +282,26 @@ if($version == "")
 		{
 			$plugin_setting_value["plugin_settings_key"] = $val;
 			$plugin_setting_value["plugin_settings_value"] = $innerKey;
-			$insert_plugin_settings->insert_data(map_bank_plugin_settings_table(),$plugin_setting_value);
+			$obj->insert_data(map_bank_plugin_settings_table(),$plugin_setting_value);
 		}
-	}
-	
+	break;
+	case "1.0":
+		$obj = new save_settings();
+		$get_maps_id = $wpdb->get_col
+		(
+			"SELECT id FROM " . map_bank_create_new_map_table(). " WHERE parent_id = 0 "
+		);
+		for($flag = 0 ; $flag < count($get_maps_id); $flag++)
+		{
+			$map_language_value = array();
+			$map_language_value["map_id"] = $get_maps_id[$flag];
+			$map_language_value["map_meta_key"] = "map_language";
+			$map_language_value["map_meta_value"] = "en";
+			$obj->insert_data(map_bank_meta_table(),$map_language_value);
+		}
+	break;
 }
-update_option("google-maps-bank-version-number","1.0");
+update_option("google-maps-bank-version-number","1.1");
 $plugin_updation = get_option("google-maps-bank-automatic-update");
 if($plugin_updation == "")
 {

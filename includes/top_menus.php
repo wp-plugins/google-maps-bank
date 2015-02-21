@@ -54,6 +54,12 @@ else
 	);
 	$wp_admin_bar->add_menu( array(
 		"parent" => "map_bank_links",
+		"id"     => "gmb_feature_request_links",
+		"href"  => site_url() ."/wp-admin/admin.php?page=gmb_feature_requests",
+		"title" => __("Feature Requests", map_bank))/* set the sub-menu name */
+	);
+	$wp_admin_bar->add_menu( array(
+		"parent" => "map_bank_links",
 		"id"     => "gmb_system_status_links",
 		"href"  => site_url() ."/wp-admin/admin.php?page=gmb_system_status",
 		"title" => __( "System Status", map_bank))/* set the sub-menu name */

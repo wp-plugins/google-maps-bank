@@ -24,7 +24,6 @@ else
 	else
 	{
 		$add_new_marker = wp_create_nonce("new_marker_add");
-		$update_marker = wp_create_nonce("marker_update");
 		$marker_one_delete = wp_create_nonce("marker_delete");
 		$bulk_marker_delete = wp_create_nonce("marker_delete_bulk");
 		
@@ -191,14 +190,14 @@ else
 													</div>
 												</div>
 												<div class="layout-control-group">
-													<div id="image_show" style="display:none;">
+													<div id="image_show" style="display:block;">
 														<label class="layout-control-label-location layout-control-label"><?php _e("Choose Marker", map_bank); ?> : <span class="error">*</span>
 															<span class="hovertip" data-original-title ="<?php _e("This option allows you to select the marker from the group of markers as per your requirement once the category is selected.",map_bank) ;?>">
 																<img class="tooltip_img" src="<?php echo MAP_BK_TOOLTIP?>"/>
 															</span>
 														</label>
 													</div>
-													<div class="layout-controls-location custom-layout-controls-map-location" id="show_map_icons" style="display:none;padding:5px;">
+													<div class="layout-controls-location custom-layout-controls-map-location" id="show_map_icons" style="display:block;padding:5px;">
 													<?php 
 													if(file_exists(MAP_BK_PLUGIN_DIR ."/includes/map-icons.php"))
 													{
@@ -353,7 +352,6 @@ else
 			var url= "<?php echo plugins_url("/assets/",dirname(__FILE__));?>";
 			var rand_num = Math.floor(Math.random()*10000);
 			var marker_count = 0;
-			var bounds = new google.maps.LatLngBounds();
 			var geocoder;
 			var map;
 			var marker;
@@ -365,10 +363,11 @@ else
 				jQuery(".hovertip").tooltip({placement: "right"});
 				jQuery("#step_2").addClass("current");
 				jQuery("#step_3").addClass("current");
+				jQuery("#show_map_icons").css("display","block");
 				initialize();
 				marker_change_catgory();
 				jQuery("#gmb_create_new_map").addClass("nav-tab-active");
-				jQuery("#ux_ddl_Marker").val("<?php echo isset($map_marker_category_update) ? $map_marker_category_update : "0";?>");
+				jQuery("#ux_ddl_Marker").val("<?php echo isset($map_marker_category_update) ? $map_marker_category_update : "1";?>");
 				jQuery(".dataTables_length").css("display","none");
 				jQuery(".dataTables_filter").css("float","right");
 				jQuery(".dataTables_filter").css("margin-bottom","10px");
@@ -2538,8 +2537,8 @@ else
 					break;
 					default:
 						jQuery("#upload_img").css("display","none");
-						jQuery("#show_map_icons").css("display","none");
-						jQuery("#ux_img_culture").css("display","none");
+						jQuery("#show_map_icons").css("display","block");
+						jQuery("#ux_img_culture").css("display","block");
 						jQuery("#ux_img_entertainment").css("display","none");
 						jQuery("#ux_img_crime").css("display","none");
 						jQuery("#ux_img_natural_disaster").css("display","none");
@@ -2581,7 +2580,7 @@ else
 						jQuery("#ux_img_religion").css("display","none");
 						jQuery("#ux_img_tourism").css("display","none");
 						jQuery("#upload_marker").css("display","none");
-						jQuery("#image_show").css("display","none");
+						jQuery("#image_show").css("display","block");
 						jQuery("#Or_marker").css("display","none");
 						jQuery("#upload_img_div").css("display","none");
 					break;

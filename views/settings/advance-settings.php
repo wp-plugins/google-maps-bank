@@ -460,7 +460,6 @@ else
 		<script type="text/javascript">
 			
 			var layer;
-			var bounds = new google.maps.LatLngBounds();
 		
 			jQuery(document).ready(function()
 			{

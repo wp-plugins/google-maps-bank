@@ -64,6 +64,7 @@ else
 						$map_id = intval($_REQUEST["map_id"]);
 						
 						$meta_map_array["map_title"] = htmlspecialchars(esc_attr($_REQUEST["title"]));
+						$meta_map_array["map_language"] = esc_attr($_REQUEST["map_language"]);
 						$meta_map_array["map_type"] = intval($_REQUEST["map_type"]);
 						$meta_map_array["map_themes"] = esc_attr($_REQUEST["themes"]);
 						$map_count = $wpdb->get_var
@@ -171,8 +172,8 @@ else
 						$meta_map_array["map_marker"] = esc_attr($_REQUEST["marker_icon_image"]) != "" ? esc_attr($_REQUEST["marker_icon_image"]) :$map_icon;
 						$meta_map_array["marker_category"] = intval($_REQUEST["ux_ddl_Marker"]);
 						$meta_map_array["marker_name"] = isset($_REQUEST["marker_name"]) ? htmlspecialchars(esc_attr($_REQUEST["marker_name"])) : "";
-						$meta_map_array["marker_latitude"] = esc_attr($_REQUEST["ux_txt_latitude"]);
-						$meta_map_array["marker_longitude"] = esc_attr($_REQUEST["ux_txt_longitude"]);
+						echo $meta_map_array["marker_latitude"] = esc_attr($_REQUEST["ux_txt_latitude"]);
+						echo $meta_map_array["marker_longitude"] = esc_attr($_REQUEST["ux_txt_longitude"]);
 						$meta_map_array["animation"] = isset($_REQUEST["ux_rdl_animation"]) ? intval($_REQUEST["ux_rdl_animation"]) : 0;
 						$meta_map_array["info_window"] = isset($_REQUEST["ux_rdl_info_window"]) ? intval($_REQUEST["ux_rdl_info_window"]) : 0;
 						

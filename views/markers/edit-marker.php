@@ -23,11 +23,24 @@ else
 	}
 	else
 	{
+		$add_new_marker = wp_create_nonce("new_marker_add");
 		$update_marker = wp_create_nonce("marker_update");
 		
-		if(file_exists(MAP_BK_PLUGIN_DIR ."/lib/get-map-settings.php"))
+		if(isset($_REQUEST["map_id"]))
 		{
-			include_once MAP_BK_PLUGIN_DIR ."/lib/get-map-settings.php";
+			if(file_exists(MAP_BK_PLUGIN_DIR ."/lib/get-map-settings.php"))
+			{
+				include_once MAP_BK_PLUGIN_DIR ."/lib/get-map-settings.php";
+			}
+			$map_marker_count = $wpdb->get_var
+			(
+				$wpdb->prepare
+				(
+					"SELECT count(id) FROM ".map_bank_create_new_map_table()." where  parent_id = %d AND map_type = %s ",
+					$map_id,
+					"marker"
+				)
+			);
 		}
 		?>
 		<form id="frm_edit_marker" class="layout-form" style="max-width:1000px;">
@@ -42,7 +55,23 @@ else
 						<div class="widget-layout-body">
 							<div class="fluid-layout">
 								<input type="button" onclick="proceed_to_back();" id="ux_btn_action" name="ux_btn_action" class="btn btn-danger"value="<?php _e("Back to Manage Maps", map_bank); ?>"/>
-								<input type="submit" id="ux_btn_add_marker" value= "<?php isset ($_REQUEST["mid"]) ? _e("Update Marker", map_bank) :  _e("Add Marker", map_bank); ?>" name="ux_btn_add_marker" class="btn btn-danger" style="float:right;margin-left: 5px;"/>
+								<?php	
+									if(isset($_REQUEST["mid"]))
+									{
+										?>
+										<input type="submit" id="ux_btn_add_marker" value="<?php _e("Update Marker", map_bank); ?>" name="ux_btn_add_marker" class="btn btn-danger" style="float:right;margin-left: 5px;margin-top: 10px;"/>
+										<?php
+									}
+									else 
+									{
+										if($map_marker_count < 5)
+										{
+											?>
+											<input type="submit" id="ux_btn_add_marker" value="<?php _e("Add Marker", map_bank); ?>" name="ux_btn_add_marker" class="btn btn-danger" style="float:right;margin-left: 5px;margin-top: 10px;"/>
+											<?php
+										}
+									}
+								?>
 							</div>
 							<div class="separator-doubled" style="margin-bottom: 20px;"></div> 
 							<div class="fluid-layout">
@@ -226,7 +255,23 @@ else
 									<div id="map_canvas" style="width: 100%; height: 345px; border:4px solid #e0dede; margin-top:10px;"></div>
 								</div>
 								<input type="button" onclick="proceed_to_back();" id="ux_btn_action" style="margin-top: 10px;" name="ux_btn_action" class="btn btn-danger"value="<?php _e("Back to Manage Maps", map_bank); ?>"/>
-								<input type="submit" id="ux_btn_add_marker" value= "<?php isset ($_REQUEST["mid"]) ? _e("Update Marker", map_bank) :  _e("Add Marker", map_bank); ?>" name="ux_btn_add_marker" class="btn btn-danger" style="float:right;margin-left: 5px;margin-top: 10px;"/>
+								<?php	
+									if(isset($_REQUEST["mid"]))
+									{
+										?>
+										<input type="submit" id="ux_btn_add_marker" value="<?php _e("Update Marker", map_bank); ?>" name="ux_btn_add_marker" class="btn btn-danger" style="float:right;margin-left: 5px;margin-top: 10px;"/>
+										<?php
+									}
+									else 
+									{
+										if($map_marker_count < 5)
+										{
+											?>
+											<input type="submit" id="ux_btn_add_marker" value="<?php _e("Add Marker", map_bank); ?>" name="ux_btn_add_marker" class="btn btn-danger" style="float:right;margin-left: 5px;margin-top: 10px;"/>
+											<?php
+										}
+									}
+								?>
 								<input type="button" id="ux_btn_clear_marker" onclick="clearMarkers();" name="ux_btn_clear_marker" class="btn btn-danger" value="<?php _e("Clear Marker", map_bank); ?>" style="float:right;display: none; margin-top: 10px;"/>
 							</div>
 						</div>
@@ -239,7 +284,7 @@ else
 			var url= "<?php echo plugins_url("/assets/",dirname(__FILE__));?>";
 			var rand_num = Math.floor(Math.random()*10000);
 			var marker_count = 0;
-			var bounds = new google.maps.LatLngBounds();
+		
 			var geocoder;
 			var map;
 			var marker;
@@ -265,7 +310,7 @@ else
 						<?php
 					}
 				?>
-				jQuery("#ux_ddl_Marker").val("<?php echo isset($map_marker_category_update) ? $map_marker_category_update : "0";?>");
+				jQuery("#ux_ddl_Marker").val("<?php echo isset($map_marker_category_update) ? $map_marker_category_update : "1";?>");
 			});
 			
 			jQuery("#frm_edit_marker").validate
@@ -290,16 +335,35 @@ else
 				{
 					overlay();
 					var map_id = "<?php echo $map_id; ?>";
-					var marker_id = "<?php echo intval($_REQUEST["mid"])?>";
 					var marker_name = encodeURIComponent(jQuery("#ux_txt_marker_name").val());
-					jQuery.post(ajaxurl, jQuery("#frm_edit_marker").serialize() +"&map_id="+map_id+"&marker_id="+marker_id+"&marker_name="+marker_name+"&param=update_marker_db&action=add_map_library&_wpnonce=<?php echo $update_marker;?>", function(data)
+					<?php 
+					if(isset($_REQUEST["mid"]))
 					{
-						setTimeout(function () {
+						?>
+						var marker_id = "<?php echo intval($_REQUEST["mid"])?>";
+						jQuery.post(ajaxurl, jQuery("#frm_edit_marker").serialize() +"&map_id="+map_id+"&marker_id="+marker_id+"&marker_name="+marker_name+"&param=update_marker_db&action=add_map_library&_wpnonce=<?php echo $update_marker;?>", function(data)
+						{
+							setTimeout(function () {
+								jQuery(".loader_opacity").remove();
+								jQuery(".opacity_overlay").remove();
+								window.location.href = "admin.php?page=manage_map&map_id="+map_id;
+							}, 2000);
+						});
+						<?php
+					}
+					else
+					{
+						?>
+						jQuery.post(ajaxurl, jQuery("#frm_edit_marker").serialize() +"&map_id="+map_id+"&marker_name="+marker_name+"&param=add_marker_db&action=add_map_library&_wpnonce=<?php echo $add_new_marker;?>", function(data)
+						{
+							marker_count = 0;
+							window.location.href = "admin.php?page=gmb_edit_marker&map_id="+map_id;
 							jQuery(".loader_opacity").remove();
-							jQuery(".opacity_overlay").remove();
-							window.location.href = "admin.php?page=manage_map&map_id="+map_id;
-						}, 2000);
-					});
+							jQuery(".opacity_overlay").remove();;
+						});
+						<?php
+					}
+					?>
 				}
 			});
 			
@@ -2318,8 +2382,8 @@ else
 					break;
 					default:
 						jQuery("#upload_img").css("display","none");
-						jQuery("#show_map_icons").css("display","none");
-						jQuery("#ux_img_culture").css("display","none");
+						jQuery("#show_map_icons").css("display","block");
+						jQuery("#ux_img_culture").css("display","block");
 						jQuery("#ux_img_entertainment").css("display","none");
 						jQuery("#ux_img_crime").css("display","none");
 						jQuery("#ux_img_natural_disaster").css("display","none");
@@ -2361,7 +2425,7 @@ else
 						jQuery("#ux_img_religion").css("display","none");
 						jQuery("#ux_img_tourism").css("display","none");
 						jQuery("#upload_marker").css("display","none");
-						jQuery("#image_show").css("display","none");
+						jQuery("#image_show").css("display","block");
 						jQuery("#Or_marker").css("display","none");
 						jQuery("#upload_img_div").css("display","none");
 					break;

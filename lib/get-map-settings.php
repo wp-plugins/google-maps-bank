@@ -85,8 +85,9 @@ else
 				$marker = get_geo_settings($map_id,$map_settings,"marker");
 				$polygon = get_geo_settings($map_id,$map_settings,"polygon");
 				$polyline = get_geo_settings($map_id,$map_settings,"polyline");
-				$map_type_data= $map_settings_data["map_type"];
-				$map_themes = $map_settings_data["map_themes"];
+				$map_type_data= isset($map_settings_data["map_type"]) ? $map_settings_data["map_type"] : "1";
+				$map_themes = isset($map_settings_data["map_themes"]) ? $map_settings_data["map_themes"] : "default1";
+				$map_language = isset($map_settings_data["map_language"]) ? $map_settings_data["map_language"] : "en";
 				$map_location_longitude = isset($map_settings_data["longitude"]) ? $map_settings_data["longitude"] : "-97.03259696914063";
 				$map_location_latitude = isset($map_settings_data["latitude"]) ? $map_settings_data["latitude"] : "35.38453628611739";
 					
@@ -161,7 +162,7 @@ else
 				case "gmb_add_marker":
 					$map_location_title= isset($map_settings_data["location_title"]) ? $map_settings_data["location_title"] : "35311 Westech Road, Shawnee, OK 74804, USA";
 					$map_marker_icon_update = "";
-					$map_marker_category_update = "0";
+					$map_marker_category_update = "1";
 					$map_marker_name_update = "";
 					$map_marker_animation_update = "0";
 					$map_info_window_update = "0";
@@ -199,49 +200,77 @@ else
 					$map_location_country = isset($map_settings_data["country"]) ? $map_settings_data["country"] : "Singapore";
 				break;
 				case "gmb_edit_marker":
-					$marker_id = intval($_REQUEST["mid"]);
-					$marker_settings = get_map_settings($marker_id,$map_settings,"marker");
-					$map_location_title = isset($marker_settings["marker_location"]) ? $marker_settings["marker_location"] : $map_settings_data["location_title"];
-					$map_location_latitude = isset($marker_settings["marker_latitude"]) ? $marker_settings["marker_latitude"] : $get_marker_settings["latitude"];
-					$map_location_longitude = isset($marker_settings["marker_longitude"]) ? $marker_settings["marker_longitude"] : $get_marker_settings["longitude"];
-					$map_marker_icon_update = isset($marker_settings["map_marker"]) ? $marker_settings["map_marker"] : "";
-					$map_marker_category_update = isset($marker_settings["marker_category"]) ? $marker_settings["marker_category"] : "1";
-					$map_marker_name_update = isset($marker_settings["marker_name"]) ? stripcslashes(htmlspecialchars_decode($marker_settings["marker_name"])) :"";
-					$map_marker_animation_update = isset($marker_settings["animation"]) ? $marker_settings["animation"] : "0";
-					$map_info_window_update = isset($marker_settings["info_window"]) ? $marker_settings["info_window"] : "0";
-					$map_info_window_width_update = isset($marker_settings["info_window_width"]) ? $marker_settings["info_window_width"] : "400";
-					$map_info_title_update = isset($marker_settings["info_title"]) ? stripcslashes(htmlspecialchars_decode($marker_settings["info_title"])) : "";
-					$map_description_update = isset($marker_settings["description"]) ? stripcslashes(htmlspecialchars_decode(html_entity_decode($marker_settings["description"]))) : "";
-					$map_info_dragable_update = isset($marker_settings["info_dragable"]) ? $marker_settings["info_dragable"] : "0";
-					$map_info_add_image_update = isset($marker_settings["info_add_image"]) ? $marker_settings["info_add_image"] : "1";
-					$map_info_hyperlink_update = isset($marker_settings["info_hyperlink"]) ? $marker_settings["info_hyperlink"] : "0";
-					$map_info_window_image_url_update = isset($marker_settings["info_window_image_url"]) ? $marker_settings["info_window_image_url"] : "";
-					$map_info_hyperlink_text_update = isset($marker_settings["info_hyperlink_text"]) ? stripcslashes(htmlspecialchars_decode($marker_settings["info_hyperlink_text"])) : "";
-					$map_info_hyperlink_url_update = isset($marker_settings["info_hyperlink_url"]) ? $marker_settings["info_hyperlink_url"] : "";
+					$map_location_title= isset($map_settings_data["location_title"]) ? $map_settings_data["location_title"] : "35311 Westech Road, Shawnee, OK 74804, USA";
+					$map_marker_icon_update = "";
+					$map_marker_category_update = "1";
+					$map_marker_name_update = "";
+					$map_marker_animation_update = "0";
+					$map_info_window_update = "0";
+					
+					if(isset($_REQUEST["mid"]))
+					{
+						$marker_id = intval($_REQUEST["mid"]);
+						$marker_settings = get_map_settings($marker_id,$map_settings,"marker");
+						$map_location_title = isset($marker_settings["marker_location"]) ? $marker_settings["marker_location"] : $map_settings_data["location_title"];
+						$map_location_latitude = isset($marker_settings["marker_latitude"]) ? $marker_settings["marker_latitude"] : $map_settings_data["latitude"];
+						$map_location_longitude = isset($marker_settings["marker_longitude"]) ? $marker_settings["marker_longitude"] : $map_settings_data["longitude"];
+						$map_marker_icon_update = isset($marker_settings["map_marker"]) ? $marker_settings["map_marker"] : "";
+						$map_marker_category_update = isset($marker_settings["marker_category"]) ? $marker_settings["marker_category"] : "1";
+						$map_marker_name_update = isset($marker_settings["marker_name"]) ? stripcslashes(htmlspecialchars_decode($marker_settings["marker_name"])) :"";
+						$map_marker_animation_update = isset($marker_settings["animation"]) ? $marker_settings["animation"] : "0";
+						$map_info_window_update = isset($marker_settings["info_window"]) ? $marker_settings["info_window"] : "0";
+						$map_info_window_width_update = isset($marker_settings["info_window_width"]) ? $marker_settings["info_window_width"] : "400";
+						$map_info_title_update = isset($marker_settings["info_title"]) ? stripcslashes(htmlspecialchars_decode($marker_settings["info_title"])) : "";
+						$map_description_update = isset($marker_settings["description"]) ? stripcslashes(htmlspecialchars_decode(html_entity_decode($marker_settings["description"]))) : "";
+						$map_info_dragable_update = isset($marker_settings["info_dragable"]) ? $marker_settings["info_dragable"] : "0";
+						$map_info_add_image_update = isset($marker_settings["info_add_image"]) ? $marker_settings["info_add_image"] : "1";
+						$map_info_hyperlink_update = isset($marker_settings["info_hyperlink"]) ? $marker_settings["info_hyperlink"] : "0";
+						$map_info_window_image_url_update = isset($marker_settings["info_window_image_url"]) ? $marker_settings["info_window_image_url"] : "";
+						$map_info_hyperlink_text_update = isset($marker_settings["info_hyperlink_text"]) ? stripcslashes(htmlspecialchars_decode($marker_settings["info_hyperlink_text"])) : "";
+						$map_info_hyperlink_url_update = isset($marker_settings["info_hyperlink_url"]) ? $marker_settings["info_hyperlink_url"] : "";
+					}
 				break;
 				case "gmb_edit_polygon":
-					$pgon_id = intval($_REQUEST["pgon_id"]);
-					$polygon_settings = get_map_settings($pgon_id,$map_settings,"polygon");
-					$map_location_latitude = isset($polygon_settings["polygon_latitude"]) ? $polygon_settings["polygon_latitude"] : $map_settings_data["latitude"];
-					$map_location_longitude = isset($polygon_settings["polygon_longitute"]) ? $polygon_settings["polygon_longitute"] : $map_settings_data["longitude"];
-					$map_location_title = isset($polygon_settings["polygon_location"]) ? $polygon_settings["polygon_location"] : $map_settings_data["location_title"];
-					$map_polygon_line_color_update = isset($polygon_settings["polygon_line_color"]) ? $polygon_settings["polygon_line_color"] : "#d00108";
-					$map_polygon_line_opacity_update = isset($polygon_settings["polygon_line_opacity"]) ? $polygon_settings["polygon_line_opacity"] : "1.0";
-					$map_polygon_data_update = isset($polygon_settings["polygon_data"]) ? $polygon_settings["polygon_data"] : "";
-					$map_polygon_color_update = isset($polygon_settings["polygon_color"]) ? $polygon_settings["polygon_color"] : "#ffb3b3";
-					$map_polygon_opacity_update = isset($polygon_settings["polygon_opacity"]) ? $polygon_settings["polygon_opacity"] : "0.35";
+					$map_location_title= isset($map_settings_data["location_title"]) ? $map_settings_data["location_title"] : "";
+					$map_polygon_line_color_update = "#d00108";
+					$map_polygon_line_opacity_update ="1.0";
+					$map_polygon_data_update = "";
+					$map_polygon_color_update = "#ffb3b3";
+					$map_polygon_opacity_update = "0.35";
+					if(isset($_REQUEST["pgon_id"]))
+					{
+						$pgon_id = intval($_REQUEST["pgon_id"]);
+						$polygon_settings = get_map_settings($pgon_id,$map_settings,"polygon");
+						$map_location_latitude = isset($polygon_settings["polygon_latitude"]) ? $polygon_settings["polygon_latitude"] : $map_settings_data["latitude"];
+						$map_location_longitude = isset($polygon_settings["polygon_longitute"]) ? $polygon_settings["polygon_longitute"] : $map_settings_data["longitude"];
+						$map_location_title = isset($polygon_settings["polygon_location"]) ? $polygon_settings["polygon_location"] : $map_settings_data["location_title"];
+						$map_polygon_line_color_update = isset($polygon_settings["polygon_line_color"]) ? $polygon_settings["polygon_line_color"] : "#d00108";
+						$map_polygon_line_opacity_update = isset($polygon_settings["polygon_line_opacity"]) ? $polygon_settings["polygon_line_opacity"] : "1.0";
+						$map_polygon_data_update = isset($polygon_settings["polygon_data"]) ? $polygon_settings["polygon_data"] : "";
+						$map_polygon_color_update = isset($polygon_settings["polygon_color"]) ? $polygon_settings["polygon_color"] : "#ffb3b3";
+						$map_polygon_opacity_update = isset($polygon_settings["polygon_opacity"]) ? $polygon_settings["polygon_opacity"] : "0.35";
+					}
 				break;
 				case "gmb_edit_polyline":
-					$pline_id = intval($_REQUEST["pline_id"]);
-					$polyline_settings = get_map_settings($pline_id,$map_settings,"polyline");
-					$map_location_latitude = isset($polyline_settings["polyline_latitude"]) ? $polyline_settings["polyline_latitude"] : $map_settings_data["latitude"];
-					$map_location_longitude = isset($polyline_settings["polyline_longitute"]) ? $polyline_settings["polyline_longitute"] : $map_settings_data["longitude"];
-					$map_location_title = isset($polyline_settings["polyline_location"]) ? $polyline_settings["polyline_location"] : $map_settings_data["location_title"];
-					$map_polyline_color_update = isset($polyline_settings["polyline_color"]) ? $polyline_settings["polyline_color"] : "#000000";
-					$map_polyline_opacity_update = isset($polyline_settings["polyline_opacity"]) ? $polyline_settings["polyline_opacity"] : "1.0";
-					$map_polyline_thickness_update = isset($polyline_settings["polyline_thickness"]) ? $polyline_settings["polyline_thickness"] : "2";
-					$map_polyline_type_update = isset($polyline_settings["polyline_type"]) ? $polyline_settings["polyline_type"] : "1";
-					$map_polyline_data_update = isset($polyline_settings["polyline_data"]) ? $polyline_settings["polyline_data"] : "";
+					$map_location_title= isset($map_settings_data["location_title"]) ? $map_settings_data["location_title"] : "";
+					$map_polyline_color_update = "#000000";
+					$map_polyline_opacity_update = "1.0";
+					$map_polyline_thickness_update = "2";
+					$map_polyline_type_update = "1";
+					$map_polyline_data_update = "";
+					if(isset($_REQUEST["pline_id"]))
+					{
+						$pline_id = intval($_REQUEST["pline_id"]);
+						$polyline_settings = get_map_settings($pline_id,$map_settings,"polyline");
+						$map_location_latitude = isset($polyline_settings["polyline_latitude"]) ? $polyline_settings["polyline_latitude"] : $map_settings_data["latitude"];
+						$map_location_longitude = isset($polyline_settings["polyline_longitute"]) ? $polyline_settings["polyline_longitute"] : $map_settings_data["longitude"];
+						$map_location_title = isset($polyline_settings["polyline_location"]) ? $polyline_settings["polyline_location"] : $map_settings_data["location_title"];
+						$map_polyline_color_update = isset($polyline_settings["polyline_color"]) ? $polyline_settings["polyline_color"] : "#000000";
+						$map_polyline_opacity_update = isset($polyline_settings["polyline_opacity"]) ? $polyline_settings["polyline_opacity"] : "1.0";
+						$map_polyline_thickness_update = isset($polyline_settings["polyline_thickness"]) ? $polyline_settings["polyline_thickness"] : "2";
+						$map_polyline_type_update = isset($polyline_settings["polyline_type"]) ? $polyline_settings["polyline_type"] : "1";
+						$map_polyline_data_update = isset($polyline_settings["polyline_data"]) ? $polyline_settings["polyline_data"] : "";
+					}
 				break;
 				case "manage_map":
 					$manage_location_data = get_map_settings($map_id,$map_settings,"map");

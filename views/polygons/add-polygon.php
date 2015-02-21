@@ -24,7 +24,6 @@ else
 	else
 	{
 		$add_new_polygon = wp_create_nonce("new_polygon_add");
-		$update_polygon = wp_create_nonce("polygon_update");
 		$polygon_one_delete = wp_create_nonce("polygon_delete");
 		$bulk_polygon_delete = wp_create_nonce("polygon_delete_bulk");
 		
@@ -156,6 +155,37 @@ else
 												</div>
 											</div>
 											<div class="fluid-layout">
+												<div class="layout-span6 responsive">
+													<div class="layout-control-group">
+														<label class="layout-control-label-location layout-control-label"><?php _e("Latitude", map_bank); ?> : 
+															<span class="error">*</span>
+															<span class="hovertip" data-original-title ="<?php _e("",map_bank) ;?>">
+																<img class="tooltip_img" src="<?php echo MAP_BK_TOOLTIP?>"/>
+															</span>
+														</label>
+														<div class="layout-controls-location custom-layout-controls-map-location">
+															<input type="text" id="polygon_lat" class="layout-span12" onkeypress ="return OnlyDigitsDots(event);" name="polygon_lat" value="" placeholder="<?php _e("Enter the Latitude", map_bank); ?>"/>
+														</div>
+													</div>
+												</div>
+												<div class="layout-span6 responsive">	
+													<div class="layout-control-group">
+														<label class="layout-control-label-location layout-control-label"><?php _e("Longitude", map_bank); ?> : 
+															<span class="error">*</span>
+															<span class="hovertip" data-original-title ="<?php _e("",map_bank) ;?>">
+																<img class="tooltip_img" src="<?php echo MAP_BK_TOOLTIP?>"/>
+															</span>
+														</label>
+														<div class="layout-controls-location custom-layout-controls-map-location">
+															<input type="text" id="polygon_lng" class="layout-span12" onkeypress ="return OnlyDigitsDots(event);" name="polygon_lng" value="" placeholder="<?php _e("Enter the Longitude", map_bank); ?>"/>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="fluid-layout">
+												<input type="button" id="ux_btn_add_data" onclick="polygon_data();" name="ux_btn_add_data" class="btn btn-danger" value="<?php _e("Add Polygon Data", map_bank); ?>" style="float:right;display:block; margin-right: 5px;"/>
+											</div>
+											<div class="fluid-layout">
 												<div class="layout-span12 responsive">
 													<div class="layout-control-group">
 														<label class="layout-control-label-location layout-control-label"><?php _e("Polygon Data", map_bank); ?> : <span class="error">*</span>
@@ -164,28 +194,28 @@ else
 														</span>
 														</label>
 														<div class="layout-controls-location custom-layout-controls-map-location">
-															<textarea  readonly="readonly" id="ux_txt_polygon_data" rows="4" name="ux_txt_polygon_data" class="layout-span12"></textarea>
+															<textarea readonly="readonly" id="ux_txt_polygon_data" rows="4" name="ux_txt_polygon_data" class="layout-span12"></textarea>
 														</div>
 													</div>
-												</div>
+												</div> 
 												<input type="hidden" id="ux_txt_latitude" class="layout-span12" name="ux_txt_latitude" value="<?php echo $map_location_latitude ; ?>"/>
+												<input type="hidden" id="ux_txt_polygon_data_hidden" class="layout-span12" name="ux_txt_polygon_data_hidden" value=""/>
 												<input type="hidden" id="ux_txt_longitude" class="layout-span12" name="ux_txt_longitude" value="<?php echo $map_location_longitude ; ?>"/>
 											</div>
+											<div style="max-height: 370px;">
+												<div id="map_canvas" style="width: 100%; height: 345px; border:4px solid #e0dede; margin-top:10px;"></div>
+											</div>
 											<div class="fluid-layout">
-												<div style="max-height: 370px;">
-													<div id="map_canvas" style="width: 100%; height: 345px; border:4px solid #e0dede; margin-top:10px;"></div>
-												</div>
+												<?php 
+												if($map_polygon_count < 1)
+												{
+													?>	
+													<input type="submit" id="ux_btn_action" value= "<?php isset ($_REQUEST["pgon_id"]) ? _e("Update Polygon", map_bank) :  _e("Add Polygon", map_bank); ?>" name="ux_btn_action" class="btn btn-danger" style="float:right; margin-top: 10px;"/>
+													<input type="button" id="ux_btn_clear_polygon" onclick="clearpolygon();" name="ux_btn_clear_polygon" class="btn btn-danger" value="<?php _e("Clear polygon", map_bank); ?>" style="float:right;display:block; margin-top: 10px; margin-right: 5px;"/>
 													<?php 
-													if($map_polygon_count < 1)
-													{
-														?>	
-														<input type="submit" id="ux_btn_action" value= "<?php isset ($_REQUEST["pgon_id"]) ? _e("Update Polygon", map_bank) :  _e("Add Polygon", map_bank); ?>" name="ux_btn_action" class="btn btn-danger" style="float:right; margin-top: 10px;"/>
-														<input type="button" id="ux_btn_clear_polygon" onclick="clearpolygon();" name="ux_btn_clear_polygon" class="btn btn-danger" value="<?php _e("Clear polygon", map_bank); ?>" style="float:right;display:block; margin-top: 10px; margin-right: 5px;"/>
-														
-														<?php 
-													}
-													?>
-												</div>
+												}
+												?>
+											</div>
 										</div>
 									</div>
 								</div>
@@ -267,10 +297,12 @@ else
 		<script type="text/javascript">
 			
 			var manage_polygons_array = [];
+			var polygon_data_array = [];
 			
 			jQuery(document).ready(function()
 			{
 				jQuery("#ux_txt_polygon_data").val("<?php echo isset($map_polygon_data_update) ? $map_polygon_data_update : "" ;?>");
+				
 				initialize();
 				jQuery("#gmb_create_new_map").addClass("nav-tab-active");
 				jQuery("#step_2").addClass("current");
@@ -460,7 +492,53 @@ else
 			function polygon_onblur()
 			{
 				initialize();
-				jQuery("#ux_txt_polygon_data").val("");
+			}
+			
+			function polygon_data()
+			{
+				var polygon_lat_data = jQuery("#polygon_lat").val();
+				var polygon_lng_data = jQuery("#polygon_lng").val();
+				
+				if(polygon_lat_data == "")
+				{
+					jQuery("#polygon_lat").css("background-color","#FFCCCC");
+					jQuery("#polygon_lat").css("border","1px solid red");
+				}
+				else if(polygon_lng_data == "")
+				{
+					jQuery("#polygon_lng").css("background-color","#FFCCCC");
+					jQuery("#polygon_lng").css("border","1px solid red");
+				}
+				else
+				{
+					var latlng = new google.maps.LatLng(polygon_lat_data, polygon_lng_data);
+					geocoder.geocode({'latLng': latlng}, function(results, status)
+					{
+						if (status == google.maps.GeocoderStatus.OK)
+						{
+							if (results[1])
+							{
+								var polygon_txt_area_data = jQuery("#ux_txt_polygon_data").val();
+								var polygon_txt_area_data_array = jQuery("#ux_txt_polygon_data").val();
+								polygon_txt_area_data += polygon_lat_data+","+ polygon_lng_data + "\n";
+								polygon_data_array.push(polygon_lat_data+","+ polygon_lng_data);
+								jQuery("#ux_txt_polygon_data").val(polygon_txt_area_data);
+								initialize();
+							}
+							else 
+							{
+								alert("<?php _e( "Invalid Logitute/Latitude.", map_bank ); ?>");
+								jQuery("#polygon_lat").val("");
+								jQuery("#polygon_lng").val("");
+							}
+						}
+						else 
+						{
+							alert('Geocoder failed due to: ' + status);
+						}
+					
+					});
+				}
 			}
 			
 			function delete_single_polygon(id)

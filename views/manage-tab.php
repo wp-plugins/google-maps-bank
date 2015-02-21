@@ -47,6 +47,34 @@ else
 			{
 				include_once MAP_BK_PLUGIN_DIR ."/lib/get-map-settings.php";
 			}
+		
+			$map_marker_count = $wpdb->get_var
+			(
+				$wpdb->prepare
+				(
+					"SELECT count(id) FROM ".map_bank_create_new_map_table()." where  parent_id = %d AND map_type = %s ",
+					$map_id,
+					"marker"
+				)
+			);
+			$map_polygon_count = $wpdb->get_var
+			(
+				$wpdb->prepare
+				(
+					"SELECT count(id) FROM ".map_bank_create_new_map_table()." WHERE parent_id = %d AND map_type = %s ",
+					$map_id,
+					"polygon"
+				)
+			);
+			$map_polylines_count = $wpdb->get_var
+			(
+				$wpdb->prepare
+				(
+					"SELECT count(id) FROM ".map_bank_create_new_map_table()." WHERE parent_id = %d AND map_type = %s ",
+					$map_id,
+					"polyline"
+				)
+			);
 		}
 		?>
 		<form id="frm_manage_map" name="frm_manage_map" class="layout-form" style="width:1000px;">
@@ -65,13 +93,8 @@ else
 										</label>
 										<div class="layout-controls custom-layout-controls-maps">
 											<select id="ux_ddl_location" name="ux_ddl_location" class="layout-span12" onchange="bind_map_details();">
-												<?php 
-												if(empty($map_data_details) || !isset($_REQUEST["map_id"]))
-												{
-													?>
-													<option value=""><?php _e("Select Map", map_bank); ?></option>
-													<?php
-												}
+												<option value="0"><?php _e("Select Map", map_bank); ?></option>
+												<?php
 												foreach($map_data_details as $details )
 												{
 													?>
@@ -114,28 +137,39 @@ else
 																		<?php 
 																		if(isset($_REQUEST["map_id"]))
 																		{
-																			?>
-																			<tr class="alternate">
-																				<td>
-																					<?php echo $manage_location_data["country"]; ?>
-																					<span class="check-bottom">
-																						<a href="admin.php?page=gmb_edit_location&map_id=<?php echo $map_id;?>" style="color:#0d1ff6;"><?php _e("Edit", map_bank); ?></a>
-																					</span>
-																				</td>
-																				<td>
-																				<?php echo isset($manage_location_data["location_title"]) ? stripcslashes(htmlspecialchars_decode($manage_location_data["location_title"])) : "";?>
-																				</td>
-																				<td>
-																				<?php echo isset($manage_location_data["latitude"]) ? ($manage_location_data["latitude"]) : "";?>
-																				</td>
-																				<td>
-																					<?php echo isset($manage_location_data["longitude"]) ? ($manage_location_data["longitude"]) : "";?>
-																				</td>
-																				<td>
-																					<?php echo isset($manage_location_data["creation_date"]) ? date("d M, Y", strtotime($manage_location_data["creation_date"])) : "";?>
-																				</td>
-																			</tr>
+																			if(isset($manage_location_data["location_title"])!= "")
+																			{
+																				?>
+																				<tr class="alternate">
+																					<td>
+																						<?php echo isset($manage_location_data["country"]) ? ($manage_location_data["country"]) : "" ; ?>
+																						<span class="check-bottom">
+																							<a href="admin.php?page=gmb_edit_location&map_id=<?php echo $map_id;?>" style="color:#0d1ff6;"><?php _e("Edit", map_bank); ?></a>
+																						</span>
+																					</td>
+																					<td>
+																					<?php echo isset($manage_location_data["location_title"]) ? stripcslashes(htmlspecialchars_decode($manage_location_data["location_title"])) : "";?>
+																					</td>
+																					<td>
+																					<?php echo isset($manage_location_data["latitude"]) ? ($manage_location_data["latitude"]) : "";?>
+																					</td>
+																					<td>
+																						<?php echo isset($manage_location_data["longitude"]) ? ($manage_location_data["longitude"]) : "";?>
+																					</td>
+																					<td>
+																						<?php echo isset($manage_location_data["creation_date"]) ? date("d M, Y", strtotime($manage_location_data["creation_date"])) : "";?>
+																					</td>
+																				</tr>
 																			<?php 
+																			}
+																			else 
+																			{
+																				?>
+																				<tr class="odd">
+																					<td valign="top" colspan="5" class="dataTables_empty">No data available in table</td>
+																				</tr>
+																				<?php
+																			}
 																		}
 																		else 
 																		{
@@ -165,6 +199,17 @@ else
 																<option value="1"><?php _e("Delete", map_bank); ?></option>
 															</select>
 															<input type="button" id="ux_btn_action" onclick="bulk_delete_marker();" name="ux_btn_action" class="btn btn-danger" value="<?php _e("Apply", map_bank); ?>">
+															<?php 
+															if(isset($_REQUEST["map_id"]) && ($_REQUEST["map_id"])!="0")
+															{
+																if($map_marker_count < 5)
+																{
+																	?>
+																	<a href="admin.php?page=gmb_edit_marker&map_id=<?php echo $map_id;?>" class="btn btn-danger"><?php _e("Add New Marker", map_bank); ?></a>
+																	<?php 
+																}
+															}
+															?>
 														</div>
 														<div class="separator-doubled"></div>
 														<table class="widefat" id="data-table-add_marker" style="background-color:#fff !important">
@@ -179,7 +224,7 @@ else
 															</thead>
 															<tbody>
 															<?php 
-																if(isset($_REQUEST["map_id"]))
+																if(isset($_REQUEST["map_id"]) && ($_REQUEST["map_id"])!="0")
 																{
 																	$flag = 0;
 																	foreach ($manage_marker_data as $marker_key)
@@ -229,6 +274,17 @@ else
 																<option value="1"><?php _e("Delete", map_bank); ?></option>
 															</select>
 															<input type="button" id="ux_btn_action" name="ux_btn_action" onclick="bulk_delete_polygon();" class="btn btn-danger" value="<?php _e("Apply", map_bank); ?>">
+															<?php 
+															if(isset($_REQUEST["map_id"]) && ($_REQUEST["map_id"])!="0")
+															{
+																if($map_polygon_count < 1)
+																{
+																	?>
+																	<a href="admin.php?page=gmb_edit_polygon&map_id=<?php echo $map_id;?>" class="btn btn-danger"><?php _e("Add Polygons", map_bank); ?></a>
+																	<?php 
+																}
+															}
+															?>
 														</div>
 														<div class="separator-doubled"></div>
 														<table class="widefat " id="data-table-manage-polygons" style="background-color:#fff !important">
@@ -243,7 +299,7 @@ else
 															</thead>
 															<tbody>
 																<?php 
-																if(isset($_REQUEST["map_id"]))
+																if(isset($_REQUEST["map_id"]) && ($_REQUEST["map_id"])!="0")
 																{
 																	$flag = 0;
 																	foreach ($manage_polygon_data as $polygon_key)
@@ -299,6 +355,17 @@ else
 																<option value="1"><?php _e("Delete", map_bank); ?></option>
 															</select>
 															<input type="button" id="ux_btn_action" onclick="bulk_delete_polyline();" name="ux_btn_action" class="btn btn-danger" value="<?php _e("Apply", map_bank); ?>">
+															<?php 
+															if(isset($_REQUEST["map_id"]) && ($_REQUEST["map_id"])!="0")
+															{
+																if($map_polylines_count < 1)
+																{
+																	?>
+																	<a href="admin.php?page=gmb_edit_polyline&map_id=<?php echo $map_id;?>" class="btn btn-danger"><?php _e("Add Polylines", map_bank); ?></a>
+																	<?php
+																}
+															}
+															?>
 														</div>
 														<div class="separator-doubled"></div>
 														<table class="widefat" id="data-table-manage-polyline" style="background-color:#fff !important">
@@ -313,7 +380,7 @@ else
 															</thead >
 															<tbody>
 																<?php 
-																if(isset($_REQUEST["map_id"]))
+																if(isset($_REQUEST["map_id"]) && ($_REQUEST["map_id"])!="0")
 																{
 																	$flag = 0;
 																	foreach ($manage_polyline_data as $polyline_key)
@@ -365,7 +432,7 @@ else
 													<div class="widget-layout-body">
 														<div class="layout-control-group">
 														<?php 
-															if(isset($_REQUEST["map_id"]))
+															if(isset($_REQUEST["map_id"]) && ($_REQUEST["map_id"])!="0")
 															{
 															?>
 															<table class="widefat" id="data-table-manage-layers" style="background-color:#fff !important">
@@ -514,7 +581,7 @@ else
 													<div class="widget-layout-body">
 														<div class="layout-control-group">
 														<?php 
-															if(isset($_REQUEST["map_id"]))
+															if(isset($_REQUEST["map_id"]) && ($_REQUEST["map_id"])!="0")
 															{
 															?>
 															<a href="admin.php?page=gmb_edit_adv_settings&map_id=<?php echo $map_id;?>" class="btn btn-danger" style="float:right;margin-bottom:10px;"><?php _e("Edit Advanced Settings", map_bank); ?></a>

@@ -202,7 +202,7 @@ color:#dc334b!important;
 
 .custom-message span {
     display: block;
-    /*background : url(../images/icons/system-icon.png) no-repeat 98% center;*/
+    /*background : url(../images/system-icon.png) no-repeat 98% center;*/
     padding: 13px 0;
     font: 12px/1.0em Arial;
 }
@@ -216,5 +216,12 @@ color:#dc334b!important;
     background : #F8E9E9;
     border: 1px solid #E4BBBC;
     color: #b80000;
+}
+
+.custom-message.green {
+    display: block;
+    background: url(../images/icons/icon-succes.png) no-repeat 1px 8px #EBF9E2;
+    border: 1px solid #BEE4A5;
+    color: #6aa500;
 }
 /* Custom Css for Google Maps Bank */

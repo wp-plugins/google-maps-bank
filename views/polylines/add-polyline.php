@@ -24,7 +24,6 @@ else
 	else
 	{
 		$add_new_polyline = wp_create_nonce("new_polyline_add");
-		$update_polyline = wp_create_nonce("polyline_update");
 		$polyline_one_delete = wp_create_nonce("polyline_delete");
 		$bulk_polyline_delete = wp_create_nonce("polyline_delete_bulk");
 		
@@ -157,6 +156,37 @@ else
 													</div>
 												</div>
 											</div>
+											<div class="fluid-layout">
+												<div class="layout-span6 responsive">
+													<div class="layout-control-group">
+														<label class="layout-control-label-location layout-control-label"><?php _e("Latitude", map_bank); ?> : 
+															<span class="error">*</span>
+															<span class="hovertip" data-original-title ="<?php _e("",map_bank) ;?>">
+																<img class="tooltip_img" src="<?php echo MAP_BK_TOOLTIP?>"/>
+															</span>
+														</label>
+														<div class="layout-controls-location custom-layout-controls-map-location">
+															<input type="text" id="polyline_lat" onkeypress ="return OnlyDigitsDots(event);" class="layout-span12" name="polyline_lat" value="" placeholder="<?php _e("Enter the Latitude", map_bank); ?>"/>
+														</div>
+													</div>
+												</div>
+												<div class="layout-span6 responsive">	
+													<div class="layout-control-group">
+														<label class="layout-control-label-location layout-control-label"><?php _e("Longitude", map_bank); ?> : 
+															<span class="error">*</span>
+															<span class="hovertip" data-original-title ="<?php _e("",map_bank) ;?>">
+																<img class="tooltip_img" src="<?php echo MAP_BK_TOOLTIP?>"/>
+															</span>
+														</label>
+														<div class="layout-controls-location custom-layout-controls-map-location">
+															<input type="text" id="polyline_lng" onkeypress ="return OnlyDigitsDots(event);" class="layout-span12" name="polyline_lng" value="" placeholder="<?php _e("Enter the Longitude", map_bank); ?>"/>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="fluid-layout">
+												<input type="button" id="ux_btn_add_data" onclick="polyline_data_chk();" name="ux_btn_add_data" class="btn btn-danger" value="<?php _e("Add Polyline Data", map_bank); ?>" style="float:right;display:block; margin-right: 5px;"/>
+											</div>
 											<div class="fluid-layout" >
 												<div class="layout-span12 responsive">	
 													<div class="layout-control-group">
@@ -269,8 +299,8 @@ else
 		<script type="text/javascript">
 		
 			var line;
-			var bounds = new google.maps.LatLngBounds();
 			var manage_polylines_array = [];
+			var polyline_data_array = [];
 			
 			jQuery(document).ready(function()
 			{
@@ -434,6 +464,54 @@ else
 					jQuery(".opacity_overlay").remove();
 				}, 2000);
 				window.location.href = "admin.php?page=gmb_add_polygon&map_id=<?php echo $map_id;?>";
+			}
+			
+			function polyline_data_chk()
+			{
+				var polyline_lat_data = jQuery("#polyline_lat").val();
+				var polyline_lng_data = jQuery("#polyline_lng").val();
+				
+				if(polyline_lat_data == "")
+				{
+					jQuery("#polyline_lat").css("background-color","#FFCCCC");
+					jQuery("#polyline_lat").css("border","1px solid red");
+				}
+				else if(polyline_lng_data == "")
+				{
+					jQuery("#polyline_lng").css("background-color","#FFCCCC");
+					jQuery("#polyline_lng").css("border","1px solid red");
+				}
+				else
+				{
+					var latlng = new google.maps.LatLng(polyline_lat_data, polyline_lng_data);
+					geocoder.geocode({'latLng': latlng}, function(results, status)
+					{
+						if (status == google.maps.GeocoderStatus.OK)
+						{
+							if (results[1])
+							{
+								var polyline_txt_area_data = jQuery("#ux_txt_polyline_data").val();
+								var polyline_txt_area_data_array = jQuery("#ux_txt_polyline_data").val();
+								polyline_txt_area_data += polyline_lat_data+","+ polyline_lng_data + "\n";
+								polyline_data_array.push(polyline_lat_data+","+ polyline_lng_data);
+								jQuery("#ux_txt_polyline_data").val(polyline_txt_area_data);
+								jQuery("#polyline_lat").val("");
+								jQuery("#polyline_lng").val("");
+								initialize();
+							}
+							else 
+							{
+								alert("<?php _e( "Invalid Logitute/Latitude.", map_bank ); ?>");
+								jQuery("#polyline_lat").val("");
+								jQuery("#polyline_lng").val("");
+							}
+						}
+						else 
+						{
+							alert('Geocoder failed due to: ' + status);
+						}
+					});
+				}
 			}
 			
 			function ux_clr_font_color_label_setting()
