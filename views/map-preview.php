@@ -25,13 +25,7 @@ else
 	{
 		?>
 		<style type="text/css">
-		.map_canvas_class_<?php echo $map_id;?>_<?php echo $unique_id;?>
-		{
-			max-width: none !important;
-			border:<?php echo  $border_width."px"." ".$border_style." ".$border_color; ?>;
-			width:<?php echo $map_width . "". $map_width_type; ?>;
-			height:<?php echo  $map_height. "". $map_height_type; ?>;
-		}
+		
 		
 		.scrollFix 
 		{

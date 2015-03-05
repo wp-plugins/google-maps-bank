@@ -38,12 +38,6 @@ else
 		<form id="frm_advance_settings" class="layout-form" style="max-width:1000px;">
 			<div class="fluid-layout">
 				<div class="layout-span12">
-					<?php 
-						if(file_exists(MAP_BK_PLUGIN_DIR ."/includes/headers.php"))
-						{
-							include_once MAP_BK_PLUGIN_DIR ."/includes/headers.php";
-						}
-					?>
 					<div class="widget-layout">
 						<div class="widget-layout-title">
 							<h4><?php _e("Edit Advanced Settings", map_bank); ?></h4>

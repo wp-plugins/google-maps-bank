@@ -170,7 +170,7 @@ if(file_exists(MAP_BK_PLUGIN_DIR ."/views/themes.php"))
 					map: map_<?php echo $map_id;?>_<?php echo $unique_id;?>,
 					animation: google.maps.Animation.<?php echo $marker_key["animation"] == 1 ? "BOUNCE" : "DROP";?>,
 					icon : "<?php echo $marker_key["map_marker"];?>",
-					title: "<?php echo stripslashes(htmlspecialchars_decode($marker_key["marker_name"]));?>"
+					title: "<?php echo esc_attr(stripslashes(htmlspecialchars_decode($marker_key["marker_name"])));?>"
 				});
 				<?php
 			}
