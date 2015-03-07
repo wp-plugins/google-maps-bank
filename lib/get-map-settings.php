@@ -64,14 +64,23 @@ else
 		{
 			function get_geo_settings($id,$map_settings,$match)
 			{
-				$map_marker_array = array();
+				$ids = array();
 				foreach ($map_settings as $row)
 				{
 					if ($row->parent_id == $id && $row->map_type == $match)
 					{
-						$map_marker = get_map_settings($row->id,$map_settings,$match);
-						array_push($map_marker_array, $map_marker);
+						if(!in_array($row->id,$ids))
+						{
+							array_push($ids, $row->id);
+						}
 					}
+				}
+				
+				$map_marker_array = array();
+				foreach ($ids as $row)
+				{
+					$map_marker = get_map_settings($row,$map_settings,$match);
+					array_push($map_marker_array, $map_marker);
 				}
 				return array_unique($map_marker_array, SORT_REGULAR);
 			}

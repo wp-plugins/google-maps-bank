@@ -25,10 +25,10 @@ else
 	{
 		if(!function_exists("get_map_count"))
 		{
-			function get_map_count($map_settings)
+			function get_map_count($maps, $map_settings)
 			{
 				$map_data_array = array();
-				foreach ($map_settings as $row)
+				foreach ($maps as $row)
 				{
 					$map_data = get_map_details($row->id,$map_settings);
 					array_push($map_data_array, $map_data);
@@ -67,6 +67,15 @@ else
 				"map"
 			)
 		);
+		$maps = $wpdb->get_results
+		(
+			$wpdb->prepare
+			(
+				"SELECT id FROM " . map_bank_create_new_map_table(). " WHERE parent_id = %d and map_type = %s",
+				0,
+				"map"
+			)
+		);
 		$map_count = $wpdb->get_var
 		(
 			$wpdb->prepare
@@ -75,7 +84,7 @@ else
 				"map"
 			)
 		);
-		$map_details =  get_map_count($map_data_details);
+		$map_details =  get_map_count($maps, $map_data_details);
 		?>
 		<form  class="layout-form" style="max-width:1000px;">
 			<div class="fluid-layout">
