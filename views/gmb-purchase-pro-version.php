@@ -68,9 +68,8 @@ else
 												class="css3_grid_row_2 row_style_4 css3_grid_row_2_responsive"><span
 												class="css3_grid_vertical_align_table"><span
 													class="css3_grid_vertical_align"><span><span
-															class="css3_hidden_caption">Domains per License</span><span
-															class="css3_grid_tooltip"><span>Number of websites that
-																	can use the plugin on purchase of a License.</span>Domains
+															class="css3_hidden_caption">Installation per License</span><span
+															class="css3_grid_tooltip"><span>Number of websites that can use the plugin on purchase of a License.</span>Installation
 																per License</span></span></span></span></li>
 											<li
 												class="css3_grid_row_3 row_style_2 css3_grid_row_3_responsive"><span
@@ -1950,13 +1949,12 @@ else
 										</ul>
 									</div>
 								</div>
-
 								<div class="gap" style="line-height: 20px; height: 20px;"></div>
 								<div class="wpb_text_column wpb_content_element ">
 									<div class="wpb_wrapper">
-										<strong>NOTE FOR MULTISITE* :</strong> Allows you to use this
+										<strong><u>NOTE FOR MULTISITE* :</u></strong> Allows you to use this
 										Plugin with network of sites / Multisites WordPress. But you
-										need to have separate license for each domain.
+										need to have separate license for each Installation.
 									</div>
 								</div>
 							</div>
