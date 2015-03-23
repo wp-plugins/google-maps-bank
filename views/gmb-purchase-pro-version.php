@@ -1954,7 +1954,7 @@ else
 									<div class="wpb_wrapper">
 										<strong><u>NOTE FOR MULTISITE* :</u></strong> Allows you to use this
 										Plugin with network of sites / Multisites WordPress. But you
-										need to have separate license for each Installation.
+										need to purchase separate license for each Installation / Instance.
 									</div>
 								</div>
 							</div>

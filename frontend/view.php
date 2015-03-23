@@ -152,7 +152,7 @@ if(file_exists(MAP_BK_PLUGIN_DIR ."/views/themes.php"))
 			streetViewControl:false,
 			overviewMapControl:<?php echo $map_overview_control_update == "1" ? "true" : "false" ;?>,
 			visible:true,
-			zoom: 12,
+			zoom: <?php echo $map_zoom ?>,
 			mapTypeId: google.maps.MapTypeId.<?php echo $map_type;?>,
 		}
 		map_<?php echo $map_id;?>_<?php echo $unique_id;?> = new google.maps.Map(document.getElementById("map_canvas_<?php echo $map_id;?>_<?php echo $unique_id;?>"), mapOptions);
