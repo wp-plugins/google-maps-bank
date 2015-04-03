@@ -323,11 +323,11 @@ else
 				}
 			});
 			
-			function minmax(value) 
+			function minmax(value)
 			{
-				if(parseInt(value) < 0 || isNaN(value)) 
+				if(parseInt(value) < 0 || isNaN(value))
 					return 0; 
-				else if(value > 1) 
+				else if(value > 1)
 					return 1; 
 				else return value;
 			}
@@ -397,7 +397,6 @@ else
 						{
 							alert('Geocoder failed due to: ' + status);
 						}
-					
 					});
 				}
 			}

@@ -262,7 +262,7 @@ else
 										<input type="submit" id="ux_btn_add_marker" value="<?php _e("Update Marker", map_bank); ?>" name="ux_btn_add_marker" class="btn btn-danger" style="float:right;margin-left: 5px;margin-top: 10px;"/>
 										<?php
 									}
-									else 
+									else
 									{
 										if($map_marker_count < 5)
 										{

@@ -111,6 +111,7 @@ else
 						die();
 					}
 				break;
+				
 				case "add_location_db":
 					if(wp_verify_nonce( $_REQUEST["_wpnonce"], "add_new_location"))
 					{

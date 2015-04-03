@@ -169,7 +169,7 @@ switch($version)
 			$plugin_category_value["marker_category"] = $row;
 			$obj->insert_data(map_bank_marker_category_table(),$plugin_category_value);
 		}
-	
+		
 		$map_themes["subtle_grayscale"] = "Subtle Grayscale";
 		$map_themes["pale_dawn"] = "Pale Dawn";
 		$map_themes["blue_water"] = "Blue Water";

@@ -1246,7 +1246,7 @@ else
 			</div>
 		</div>
 		<script type="text/javascript">
-		jQuery(".framework_tabs .framework_tab-links a").on("click", function(e)
+			jQuery(".framework_tabs .framework_tab-links a").on("click", function(e)
 			{
 				var currentAttrValue = jQuery(this).attr("href");
 				// Show/Hide Tabs

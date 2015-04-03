@@ -209,7 +209,7 @@ else
 												<?php 
 												if($map_polygon_count < 1)
 												{
-													?>	
+													?>
 													<input type="submit" id="ux_btn_action" value= "<?php isset ($_REQUEST["pgon_id"]) ? _e("Update Polygon", map_bank) :  _e("Add Polygon", map_bank); ?>" name="ux_btn_action" class="btn btn-danger" style="float:right; margin-top: 10px;"/>
 													<input type="button" id="ux_btn_clear_polygon" onclick="clearpolygon();" name="ux_btn_clear_polygon" class="btn btn-danger" value="<?php _e("Clear polygon", map_bank); ?>" style="float:right;display:block; margin-top: 10px; margin-right: 5px;"/>
 													<?php 
@@ -284,7 +284,7 @@ else
 									</div>
 								</div>
 							</div>
-							<div class="separator-doubled"></div> 
+							<div class="separator-doubled"></div>
 							<div style="margin-top: 10px;">
 								<input type="button" onclick="proceed_to_back();" id="ux_btn_action" name="ux_btn_action" class="btn btn-danger" value="<?php _e("<< Back to Previous Step", map_bank); ?>"/>
 								<input type="button" onclick="proceed_to_step();" id="ux_btn_action" name="ux_btn_action" class="btn btn-danger" value="<?php _e("Proceed to Next Step >>", map_bank); ?>" style="float:right; margin-right: 8px;"/>
@@ -383,16 +383,16 @@ else
 				jQuery("body").append(overlay);
 			}
 	
-			function minmax(value) 
+			function minmax(value)
 			{
-				if(parseInt(value) < 0 || isNaN(value)) 
-					return 0; 
-				else if(value > 1) 
+				if(parseInt(value) < 0 || isNaN(value))
+					return 0;
+				else if(value > 1)
 					return 1; 
 				else return value;
 			}
 			
-			function OnlyDigitsDots(evt) 
+			function OnlyDigitsDots(evt)
 			{
 				var theEvent = evt || window.event;
 				var key = theEvent.keyCode || theEvent.which;

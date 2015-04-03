@@ -25,8 +25,6 @@ else
 	{
 		?>
 		<style type="text/css">
-		
-		
 		.scrollFix 
 		{
 			line-height: 1.35;

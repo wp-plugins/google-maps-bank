@@ -188,7 +188,7 @@ else
 												<input type="button" id="ux_btn_add_data" onclick="polyline_data_chk();" name="ux_btn_add_data" class="btn btn-danger" value="<?php _e("Add Polyline Data", map_bank); ?>" style="float:right;display:block; margin-right: 5px;"/>
 											</div>
 											<div class="fluid-layout" >
-												<div class="layout-span12 responsive">	
+												<div class="layout-span12 responsive">
 													<div class="layout-control-group">
 														<label class="layout-control-label-location layout-control-label"><?php _e("Polyline Data", map_bank); ?> : 
 															<span class="error">*</span>
@@ -286,7 +286,7 @@ else
 									</div>
 								</div>
 							</div>
-							<div class="separator-doubled"></div> 
+							<div class="separator-doubled"></div>
 							<div style="margin-top: 10px;">
 								<input type="button" onclick="proceed_to_back();" id="ux_btn_action" name="ux_btn_action" class="btn btn-danger" value="<?php _e("<< Back to Previous Step", map_bank); ?>"/>
 								<input type="button" onclick="proceed_to_step();" id="ux_btn_action" name="ux_btn_action" class=" btn btn-danger" value="<?php _e("Proceed to Next Step >>", map_bank); ?>" style="float:right;margin-right:8px;"/>
@@ -411,13 +411,13 @@ else
 								window.location.href = "admin.php?page=gmb_add_layers&map_id="+map_id;
 							}, 2000);
 						});
-						<?php 
+						<?php
 					}
 					else 
 					{
 						?>
 							overlay();
-							setTimeout(function () 
+							setTimeout(function ()
 							{
 								jQuery(".loader_opacity").remove();
 								window.location.href = "admin.php?page=gmb_add_layers&map_id="+map_id;
@@ -450,7 +450,7 @@ else
 				}
 			}
 			
-			function OnlyNumbers(evt) 
+			function OnlyNumbers(evt)
 			{
 				var charCode = (evt.which) ? evt.which : event.keyCode;
 				return (charCode > 47 && charCode < 58) || charCode == 127 || charCode == 8;
@@ -583,7 +583,7 @@ else
 			}
 			
 		</script>
-		<?php 
+		<?php
 		if(file_exists(MAP_BK_PLUGIN_DIR ."/views/map-preview.php"))
 		{
 			include_once MAP_BK_PLUGIN_DIR ."/views/map-preview.php";

@@ -106,10 +106,12 @@ else
 		</div>
 	</div>
 	<script>
+	
 	jQuery(document).ready(function()
 	{
 		jQuery(".nav-tab-wrapper > a#<?php echo $_REQUEST["page"];?>").addClass("nav-tab-active");
 	});
+	
 	</script>
 	<h2 class="nav-tab-wrapper" style="max-width: 1000px;">
 		<a style="display:none;" class="nav-tab" id="gmb_dashboard" href=""><?php _e("Dashboard", map_bank);?></a>

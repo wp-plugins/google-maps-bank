@@ -22,7 +22,7 @@ else
 		return;
 	}
 	else
-	{ 
+	{
 		$create_map = wp_create_nonce("map_create");
 		$themes_change = wp_create_nonce("map_themes");
 		if(isset($_REQUEST["map_id"]))
@@ -320,22 +320,22 @@ else
 				{
 					?>
 					window.location.href = "admin.php?page=gmb_create_new_map&map_themes="+themes+"&map_type="+map_type+"&map_title="+map_title+"&map_language="+map_language+"&map_id="+map_id;
-					<?php 
+					<?php
 				}
 				else
 				{
 					?>
 					window.location.href = "admin.php?page=gmb_create_new_map&map_themes="+themes+"&map_type="+map_type+"&map_language="+map_language+"&map_title="+map_title;
-					<?php 
+					<?php
 				}
 				?>
 			}
 		</script>
 		<?php 
-			if(file_exists(MAP_BK_PLUGIN_DIR ."/views/map-preview.php"))
-			{
-				include_once MAP_BK_PLUGIN_DIR ."/views/map-preview.php";
-			}
+		if(file_exists(MAP_BK_PLUGIN_DIR ."/views/map-preview.php"))
+		{
+			include_once MAP_BK_PLUGIN_DIR ."/views/map-preview.php";
+		}
 	}
 }
 ?>

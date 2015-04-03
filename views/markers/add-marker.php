@@ -265,7 +265,7 @@ else
 													?>
 													<input type="submit" id="ux_btn_add_marker" value= "<?php isset ($_REQUEST["mid"]) ? _e("Update Marker", map_bank) :  _e("Add Marker", map_bank); ?>" name="ux_btn_add_marker" class="btn btn-danger"  style="float:right;margin-left: 5px;margin-top: 10px;"/>
 													<input type="button" id="ux_btn_clear_marker" onclick="clearMarkers();" name="ux_btn_clear_marker" class="btn btn-danger" value="<?php _e("Clear Marker", map_bank); ?>" style="float:right;display: none; margin-top: 10px;"/>
-													<?php 
+													<?php
 												}
 												?>
 											</div>

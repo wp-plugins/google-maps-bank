@@ -4,7 +4,7 @@ Plugin Name: Google Maps Bank Lite Edition
 Plugin URI: http://tech-banker.com
 Description: Google Maps Bank provides directions, interactive maps, and satellite/aerial imagery of anything. It's more than a Map.
 Author: Tech Banker
-Version: 1.0.14
+Version: 1.0.15
 Author URI: http://tech-banker.com
 */
 /////////////////////////////////////  Define  Google Maps Bank  Constants  ////////////////////////////////////////
@@ -146,6 +146,7 @@ if(!function_exists("create_global_menus_for_google_map_bank"))
 		}
 	}
 }
+
 /////////////////////////////////////  Functions for Returing Table Names  /////////////////////////////////
 
 function map_bank_create_new_map_table()
@@ -183,7 +184,9 @@ function google_maps_bank_licensing()
 	global $wpdb;
 	return $wpdb->prefix . "gmb_licensing_settings";
 }
+
 /////////////////////////////////////  Call Install Script on Plugin Activation ////////////////////////////////////////
+
 if(!function_exists("plugin_install_script_for_map_bank"))
 {
 	function plugin_install_script_for_map_bank()
@@ -213,6 +216,7 @@ if(!function_exists("plugin_install_script_for_map_bank"))
 }
 
 ///////////////////////////////////  Call Shortcodes for Front End ////////////////////////////////////////
+
 if(!function_exists("map_bank_short_code"))
 {
 	function map_bank_short_code($atts)
@@ -232,6 +236,7 @@ if(!function_exists("map_bank_short_code"))
 }
 
 /////////////////////////////////////  Extract Shortcodes called by Front End Function ////////////////////////////////////////
+
 if(!function_exists("extract_map_short_code"))
 {
 	function extract_map_short_code($map_id,$map_width,$map_width_type,$map_height,$map_height_type,$map_zoom,$scrolling_wheel,$map_title)
@@ -269,7 +274,9 @@ if(isset($_REQUEST["action"]))
 		break;
 	}
 }
+
 ///////////////////////////////////// Shortcodes Generator Functions /////////////////////////////////////
+
 if(!function_exists("add_map_shortcode_button"))
 {
 	function add_map_shortcode_button($context) {
@@ -400,7 +407,7 @@ add_action("plugins_loaded", "plugin_load_textdomain_google_map_bank");
 add_action("admin_init","backend_plugin_js_scripts_map_bank");
 
 // add_action Hook called for function frontend_plugin__java_script_for_google_map_bank
-add_action("wp_head","frontend_plugin_js_scripts_map_bank"); 
+add_action("init","frontend_plugin_js_scripts_map_bank"); 
 
 // add_action Hook called for function create_admin_bar_for_google_map_bank
 add_action("admin_bar_menu", "create_admin_bar_menus_for_google_map_bank", 100);
@@ -420,6 +427,7 @@ if(file_exists(MAP_BK_PLUGIN_DIR ."/lib/map-widget.php"))
 }
 
 // add_action Hook called for create_shortcode_for_google_map_bank
+
 add_action( "media_buttons_context", "add_map_shortcode_button", 1);
 add_action("admin_footer","add_map_mce_popup");
 add_action("in_plugin_update_message-".MAP_FILE,"google_maps_bank_plugin_update_message");

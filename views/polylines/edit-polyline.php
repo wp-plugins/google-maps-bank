@@ -38,7 +38,7 @@ else
 					"SELECT count(id) FROM ".map_bank_create_new_map_table()." WHERE parent_id = %d AND map_type = %s ",
 					$map_id,
 					"polyline"
-			)
+				)
 			);
 		}
 		?>
@@ -240,7 +240,7 @@ else
 						</div>
 					</div>
 				</div>
-			</div>		
+			</div>
 		</form>
 		<script type="text/javascript">
 	
@@ -422,7 +422,7 @@ else
 								jQuery("#polyline_lng").val("");
 							}
 						}
-						else 
+						else
 						{
 							alert('Geocoder failed due to: ' + status);
 						}

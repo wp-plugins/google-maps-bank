@@ -475,7 +475,8 @@ else
 					}
 					return false;
 				});
-				jQuery("a.close-report").click(function () {
+				jQuery("a.close-report").click(function () 
+				{
 					jQuery("#wp-map-bank-system-report").slideUp();
 					jQuery(this).fadeOut();
 					jQuery("a.system-report").fadeIn();
