@@ -149,7 +149,7 @@ if(file_exists(MAP_BK_PLUGIN_DIR ."/views/themes.php"))
 			{
 				style: google.maps.ZoomControlStyle.LARGE
 			},
-			streetViewControl:false,
+			streetViewControl:true,
 			overviewMapControl:<?php echo $map_overview_control_update == "1" ? "true" : "false" ;?>,
 			visible:true,
 			zoom: <?php echo $map_zoom ?>,
