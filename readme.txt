@@ -1,13 +1,13 @@
-=== WP Google Maps Bank - Google Maps Builder ===
+=== Google Maps Bank - Best Maps Builder ===
 Contributors: contact-banker, Gallery-Bank
 Tags: admin, plugin, best google maps, best maps, comments, custom google map, google map widget, gmaps, google map plugin, custom google maps, Custom Google Map, Custom Google Maps, google map, google maps, maps, map, map markers, wp maps, wp google maps, wp google map, easy map, store locator, map plugin, directions, map directions, google map plugin, routes, polygons, polylines, streetview, location, marker, latitude, longitude, map widget
 Requires at least: 3.4
 Tested up to: 4.2.2
-Stable tag: 1.0.21
+Stable tag: 1.0.22
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
-Google Maps Bank provides directions, interactive maps, and satellite/aerial imagery of anything. It's more than just a Map.
+Google Maps Bank provides directions, locations, markers, interactive maps, and satellite/aerial imagery of anything. It's more than just a Map.
 
 == Description ==
 
@@ -207,6 +207,10 @@ If any problem occurs, please contact us at [support@tech-banker.com](mailto:sup
 
 == Changelog ==
 
+= 1.0.22 =
+
+* Few Bugs Fixed.
+
 = 1.0.21 =
 
 * Added Compatibility with WordPress 4.2.2
@@ -215,7 +219,7 @@ If any problem occurs, please contact us at [support@tech-banker.com](mailto:sup
 
 * Added Compatibility with WordPress 4.2.1
 
-= 1.0.19=
+= 1.0.19 =
 
 * Added Compatibility with WordPress 4.2
 * Added New Languages.
