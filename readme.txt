@@ -3,7 +3,7 @@ Contributors: contact-banker, Gallery-Bank
 Tags: admin, plugin, best google maps, best maps, comments, custom google map, google map widget, gmaps, google map plugin, custom google maps, Custom Google Map, Custom Google Maps, google map, google maps, maps, map, map markers, wp maps, wp google maps, wp google map, easy map, store locator, map plugin, directions, map directions, google map plugin, routes, polygons, polylines, streetview, location, marker, latitude, longitude, map widget
 Requires at least: 3.4
 Tested up to: 4.2.2
-Stable tag: 1.0.23
+Stable tag: 1.0.24
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -28,6 +28,28 @@ Creating a **[Google Maps Bank](http://tech-banker.com/products/wp-google-maps-b
 **[Google Maps Bank](http://tech-banker.com/products/wp-google-maps-bank/)** can be also upgraded to Premium Editions as and when required without loosing an existing data.
 
 **[Support Desk - Feel Free to ask your Queries](http://tech-banker.com/forums/forum/google-maps-bank-support/)**
+
+= Demos - Google Maps Bank = 
+
+**[Demo using Marker Cluster](http://tech-banker.com/products/wp-google-maps-bank/demo/google-map-marker-cluster-demo/)**
+
+**[Demo using 45 Degree Imagery](http://tech-banker.com/products/wp-google-maps-bank/demo/google-map-45-degree-imagery-demo/)**
+
+**[Demo using KML Layer](http://tech-banker.com/products/wp-google-maps-bank/demo/google-map-kml-layer-demo/)**
+
+**[Demo using Weather Layer](http://tech-banker.com/products/wp-google-maps-bank/demo/google-map-weather-layer-demo/)**
+
+**[Demo using Fusion Table Layer](http://tech-banker.com/products/wp-google-maps-bank/demo/google-map-fusion-table-layer-demo/)**
+
+**[Demo using Traffic Layer](http://tech-banker.com/products/wp-google-maps-bank/demo/google-map-traffic-layer-demo/)**
+
+**[Demo using Transit Layer](http://tech-banker.com/products/wp-google-maps-bank/demo/google-map-transit-layer-demo/)**
+
+**[Demo using Bicycling Layer](http://tech-banker.com/products/wp-google-maps-bank/demo/google-map-bicycling-layer-demo/)**
+
+**[Demo using Panorama Layer](http://tech-banker.com/products/wp-google-maps-bank/demo/google-map-panorama-layer-demo/)**
+
+**[Demo using Map Engine Layer](http://tech-banker.com/products/wp-google-maps-bank/demo/google-map-map-engine-layer-demo/)**
 
 
 = Key Features in Google Maps Bank Lite Edition : =
@@ -207,6 +229,10 @@ If any problem occurs, please contact us at [support@tech-banker.com](mailto:sup
 
 == Changelog ==
 
+= 1.0.24 =
+
+* Visual Editor Bug Fixed
+
 = 1.0.23 =
 
 * Few Bugs Fixed
@@ -229,27 +255,27 @@ If any problem occurs, please contact us at [support@tech-banker.com](mailto:sup
 * Added Compatibility with WordPress 4.2
 * Added New Languages.
 
-= 1.0.18=
+= 1.0.18 =
 
 * Added Compatibility with WordPress 4.1.2
 
-= 1.0.17=
+= 1.0.17 =
 
 * Few Bugs Fixed.
 
-= 1.0.16=
+= 1.0.16 =
 
 * Minor Bugs Fixed.
 
-= 1.0.15=
+= 1.0.15 =
 
 * Formatting Issue Fixed.
 
-= 1.0.14=
+= 1.0.14 =
 
 * Minor Bugs Fixed.
 
-= 1.0.13=
+= 1.0.13 =
 
 * Minor Bugs Fixed related to Zoom Level.
 

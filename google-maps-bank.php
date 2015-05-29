@@ -4,7 +4,7 @@ Plugin Name: Google Maps Bank Lite Edition
 Plugin URI: http://tech-banker.com
 Description: Google Maps Bank provides directions, interactive maps, and satellite/aerial imagery of anything. It's more than a Map.
 Author: Tech Banker
-Version: 1.0.23
+Version: 1.0.24
 Author URI: http://tech-banker.com
 License: GPLv3 or later
 */
@@ -391,7 +391,6 @@ if(!function_exists( "plugin_uninstall_hook_for_google_maps_bank" ))
 }
 
 ///////////////////////////////////  Call Hooks   /////////////////////////////////////////////////////
-add_filter( "wp_default_editor", create_function( '', 'return "html";' ));
 // activation Hook called for installation_for_google_map_bank
 register_activation_hook(__FILE__,"plugin_install_script_for_map_bank");
 
